@@ -31,7 +31,7 @@
 			"rich-text#login-text-overlay",
 			"link#orders",
 			"link#account",
-			"rich-text#logout"
+			"link#logout"
 		],
 		"props": {
 			"blockClass": ["logged", "dropdown-login"]
@@ -51,11 +51,12 @@
 			"blockClass": "overlay-login"
 		}
 	},
-	"rich-text#logout": {
+	"link#logout": {
 		"title": "Desconectar",
 		"props": {
 			"blockClass": "overlay-login",
-			"text": "[Sair](/no-cache/user/logout)"
+			"href": "/api/vtexid/pub/logout?scope=tuttoperlacasa&returnUrl=https://www.tuttoperlacasa.com.br",
+			"label": "Sair"
 		}
 	},
 	"conditional-login.unlogged": {
