@@ -1,0 +1,67 @@
+{
+  "menu-item#decor": {
+		"props": {
+			"id": "menu-item-decor",
+			"type": "custom",
+			"highlight": false,
+			"hasChild": true,
+			"itemProps": {
+				"type": "internal",
+				"href": "/decor",
+				"noFollow": false,
+				"tagTitle": "decor",
+				"text": "decor"
+			},
+			"blockClass": ["department"]
+		},
+		"blocks": ["tuttoperlacasa.menu:submenu#decor"]
+	},
+  "tuttoperlacasa.menu:submenu#decor": {
+		"title": "Category",
+		"children": [
+			"container#decor-category-list-wrapper"
+		],
+		"props": {
+			"blockClass": "category"
+		}
+	},
+	"container#decor-category-list-wrapper": {
+		"children": [
+			"tuttoperlacasa.menu:menu#submenu-decor",
+			"container#department-image-decor"
+		],
+		"props": {
+			"blockClass": "category-list-wrapper"
+		}
+	},
+
+  // !Category
+
+  "tuttoperlacasa.menu:menu#submenu-decor": {
+		"children": [
+			"menu-item#submenu-decoracao",
+			"menu-item#submenu-aroma",
+			"menu-item#submenu-decor-vazio1",
+			"menu-item#submenu-decor-vazio2",
+			"menu-item#submenu-decor-vazio3",
+			"menu-item#submenu-decor-vazio4",
+			"menu-item#submenu-decor-vazio5",
+			"menu-item#submenu-decor-vazio6"
+		],
+		"props": {
+			"orientation": "vertical"
+		}
+	},
+	"container#department-image-decor": {
+		"children": ["image#category-menu-decor"],
+		"props": {
+			"blockClass": "department-image"
+		}
+	},
+	"image#category-menu-decor": {
+		"props": {
+			"src": "assets/images/banner-menu-decor.png",
+			"blockClass": "department-image"
+		}
+	}
+}

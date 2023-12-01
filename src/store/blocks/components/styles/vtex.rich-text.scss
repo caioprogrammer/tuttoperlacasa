@@ -1,0 +1,124 @@
+.container {
+	&--quick-view {
+		align-items: center;
+	}
+	&--shelf-banner-button-text {
+		margin-right: 15px;
+		align-items: center;
+		@include media-max(1024px) {
+			margin-right: 8px;
+		}
+	}
+	&--common-title {
+		// padding-bottom: 17px;
+		padding-bottom: 64px;
+		margin-bottom: 24px;
+		// border-bottom: 1px solid opacify-color($secondaryBorderColor, 0.5);
+		text-align: center;
+		@include media-max(1024px) {
+			// padding-bottom: 12px;
+			margin-bottom: 25px;
+		}
+	}
+	&--wishlist-title {
+		border-bottom: none;
+		padding-bottom: 0;
+		margin-bottom: 0;
+		@include media-max(1024px) {
+			padding-bottom: 10px;
+			margin-bottom: 0;
+		}
+	}
+}
+.wrapper {
+	&--shelf-product-unavailable-button {
+		width: 100%;
+	}
+	&--common-title {
+		width: 100%;
+		@include container-center;
+	}
+	&--wishlist-title {
+		@include media-max(1024px) {
+			padding: 0;
+		}
+	}
+}
+.headingLevel3 {
+	&--common-title {
+		font-family: $secondaryFont;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 26px;
+		color: $primary400;
+		margin: 0 0 3px;
+	}
+
+	&--wishlist-title {
+		font-family: Lato, sans-serif;
+	}
+	// &--wishlist-title {
+	//   font-size: 2.25rem;
+	//   @include media-max(1024px) {
+	//     font-size: 1.25rem;
+	//   }
+	// }
+}
+
+.paragraph {
+	&--common-title {
+		font-family: $primaryFont;
+		font-style: normal;
+		font-size: 14px;
+		line-height: 17px;
+		color: $primary400;
+	}
+	&--shelf-product-unavailable {
+		font-family: $primaryFont;
+		font-style: normal;
+		font-size: 16px;
+		line-height: 19px;
+		color: $textColor;
+		margin-bottom: 17px;
+	}
+	&--shelf-product-unavailable-button {
+		background-color: $buyButton;
+		box-sizing: border-box;
+		border-radius: 5px;
+		height: 45px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: $primaryFont;
+		font-style: normal;
+		font-size: 16px;
+		line-height: 19px;
+		color: $buttonText;
+		margin-bottom: 10px;
+
+		&:hover {
+			background-color: $buyButtonHover;
+		}
+	}
+	&--quick-view {
+		font-family: $primaryFont;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 17px;
+		color: $primary400;
+	}
+	&--shelf-banner-button-text {
+		font-family: $primaryFont;
+		font-style: normal;
+		font-size: 16px;
+		line-height: 20px;
+		color: $buttonSecondaryText;
+		transition: all 0.4s;
+		@include media-max(1024px) {
+			font-size: 14px;
+			line-height: 19px;
+		}
+	}
+}

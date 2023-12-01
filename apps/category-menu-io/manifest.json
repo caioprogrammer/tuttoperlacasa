@@ -1,0 +1,26 @@
+{
+  "vendor": "tuttoperlacasa",
+  "name": "category-menu",
+  "version": "2.29.5",
+  "title": "Category Menu",
+  "description": "Displays the categories for the store in a menu",
+  "defaultLocale": "pt-BR",
+  "builders": {
+    "messages": "1.x",
+    "store": "0.x",
+    "react": "3.x",
+    "docs": "0.x"
+  },
+  "mustUpdateAt": "2019-04-09",
+  "scripts": {
+    "postreleasy": "vtex publish --verbose"
+  },
+  "dependencies": {
+    "vtex.store-components": "3.x",
+    "vtex.store-graphql": "2.x",
+    "vtex.styleguide": "9.x",
+    "vtex.use-svg": "1.x",
+    "vtex.store-icons": "0.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

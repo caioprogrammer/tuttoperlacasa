@@ -1,0 +1,86 @@
+{
+  "overlay-trigger#installments": {
+    "props": {
+      "blockClass": "installments",
+      "trigger": "hover"
+    },
+    "children": [
+      "flex-layout.row#installments-title",
+      "overlay-layout#installments"
+    ]
+  },
+  "overlay-layout#installments": {
+    "props": {
+      "blockClass": "installments",
+      "offsets": {
+        "distance": -20
+      }
+    },
+    "children": [
+      "flex-layout.col#installments"
+    ]
+  },
+  
+  "flex-layout.col#installments": {
+    "children": [
+      "flex-layout.row#installments-title",
+      "product-installments-list"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "installments-overlay"
+    }
+  },
+  "flex-layout.row#installments-title": {
+    "children": ["rich-text#installmentsTrigger", "icon#installments-arrow"],
+    "props": {
+      "blockClass": "installments-title",
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "rich-text#installmentsTrigger": {
+    "props": {
+      "text": "Opções de parcelamento",
+      "blockClass": "installments-trigger"
+    }
+  },
+  "icon#installments-arrow": {
+    "props": {
+      "id": "nav-arrow-down-filled",
+      "activeClassName": "vtex-store-components-3-x-installmentsIcon"
+    }
+  },
+  "product-installments-list": {
+    "children": [
+      "flex-layout.row#installments-item"
+    ],
+    "props": {
+      "blockClass": "installments-item"
+    }
+  },
+  "flex-layout.row#installments-item":{
+    "children": [
+      "product-installments-list-item",
+      "product-installments-list-item#total"
+    ],
+    "props": {
+      "blockClass": "installments-item",
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "product-installments-list-item": {
+    "props": {
+      "message": "{hasMoreThanOne, select, true {{installmentsNumber}x} false {À VISTA}} {installmentValue}",
+      "blockClass": "installments-item"
+    }
+  },
+  "product-installments-list-item#total":{
+    "props": {
+      "message": "TOTAL: {installmentsTotalValue}",
+      "blockClass": "installments-item-total"
+    }
+  }
+}

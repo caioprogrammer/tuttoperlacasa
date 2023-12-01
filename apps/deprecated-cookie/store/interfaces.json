@@ -1,0 +1,15 @@
+{
+  "cookie": {
+    "component": "Cookie",
+    "composition": "children"
+  },
+  "cookie-autorize-button": {
+    "component": "AutorizeButton"
+  },
+  "cookie-autorize-message": {
+    "component": "CookieMessage"
+  },
+  "cookie-close-button": {
+    "component": "CookieCloseButton"
+  }
+}

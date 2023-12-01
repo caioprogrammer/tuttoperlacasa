@@ -1,0 +1,63 @@
+{
+  "menu-item#submenu-vazio5--mobile": {
+    "props": {
+			"id": "menu-item-vazio5",
+			"type": "custom",
+			"highlight": false,
+			"hide": true,
+			"hasChild": true,
+			"itemProps": {
+				"type": "internal",
+				"href": "/area-externa/vazio5",
+				"noFollow": false,
+				"tagTitle": "vazio5",
+				"text": "vazio5"
+			}
+		},
+		"blocks": ["tuttoperlacasa.menu:submenu.accordion#submenu-vazio5"]
+  },
+
+  // !SUBMENU
+  	"tuttoperlacasa.menu:submenu.accordion#submenu-vazio5": {
+		"title": "Subcategoria",
+		"children": ["container#submenu-vazio5-category-list-wrapper-externa--mobile"],
+		"props": {
+			"blockClass": "subcategory"
+		}
+	},
+	"container#submenu-vazio5-category-list-wrapper-externa--mobile": {
+		"children": ["tuttoperlacasa.menu:menu#submenu-submenu-vazio5--mobile"],
+		"props": {
+			"blockClass": "subcategory-list-wrapper--mobile"
+		}
+	},
+
+  "tuttoperlacasa.menu:menu#submenu-submenu-vazio5--mobile": {
+		"props": {
+			"orientation": "vertical",
+			"items": [
+				{
+					"id": "ver-todos-vazio5",
+					"type": "custom",
+					"highlight": false,
+					"hide": true,
+					"itemProps": {
+						"href": "/area-externa/vazio5",
+						"text": "Ver Todos"
+					}
+				},
+				{
+					"id": "menu-item-cesta-de-piquenique",
+					"type": "custom",
+					"highlight": false,
+					"hide": true,
+					"itemProps": {
+						"href": "/area-externa/vazio5/cesta-de-piquenique",
+						"text": "vazio"
+					}
+				}
+			],
+			"blockClass": ["subcategory"]
+		}
+	}
+}

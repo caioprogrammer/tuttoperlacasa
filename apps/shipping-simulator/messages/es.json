@@ -1,0 +1,8 @@
+{
+  "store/shipping.deliveryName": "Entrega",
+  "store/shipping.deliveryEstimate": "Fecha",
+  "store/shipping.deliveryPrice": "Valor",
+  "store/shipping.label": "Calcular el flete",
+  "store/shipping.free": "Gratis",
+  "store/shipping.empty-sla": "No hay información de envío disponible para el código postal informado"
+}

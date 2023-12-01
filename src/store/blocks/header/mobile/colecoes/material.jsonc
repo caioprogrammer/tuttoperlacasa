@@ -1,0 +1,96 @@
+{
+  "menu-item#submenu-material--mobile": {
+    "props": {
+			"id": "menu-item-material--mobile",
+			"type": "custom",
+			"highlight": false,
+			"hasChild": true,
+			"itemProps": {
+				"type": "internal",
+				"href": "/colecoes/material",
+				"noFollow": false,
+				"tagTitle": "Material",
+				"text": "Material"
+			}
+		},
+		"blocks": ["tuttoperlacasa.menu:submenu.accordion#submenu---mobile"]
+  },
+
+  // !SUBMENU
+  	"tuttoperlacasa.menu:submenu.accordion#submenu---mobile": {
+		"title": "Subcategoria",
+		"children": ["container#submenu-material-category-list-wrapper--mobile"],
+		"props": {
+			"blockClass": "subcategory"
+		}
+	},
+	"container#submenu-material-category-list-wrapper--mobile": {
+		"children": ["tuttoperlacasa.menu:menu#submenu-submenu-material--mobile"],
+		"props": {
+			"blockClass": "subcategory-list-wrapper--mobile"
+		}
+	},
+
+  "tuttoperlacasa.menu:menu#submenu-submenu-material--mobile": {
+		"props": {
+			"orientation": "vertical",
+			"items": [
+				{
+					"id": "ver-todos-material",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/colecoes/material",
+						"text": "Ver Todos"
+					}
+				},
+				{
+					"id": "menu-item-bambu",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/colecoes/material/bambu",
+						"text": "Bambu"
+					}
+				},
+        {
+					"id": "menu-item-prataria",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/colecoes/material/prataria",
+						"text": "Prataria"
+					}
+				},
+				{
+					"id": "menu-item-rattan",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/colecoes/material/rattan",
+						"text": "Ratan"
+					}
+				},
+        {
+					"id": "menu-item-murano",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/colecoes/material/murano",
+						"text": "Murano"
+					}
+				},
+				{
+					"id": "menu-item-acrilico",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/colecoes/material/acrilico",
+						"text": "Acrílico"
+					}
+				}
+			],
+			"blockClass": ["subcategory"]
+		}
+	}
+}

@@ -1,0 +1,342 @@
+{
+	"store.search": {
+		"blocks": ["search-result-layout"],
+		"props": {
+			"context": {
+				"skusFilter": "ALL_AVAILABLE",
+				"orderByField": "OrderByReleaseDateDESC",
+				"simulationBehavior": "skip",
+				"maxItemsPerPage": 16
+			}
+		}
+	},
+	"store.search#department": {
+		"blocks": ["search-result-layout"],
+		"props": {
+			"context": {
+				"skusFilter": "ALL_AVAILABLE",
+				"orderByField": "OrderByReleaseDateDESC",
+				"simulationBehavior": "skip",
+				"maxItemsPerPage": 16
+			}
+		}
+	},
+	"store.search#category": {
+		"blocks": ["search-result-layout"],
+		"props": {
+			"context": {
+				"skusFilter": "ALL_AVAILABLE",
+				"orderByField": "OrderByReleaseDateDESC",
+				"simulationBehavior": "skip",
+				"maxItemsPerPage": 16
+			}
+		}
+	},
+	"store.search#brand": {
+		"blocks": ["search-result-layout"],
+		"props": {
+			"context": {
+				"skusFilter": "ALL_AVAILABLE",
+				"orderByField": "OrderByReleaseDateDESC",
+				"simulationBehavior": "skip",
+				"maxItemsPerPage": 16
+			}
+		}
+	},
+	"store.search#subcategory": {
+		"blocks": ["search-result-layout"],
+		"props": {
+			"context": {
+				"skusFilter": "ALL_AVAILABLE",
+				"orderByField": "OrderByReleaseDateDESC",
+				"simulationBehavior": "skip",
+				"maxItemsPerPage": 16
+			}
+		}
+	},
+	"flex-layout.row#search-banner-new": {
+		"children": ["image#search-result"],
+		"title": "Banner Departamento",
+		"props": {
+			"blockClass": "search-banner",
+			"fullWidth": true
+		}
+	},
+	"image#search-result": {
+		"props": {
+			"src": "assets/images/banner.png",
+			"blockClass": "search-result"
+		}
+	},
+	"search-result-layout": {
+		"blocks": [
+			"search-result-layout.desktop",
+			"search-result-layout.mobile",
+			"search-not-found-layout"
+		]
+	},
+	"search-result-layout.desktop": {
+		"children": [
+			"flex-layout.row#search-banner-new",
+			"flex-layout.row#search-breadcrumb",
+			"flex-layout.row#search-result.desktop",
+			"flex-layout.row#search-seo",
+			"flex-layout.row#banners-slider"
+			//"flex-layout.row#banners-slider"
+		],
+		"props": {
+			"defaultGalleryLayout": "grid",
+			"blockClass": "search-result",
+			"pagination": "show-more",
+			"showProductsCount": true,
+			"hiddenFacets": {
+				"brands": true,
+				"priceRange": false,
+				"categories": false
+			}
+		}
+	},
+	"search-result-layout.mobile": {
+		"children": [
+			"flex-layout.row#search-banner-new",
+			"flex-layout.row#search-breadcrumb",
+			"flex-layout.row#search-result.mobile",
+			"flex-layout.row#search-seo",
+			"flex-layout.row#banners-slider"
+			//"flex-layout.row#banners-slider"
+		],
+		"props": {
+			"defaultGalleryLayout": "grid",
+			"blockClass": "search-result",
+			"pagination": "show-more",
+			"showProductsCount": true,
+			"hiddenFacets": {
+				"brands": true,
+				"priceRange": false,
+				"categories": false
+			}
+		}
+	},
+	"flex-layout.row#search-breadcrumb": {
+		"children": ["breadcrumb.search#search-result"],
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"fullWidth": false,
+			"blockClass": "search-breadcrumb"
+		}
+	},
+	"flex-layout.row#search-result.desktop": {
+		"children": ["flex-layout.col#search-result.desktop"],
+		"props": {
+			"blockClass": "search-result",
+			"fullWidth": true
+		}
+	},
+	"flex-layout.col#search-result.desktop": {
+		"children": [
+			"flex-layout.row#filters-container.desktop",
+			//"flex-layout.row#paged-controls-top",
+			"flex-layout.row#search-content.desktop",
+			//"flex-layout.row#paged-controls-bottom",
+			"flex-layout.row#fetch-more"
+		],
+		"props": {
+			"blockClass": "search-result"
+		}
+	},
+	"flex-layout.row#search-result.mobile": {
+		"children": ["flex-layout.col#search-result.mobile"],
+		"props": {
+			"blockClass": "search-result"
+		}
+	},
+	"flex-layout.col#search-result.mobile": {
+		"children": [
+			"flex-layout.row#filters-container.mobile",
+			//"flex-layout.row#paged-controls-top",
+			"flex-layout.row#search-content.mobile",
+			//"flex-layout.row#paged-controls-bottom",
+			"flex-layout.row#fetch-more"
+		],
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"preventVerticalStretch": true,
+			"fullWidth": true,
+			"blockClass": "search-result-mobile"
+		}
+	},
+	"flex-layout.row#filters-container.desktop": {
+		"children": [
+			"search-products-count-per-page",
+			"flex-layout.col#filter-content",
+			"flex-layout.col#order-content"
+		],
+		"props": {
+			"blockClass": "filters-container",
+			"preserveLayoutOnMobile": true,
+			"colSizing": "auto"
+		}
+	},
+	"flex-layout.row#filters-container.mobile": {
+		"children": ["flex-layout.col#filters-container.mobile"],
+		"props": {
+			"blockClass": "filters-container",
+			"preserveLayoutOnMobile": true
+		}
+	},
+	"flex-layout.col#filters-container.mobile": {
+		"children": [
+			"flex-layout.row#filters-container-top.mobile",
+			"flex-layout.row#filters-container-bottom.mobile"
+		],
+		"props": {
+			"blockClass": "filters-container"
+		}
+	},
+	"flex-layout.row#filters-container-top.mobile": {
+		"children": [
+			"flex-layout.col#filter-content",
+			"flex-layout.col#order-content"
+		],
+		"props": {
+			"blockClass": ["filters-container-top", "filters-container-top-mobile"],
+			"preserveLayoutOnMobile": true,
+			"marginBottom": 6,
+			"colJustify": "between",
+			"colSizing": "auto"
+		}
+	},
+	"flex-layout.row#filters-container-bottom.mobile": {
+		"children": ["search-products-count-per-page"],
+		"props": {
+			"blockClass": "filters-container-bottom"
+		}
+	},
+	"flex-layout.col#filter-content": {
+		"children": ["filter-navigator.v3"],
+		"props": {
+			"blockClass": "filter-content",
+			"width": "grow"
+		}
+	},
+	"filter-navigator.v3": {
+		"props": {
+			"navigationTypeOnMobile": "page",
+			"priceRangeLayout": "slider",
+			"initiallyCollapsed": true,
+			"appliedFiltersOverview": "hide",
+			"closeOnOutsideClick": true,
+			"openFiltersMode": "one",
+			"priceRangeToggle": true
+			
+		}
+	},
+	"flex-layout.col#order-content": {
+		"children": ["order-by.v2"],
+		"props": {
+			"blockClass": "order-content",
+			"verticalAlign": "middle",
+			"preventVerticalStretch": true
+		}
+	},
+	"order-by.v2": {
+		"props": {
+			"hiddenOptions": ["OrderByBestDiscountDESC"]
+		}
+	},
+	"flex-layout.row#fetch-more": {
+		"children": ["search-fetch-more"]
+	},
+	"paged-controls#bottom": {
+		"props": {
+			"maxPageButtons": 8,
+			"showLastPage": true,
+			"showFirstPage": true,
+			"PreviousPageIcon": "icon#prev-page",
+			"NextPageIcon": "icon#next-page"
+		}
+	},
+	"icon#prev-page": {
+		"props": {
+			"id": "nav-caret--left",
+			"size": 11,
+			"activeClassName": "vtex-store-components-3-x-prevIcon"
+		}
+	},
+	"icon#next-page": {
+		"props": {
+			"id": "nav-caret--right",
+			"size": 11,
+			"activeClassName": "vtex-store-components-3-x-nextIcon"
+		}
+	},
+	"flex-layout.row#search-content.desktop": {
+		"children": ["hover-container#search-content"],
+		"props": {
+			"blockClass": "search-content"
+		}
+	},
+	"hover-container#search-content": {
+		"children": ["search-content"],
+		"props": {
+			"blockClass": "hover-search-content"
+		}
+	},
+	"flex-layout.row#search-content.mobile": {
+		"children": ["search-content"],
+		"props": {
+			"blockClass": "search-content"
+		}
+	},
+	"search-content": {
+		"blocks": ["gallery", "not-found"]
+	},
+	"gallery": {
+		"props": {
+			"layouts": [
+				{
+					"name": "list",
+					"component": "ListSummary",
+					"itemsPerRow": 1
+				},
+				{
+					"name": "grid",
+					"component": "GridSummary",
+					"itemsPerRow": {
+						"desktop": 4,
+						"tablet": 2,
+						"mobile": 1
+					}
+				}
+			],
+			"GridSummary": "product-summary.shelf#main-product",
+			"ListSummary": "product-summary.shelf#main-product"
+		}
+	},
+	"flex-layout.row#search-seo": {
+		"children": ["image#search-seo", "rich-text#search-seo"],
+		"props": {
+			"blockClass": "search-seo",
+			"colSizing": "auto",
+			"preventHorizontalStretch": true,
+			"preventVerticalStretch": true,
+			"horizontalAlign": "center"
+		}
+	},
+	"rich-text#search-seo": {
+		"props": {
+			"text": "## Tutto Per La Casa sempre com você \n Todo requinte para o seu ambiente Alta qualidade e beleza",
+			"blockClass": "search-seo", 
+			"textPosition": "CENTER"
+			// "textAlignment": "CENTER"
+		}
+	},
+	"image#search-seo": {
+		"props": {
+			"src": "assets/images/seo-banner-department.png",
+			"blockClass": "search-seo",
+			"maxWidth": "620px",
+			"maxHeight": "199.84px"
+		}
+	}
+}

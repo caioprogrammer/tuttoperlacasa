@@ -1,0 +1,16 @@
+{
+  "menu-item#bar-ver-todos--mobile": {
+    "props": {
+			"id": "bar-ver-todos--mobile",
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/bar",
+				"noFollow": false,
+				"tagTitle": "Ver Todos",
+				"text": "Ver Todos"
+			}
+		}
+  }
+}

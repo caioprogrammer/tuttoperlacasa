@@ -1,0 +1,186 @@
+{
+  "menu-item#submenu-decoracao--mobile": {
+    "props": {
+			"id": "menu-item-decoracao--mobile",
+			"type": "custom",
+			"highlight": false,
+			"hasChild": true,
+			"itemProps": {
+				"type": "internal",
+				"href": "/decor/decoracao",
+				"noFollow": false,
+				"tagTitle": "Decoração",
+				"text": "Decoração"
+			}
+		},
+		"blocks": ["tuttoperlacasa.menu:submenu.accordion#submenu-decoracao--mobile"]
+  },
+
+  // !SUBMENU
+  	"tuttoperlacasa.menu:submenu.accordion#submenu-decoracao--mobile": {
+		"title": "Subcategoria",
+		"children": ["container#submenu-decoracao-category-list-wrapper--mobile"],
+		"props": {
+			"blockClass": "subcategory"
+		}
+	},
+	"container#submenu-decoracao-category-list-wrapper--mobile": {
+		"children": ["tuttoperlacasa.menu:menu#submenu-submenu-decoracao--mobile"],
+		"props": {
+			"blockClass": "subcategory-list-wrapper--mobile"
+		}
+	},
+
+  "tuttoperlacasa.menu:menu#submenu-submenu-decoracao--mobile": {
+		"props": {
+			"orientation": "vertical",
+			"items": [
+				{
+					"id": "ver-todos-decoracao",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/decor/decoracao",
+						"text": "Ver Todos"
+					}
+				},
+				{
+					"id": "menu-item-almofada-e-tapete",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/decor/decoracao/almofada-e-tapete",
+						"text": "Almofada e Tapete"
+					}
+				},
+        {
+					"id": "menu-item-abajur-e-luminaria",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/decor/decoracao/abajur-e-luminaria",
+						"text": "Abajur e Luminária"
+					}
+				},
+        {
+					"id": "menu-item-aparador-de-livro-e-livro",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/decor/decoracao/aparador-de-livro-e-livro",
+						"text": "Aparador de livro e Livro"
+					}
+				},
+        {
+					"id": "menu-item-banco-banqueta-e-cadeira",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/decor/decoracao/banco-banqueta-e-cadeira",
+						"text": "Banco, Banqueta e Cadeira"
+					}
+				},
+        {
+					"id": "menu-item-bau-e-caixa",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/decor/decoracao/bau-e-caixa",
+						"text": "Baú e Caixa"
+					}
+				},
+        {
+					"id": "menu-item-cachepot-vaso-e-cesto",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/decor/decoracao/cachepot-vaso-e-cesto",
+						"text": "Cachepot, Vaso e Cesto"
+					}
+				},
+        {
+					"id": "menu-item-castical-e-lanterna",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/decor/decoracao/castical-e-lanterna",
+						"text": "Castiçal e Lanterna"
+					}
+				},
+        {
+					"id": "menu-item-centro-de-mesa",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/decor/decoracao/centro-de-mesa",
+						"text": "Centro de Mesa"
+					}
+				},
+        {
+					"id": "menu-item-escultura-e-objeto-decorativo",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/decor/decoracao/escultura-e-objeto-decorativo",
+						"text": "Escultura e Objeto decorativo"
+					}
+				},
+        {
+					"id": "menu-item-porta-retrato-espelho-e-quadro",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/decor/decoracao/porta-retrato-espelho-e-quadro",
+						"text": "Porta retrato, Espelho e Quadro"
+					}
+				},
+        {
+					"id": "menu-item-lupa-e-pincel",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/decor/decoracao/lupa-e-pincel",
+						"text": "Lupa e Pincel"
+					}
+				},
+        {
+					"id": "menu-item-murano",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/decor/decoracao/murano",
+						"text": "Murano"
+					}
+				},
+        {
+					"id": "menu-item-planta",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/decor/decoracao/planta",
+						"text": "Planta"
+					}
+				},
+        {
+					"id": "menu-item-cinzeiro",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/decor/decoracao/cinzeiro",
+						"text": "Cinzeiro"
+					}
+				},
+        {
+					"id": "menu-item-mesa",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/decor/decoracao/mesa",
+						"text": "Mesa"
+					}
+				}
+			],
+			"blockClass": ["subcategory"]
+		}
+	}
+}

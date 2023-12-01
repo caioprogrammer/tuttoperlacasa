@@ -1,0 +1,19 @@
+{
+  "cookie": {
+    "children": ["flex-layout.row#cookie-bar"]
+  },
+  "flex-layout.row#cookie-bar": {
+    "children": ["flex-layout.col#cookie-message", "cookie-autorize-button"],
+    "props": {
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "colSizing": "auto"
+    }
+  },
+  "flex-layout.col#cookie-message": {
+    "children": ["cookie-autorize-message"],
+    "props": {
+      "verticalAlign": "middle"
+    }
+  }
+}

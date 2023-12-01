@@ -1,0 +1,13 @@
+query getSeller($sellerId: ID!){
+  seller(id: $sellerId) {
+     id
+      name
+      isActive
+      fulfillmentEndpoint
+      logo
+      catalogSystemEndpoint
+      account
+      channel
+      salesChannel
+  }
+}

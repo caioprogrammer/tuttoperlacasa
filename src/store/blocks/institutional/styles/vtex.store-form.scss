@@ -1,0 +1,16 @@
+.formSubmitButton--contact-button :global(.vtex-button) {
+	width: 200px;
+	margin-top: 20px;
+	background-color: $primary100;
+	border: 1px solid $primary100;
+
+	&:hover {
+		background-color: $primary900;
+		border: 1px solid $primary900;
+	}
+
+	@include media-max(1024px) {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+}

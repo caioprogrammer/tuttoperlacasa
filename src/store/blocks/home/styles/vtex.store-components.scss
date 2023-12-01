@@ -1,0 +1,48 @@
+.diferentialsIcon {
+	color: $white;
+	margin-right: 7px;
+	max-width: 20px;
+}
+
+.imageElement {
+	&--banner-main {
+		@include media-max(1024px) {
+			width: 100%;
+			height: auto;
+			min-width: 768px;
+		}
+	}
+	&--banner-home {
+		border-radius: 7px;
+	}
+	&--banner-grid-mobile {
+		@include media-max(638px) {
+			border-radius: 0px 7px 7px 0px;
+		}
+		max-width: 100%;
+	}
+	&--grid-banner01-desktop {
+		max-height: 100%;
+	}
+	&--banner-double {
+		max-width: 100%;
+	}
+	&--banner-shelf {
+	}
+	&--banner-hover {
+		transition: filter 0.4s;
+		&:hover {
+			mix-blend-mode: multiply;
+			filter: brightness(60%);
+		}
+	}
+}
+
+.imageElementLink{ 
+	&--banner-double {
+		@include media-max(1024px) {
+			display: flex;
+			justify-content: center;
+		}
+	}
+}

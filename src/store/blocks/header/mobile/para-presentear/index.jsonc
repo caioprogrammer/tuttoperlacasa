@@ -1,0 +1,55 @@
+{
+  "menu-item#para-presentear--mobile": {
+		"props": {
+			"id": "menu-item-para-presentear",
+			"type": "custom",
+			"highlight": false,
+			"hasChild": true,
+			"itemProps": {
+				"type": "internal",
+				"href": "/para-presentear",
+				"noFollow": false,
+				"tagTitle": "Para Presentear",
+				"text": "Para Presentear"
+			},
+			"blockClass": ["department"]
+		},
+		"blocks": ["tuttoperlacasa.menu:submenu.accordion#para-presentear--mobile"]
+	},
+  "tuttoperlacasa.menu:submenu.accordion#para-presentear--mobile": {
+		"title": "Category",
+		"children": [
+			"container#para-presentear-category-list-wrapper--mobile"
+		],
+		"props": {
+			"blockClass": "category"
+		}
+	},
+	"container#para-presentear-category-list-wrapper--mobile": {
+		"children": [
+			"tuttoperlacasa.menu:menu#submenu-para-presentear--mobile"
+		],
+		"props": {
+			"blockClass": "category-list-wrapper--mobile"
+		}
+	},
+
+  // !Category
+
+  "tuttoperlacasa.menu:menu#submenu-para-presentear--mobile": {
+		"children": [
+			"menu-item#para-presentear-ver-todos--mobile",
+			"menu-item#submenu-duzentos--mobile",
+			"menu-item#submenu-quatrocentos--mobile",
+			"menu-item#submenu-seiscentos--mobile",
+			"menu-item#submenu-seiscentos-mais--mobile",
+			"menu-item#submenu-vazio1--mobile",
+			"menu-item#submenu-vazio2--mobile",
+			"menu-item#submenu-vazio3--mobile",
+			"menu-item#submenu-vazio4--mobile"
+		],
+		"props": {
+			"orientation": "vertical"
+		}
+	}
+}

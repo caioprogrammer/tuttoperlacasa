@@ -1,0 +1,175 @@
+{
+	"flex-layout.row#categories-slider": {
+		"title": "Container categorias desktop",
+		"children": ["flex-layout.col#categories-slider-content"],
+		"props": {
+			"blockClass": "categories-slider",
+			"colSizing": "equal",
+			// "fullWidth": true,
+			"preventVerticalStretch": true
+		}
+	},
+	"flex-layout.col#categories-slider-content": {
+		"title": "Conteúdo categorias desktop",
+		"children": [
+			"flex-layout.col#categories-title",
+			"flex-layout.col#categories-content"
+		],
+		"props": {
+			"blockClass": "categories-slider-content"
+			// "colSizing": "equal",
+			// "fullWidth": true,
+			// "preventVerticalStretch": true
+		}
+	},
+	"flex-layout.row#categories-slider.mobile": {
+		"title": "Container categorias mobile",
+		"children": ["flex-layout.col#categories-slider.mobile"],
+		"props": {
+			"blockClass": "categories-slider"
+		}
+	},
+	"flex-layout.col#categories-slider.mobile": {
+		"title": "Container categorias mobile",
+		"children": [
+			"flex-layout.col#categories-title",
+			"image-flip-list#categories-slider"
+		],
+		"props": {
+			"blockClass": "categories-slider"
+		}
+	},
+	"flex-layout.col#categories-title": {
+		"title": "Título categorias",
+		"children": ["rich-text#categories-title"],
+		"props": {
+			"blockClass": "categories-title",
+			"verticalAlign": "middle",
+			"width": "grow"
+		}
+	},
+	"rich-text#categories-title": {
+		"title": "Título categorias desktop",
+		"props": {
+			"text": "__Compre por categoria__",
+			"blockClass": "categories-title"
+		}
+	},
+	"flex-layout.col#categories-content": {
+		"title": "Carrossel de categorias desktop",
+		"children": ["image-flip-list#categories-slider"],
+		"props": {
+			"blockClass": "categories-content",
+			"width": "grow"
+		}
+	},
+	"image-flip-list#categories-slider": {
+		"props": {
+			"layoutMode": "slider",
+			"sliderProps": {
+				"itemsPerPage": {
+					"(max-width: 500px)": 2,
+					"(max-width: 720px)": 3,
+					"phone": 2,
+					"tablet": 4,
+					"desktop": 10
+				},
+				"showPaginationDots": "never",
+				"infinite": true
+			},
+			"images": [
+				{
+					"title": "Mesa Posta",
+					"imgURL": "assets/images/category01.png",
+					"link": "/mesa-posta"
+				},
+				{
+					"title": "Decoração",
+					"imgURL": "assets/images/category02.png",
+					"link": "/decoracao"
+				},
+				{
+					"title": "Casa de campo",
+					"imgURL": "assets/images/category03.png",
+					"link": "/Casa-de-campo"
+				},
+				{
+					"title": "Escritório",
+					"imgURL": "assets/images/category04.png",
+					"link": "/escritorio"
+				},
+				{
+					"title": "Quarto",
+					"imgURL": "assets/images/category05.png",
+					"link": "/Quarto"
+				},
+				{
+					"title": "Lavabo",
+					"imgURL": "assets/images/category06.png",
+					"link": "/Lavabo"
+				},
+				{
+					"title": "Sala",
+					"imgURL": "assets/images/category07.png",
+					"link": "/Sala"
+				},
+				{
+					"title": "Varanda",
+					"imgURL": "assets/images/category08.png",
+					"link": "/Varanda"
+				},
+				{
+					"title": "Bar em Casa",
+					"imgURL": "assets/images/category09.png",
+					"link": "/Bar-em-Casa"
+				},
+				{
+					"title": "Momentos",
+					"imgURL": "assets/images/category10.png",
+					"link": "/Momentos"
+				},
+				{
+					"title": "Churrasco",
+					"imgURL": "assets/images/category11.png",
+					"link": "/Churrasco"
+				},
+				{
+					"title": "Vinhos",
+					"imgURL": "assets/images/category12.png",
+					"link": "/vinhos"
+				},
+				{
+					"title": "Brunch",
+					"imgURL": "assets/images/category13.png",
+					"link": "/Brunch"
+				},
+				{
+					"title": "Pizza",
+					"imgURL": "assets/images/category14.png",
+					"link": "/Pizza"
+				},
+				{
+					"title": "Sushi",
+					"imgURL": "assets/images/category15.png",
+					"link": "/Sushi"
+				},
+				{
+					"title": "Drinks",
+					"imgURL": "assets/images/category16.png",
+					"link": "/Drinks"
+				},
+				{
+					"title": "Garden",
+					"imgURL": "assets/images/category17.png",
+					"link": "/Garden"
+				},
+				{
+					"title": "Cozinha",
+					"imgURL": "assets/images/category18.png",
+					"link": "/Cozinha"
+				}
+			],
+			"blockClass": "categories-slider"
+		}
+	}
+}

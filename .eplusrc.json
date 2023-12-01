@@ -1,0 +1,34 @@
+{
+	"institutional": {
+		"insertLast": [
+			{
+				"id": "contact",
+				"title": "Contato"
+			}
+		]
+	},
+	"fantasticon": {
+		"center": true
+	},
+	"type": "fast",
+	"colors": {},
+	"dependencies": {
+		"breadcrumb": "",
+		"buy-together": "",
+		"category-menu-io": "",
+		"condition-layout": "",
+		"cookie": "",
+		"hover-container": "",
+		"image-flip-list": "",
+		"list-grid": "",
+		"condition-login": "",
+		"minicart": "",
+		"search-result": "",
+		"seller-page": "",
+		"shipping-simulator": "",
+		"specification-table": "",
+		"wishlist-selection": "",
+		"store-components": "",
+		"awesome-newsletter": "",
+	}
+}

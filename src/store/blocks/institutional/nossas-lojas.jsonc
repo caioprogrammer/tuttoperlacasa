@@ -1,0 +1,72 @@
+{
+	"store.custom#nossas-lojas": {
+		"blocks": [
+			"responsive-layout.desktop#nossas-lojas",
+			"responsive-layout.mobile#nossas-lojas"
+		]
+	},
+	"responsive-layout.desktop#nossas-lojas": {
+		"children": [
+			"flex-layout.row#breadcrumb-nossas-lojas",
+			"flex-layout.row#nossas-lojas-content"
+		]
+	},
+	"flex-layout.row#nossas-lojas-content": {
+		"children": [
+			"flex-layout.col#menu-institucional",
+			"flex-layout.col#nossas-lojas"
+		],
+		"props": {
+			"blockClass": "nossas-lojas",
+			"paddingBottom": 8
+		}
+	},
+
+	"flex-layout.col#nossas-lojas": {
+		"children": ["rich-text#nossas-lojas-content"]
+	},
+	"flex-layout.row#breadcrumb-nossas-lojas": {
+		"children": [
+			"link#breadcrumb-home",
+			"link#breadcrumb-icon",
+			"link#breadcrumb-nossas-lojas"
+		],
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true,
+			"blockClass": "breadcrumb",
+			"colGap": 3
+		}
+	},
+	"responsive-layout.mobile#nossas-lojas": {
+		"children": ["flex-layout.row#nossas-lojas-mobile"]
+	},
+	"flex-layout.row#nossas-lojas-mobile": {
+		"children": ["flex-layout.col#nossas-lojas-mobile"],
+		"props": {
+			"blockClass": "nossas-lojas"
+		}
+	},
+	"flex-layout.col#nossas-lojas-mobile": {
+		"children": [
+			"flex-layout.row#breadcrumb-nossas-lojas",
+			"flex-layout.row#disc-institucional",
+			"rich-text#nossas-lojas-content"
+		],
+		"props": {}
+	},
+
+	"link#breadcrumb-nossas-lojas": {
+		"props": {
+			"label": "Nossas Lojas",
+			"blockClass": "active-breadcrumb"
+		}
+	},
+
+	"rich-text#nossas-lojas-content": {
+		"props": {
+			"text": "# Nossas Lojas\n\n## SÃO CONRADO\n\nSHOPPING FASHION MALL\n\nEstrada da Gávea, 899\n\nLj 112A\n\nTel.: (21) 3322-7822\n\n## LEBLON\n\nSHOPPING LEBLON\n\nAv. Afrânio de Melo Franco 290\n\nLj 310 I/J\n\nTel.: (21) 2294-5298\n\n## IPANEMA\n\nRua Visconde de Pirajá 547\n\nLj 103\n\nTel.:(21) 2294-2187\n\n## BARRA DA TIJUCA\n\nSHOPPING VILLAGE MALL\n\nAv. das Américas 3900\n\nLoja 216\n\nTel.: (21) 3252-2827\n\n## CASA SHOPPING\n\nCASA SHOPPING\n\nAvenida Ayrton Senna, 2150\n\nBloco G, Lj EN\n\nTel.: (21) 2434-5650\n",
+			"blockClass": "institucional-content"
+		}
+	}
+}

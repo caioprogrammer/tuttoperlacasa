@@ -1,0 +1,24 @@
+{
+  "vendor": "tuttoperlacasa",
+  "name": "store-form",
+  "version": "0.14.1",
+  "title": "VTEX store-form",
+  "description": "Build forms based on Master Data",
+  "builders": {
+    "react": "3.x",
+    "messages": "1.x",
+    "docs": "0.x",
+    "store": "0.x"
+  },
+  "dependencies": {
+    "vtex.styleguide": "9.x",
+    "vtex.store-graphql": "2.x",
+    "vtex.css-handles": "0.x",
+    "vtex.native-types": "0.x",
+    "vtex.file-manager": "0.x",
+    "vtex.file-manager-graphql": "0.x"
+  },
+  "registries": ["smartcheckout"],
+  "policies": [],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

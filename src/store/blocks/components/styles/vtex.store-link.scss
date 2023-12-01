@@ -1,0 +1,30 @@
+.link{
+  &--shelf-banner-button{
+    width: 294px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $buttonBorder;
+    border: 1px solid $buttonBorder;
+    box-sizing: border-box;
+    border-radius: 5px;
+    transition: all 0.4s;
+    @include media-max(1024px){
+      width: 249px;
+    }
+    .childrenContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &:hover{
+      background: $button;
+      :global(.vtex-rich-text-0-x-paragraph--shelf-banner-button-text),
+      :global(.vtex-store-components-3-x-arrowCTAIcon){
+        color: $buttonText;
+      }
+    }
+  }
+}

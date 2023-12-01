@@ -1,0 +1,119 @@
+{
+	"flex-layout.row#footer-newsletter": {
+		"children": ["flex-layout.col#footer-newsletter"],
+		"props": {
+			"blockClass": "footer-newsletter"
+		}
+	},
+	"flex-layout.col#footer-newsletter": {
+		"children": [
+			"flex-layout.row#newsletter-title",
+			"flex-layout.row#newsletter-form"
+		],
+		"props": {
+			"blockClass": "footer-newsletter",
+			"verticalAlign": "middle",
+			"horizontalAlign": "center",
+			"preventVerticalStretch": true
+		}
+	},
+	"flex-layout.row#newsletter-title": {
+		"children": ["rich-text#newsletter-text"],
+		"props": {
+			"blockClass": "newsletter-title"
+		}
+	},
+	"rich-text#newsletter-text": {
+		"props": {
+			"text": "Inscreva-se na nossa newsletter para receber novidades",
+			"blockClass": "newsletter-text"
+		}
+	},
+	"flex-layout.row#newsletter-form": {
+		//"children": ["newsletter-form"],
+		"children": ["awesome-newsletter"],
+		"props": {
+			"blockClass": "newsletter-form"
+		}
+	},
+	"awesome-newsletter": {
+		"children": ["awesome-newsletter.email", "awesome-newsletter.submit"],
+		"props": {
+			"entity": "NL",
+			"resetAfterSuccess": false,
+			"Success": "flex-layout.row#newsletter-success"
+		}
+	},
+
+	"awesome-newsletter.email": {
+		"props": {
+			"label": "",
+			"placeholder": "EXEMPLO: ALEXANDRA@MAIL.COM.BR",
+			"errorMessage": "O E-MAIL INSERIDO ESTÁ ESCRITO DE FORMA INCORRETA."
+		}
+	},
+	"awesome-newsletter.submit": {
+		"props": {
+			"label": "Inscreva-se"
+		}
+	},
+	"newsletter-form": {
+		"children": ["newsletter-input-email", "newsletter-submit"],
+		"props": {
+			"ErrorState": "flex-layout.row#newsletter-error",
+			"SuccessState": "flex-layout.row#newsletter-success"
+		}
+	},
+	"newsletter-input-email": {
+		"props": {
+			"placeholderText": "EXEMPLO: ALEXANDRA@MAIL.COM.BR",
+			"errorMessage": "O E-MAIL INSERIDO ESTÁ ESCRITO DE FORMA INCORRETA."
+		}
+	},
+	"newsletter-submit": {
+		"props": {
+			"submitButtonLabel": "INSCREVA-SE"
+		}
+	},
+	"flex-layout.row#newsletter-success": {
+		"children": ["rich-text#newsletter-success", "icon#newsletter-success"],
+		"props": {
+			"blockClass": "newsletter-success",
+			"preventHorizontalStretch": true,
+			"preserveLayoutOnMobile": true,
+			"horizontalAlign": "center",
+			"colGap": 5
+		}
+	},
+	"rich-text#newsletter-success": {
+		"props": {
+			"text": "INSCRIÇÃO ENVIADA COM SUCESSO :)",
+			"blockClass": ["newsletter-message", "newsletter-success"]
+		}
+	},
+	"flex-layout.row#newsletter-error": {
+		"children": ["rich-text#newsletter-error"],
+		"props": {
+			"blockClass": "newsletter-error"
+		}
+	},
+	"rich-text#newsletter-error": {
+		"props": {
+			"text": "OCORREU UM ERRO, TENTE NOVAMENTE MAIS TARDE",
+			"blockClass": ["newsletter-message", "newsletter-error"]
+		}
+	},
+	"icon#newsletter-error": {
+		"props": {
+			"id": "inf-warning",
+			"type": "filled",
+			"activeClassName": "vtex-store-components-3-x-warningIcon"
+		}
+	},
+	"icon#newsletter-success": {
+		"props": {
+			"id": "sti-check--filled",
+			"activeClassName": "vtex-store-components-3-x-successIcon"
+		}
+	}
+}

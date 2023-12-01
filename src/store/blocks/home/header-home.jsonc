@@ -1,0 +1,30 @@
+{
+	"header#home": {
+		"blocks": ["header-layout.desktop#home", "header-layout.mobile#home"]
+	},
+	"header-layout.desktop#home": {
+		"children": ["sticky-layout#home-desktop", "back-to-top-button", "cookie"]
+	},
+	"header-layout.mobile#home": {
+		"children": ["sticky-layout#home-mobile", "back-to-top-button", "cookie"]
+	},
+	"sticky-layout#home-desktop": {
+		"props": {
+			"blockClass": ["sticky-header", "sticky-header-home"]
+		},
+		"children": [
+			"flex-layout.row#header-topbar",
+			"flex-layout.row#header-desktop-content",
+			"tuttoperlacasa.menu:menu#desktop"
+		]
+	},
+	"sticky-layout#home-mobile": {
+		"props": {
+			"blockClass": ["sticky-header-mobile", "sticky-header-mobile-home"]
+		},
+		"children": [
+			"flex-layout.row#header-topbar",
+			"flex-layout.row#header-mobile-middle"
+		]
+	}
+}

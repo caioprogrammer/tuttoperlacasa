@@ -1,0 +1,462 @@
+.userGreeting {
+	color: $primary400;
+}
+
+:global(.vtex-account_menu-link) {
+	color: $primary400;
+}
+
+:global(.vtex-account_menu-link:hover) {
+	color: $primary200;
+}
+
+:global(.vtex-pageHeader__title) {
+	color: $primary400;
+}
+.dataEntryLabel {
+	color: $primary400;
+}
+
+.menuLink {
+	color: $primary400;
+}
+
+.newsletterContainerTitle {
+	color: $primary400;
+}
+
+:global(.vtex-account .c-on-base) {
+	color: $primary400 !important;
+}
+
+:global(.vtex-render-runtime-8-x-loadingBarAnimation) {
+	background-color: $primary200 !important;
+}
+
+:global(.vtex-toast) {
+	background-color: rgb(164, 112, 79, 0.8) !important;
+}
+
+:global(.c-action-primary) {
+	color: $primary400;
+}
+
+:global(.vtex-styleguide-9-x-rotate.vtex__icon-spinner) {
+	color: $primary100;
+}
+
+:global(.c-danger) {
+	color: $buyButton;
+	svg {
+		fill: $buyButton !important;
+	}
+}
+
+:global(.hover-c-link:hover) {
+	color: $primary400;
+}
+
+:global(.vtex-account__order-details) {
+	color: $primary400 !important;
+	.c-link {
+		color: $primary400;
+
+		svg {
+			fill: $primary400;
+		}
+	}
+}
+
+:global(.vtex-my-orders-app-3-x-invoiceBtn) {
+	svg {
+		color: $primary400;
+		fill: $primary400 !important;
+	}
+}
+
+:global(.bg-warning) {
+	background-color: $primary100;
+
+	:global(span.c-on-base) {
+		color: $white !important;
+	}
+}
+
+:global(.vtex-my-orders-app-3-x-productName) {
+	color: $primary400;
+}
+
+:global(.bg-success) {
+	background-color: $buyButton !important;
+	color: $white !important;
+
+	span {
+		color: $white !important;
+	}
+}
+
+:global(.b--success) {
+	border-color: $buyButton;
+}
+
+:global(.b--red) {
+	border-color: $buyButton !important;
+}
+
+:global(.bg-muted-1) {
+	background-color: $primary100;
+}
+
+:global(.b--muted-4) {
+	border-color: $primary400 !important;
+}
+
+:global(.hover-bg-action-secondary:hover) {
+	background-color: $white;
+}
+
+:global(.myo-invoice-btn:hover .c-link) {
+	text-decoration: underline;
+}
+
+:global(.c-muted-1) {
+	color: $primary400;
+}
+
+:global(.cc-window) {
+	padding: 12px 26px 13px !important;
+	max-width: 802px !important;
+	margin: 0 auto;
+	background: rgba(171, 133, 112, 0.9) !important;
+	border-radius: 5px;
+	z-index: 9999;
+	bottom: 20px !important;
+	border: none !important;
+	color: #fff !important;
+}
+
+:global(.cc-message) {
+	font-family: 'Lato', sans-serif;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-size: 12px !important;
+	line-height: 15px !important;
+	color: #fff !important;
+	display: block !important;
+	text-transform: uppercase !important;
+}
+
+:global(.cc-ALLOW) {
+	font-family: 'Lato', sans-serif !important;
+	font-style: normal !important;
+	font-weight: bold !important;
+	font-size: 16px !important;
+	line-height: 20px !important;
+	text-align: center !important;
+	color: $primary400 !important;
+	transition: all 0.4s !important;
+	background-color: $white !important;
+	min-width: unset !important;
+	text-transform: uppercase !important;
+}
+
+:global(.cc-ALLOW:hover) {
+	background-color: $primary900 !important;
+	color: $white !important;
+}
+
+:global(.cc-DENY) {
+	border: 1px solid $white !important;
+	color: $white !important;
+}
+
+:global(.vtex-styleguide-9-x-input::placeholder) {
+	color: $primary200;
+}
+
+:global(.bg-danger--faded) {
+	background-color: rgba(221, 108, 36, 0.3);
+	color: $primary400;
+}
+
+:global(.bg-danger) {
+	background: $secondary400;
+}
+
+:global(.bg--action-primary:focus) {
+	border-color: $primary400 !important;
+	background-color: $primary400 !important 	;
+}
+
+:global(.vtex-account a) {
+	color: $primary400;
+}
+
+:global(.vtex-account p) {
+	color: $primary400;
+}
+
+:global(.vtex-account span) {
+	color: $primary400;
+}
+
+:global(.vtex-account li) {
+	color: $primary400;
+}
+
+:global(.vtex-account div) {
+	color: $primary400;
+}
+
+:global(.vtex-account hr) {
+	border-color: $primary100;
+}
+
+:global(.vtex-account .c-on-danger) {
+	color: $white;
+}
+
+:global(.vtex-account input) {
+	color: $primary400;
+	outline: none !important;
+	border: 1px solid $primary400 !important;
+}
+
+:global(.vtex-account input::placeholder) {
+	color: $primary100;
+}
+
+:global(.b--light-gray) {
+	border-color: $primary400;
+}
+
+:global(.b--light-gray:hover) {
+	border-color: $primary400;
+}
+
+:global(.vtex-account select) {
+	color: $primary400;
+	outline: none !important;
+	border: 1px solid $primary400;
+}
+
+:global(.vtex-account select button) {
+	color: $primary400;
+}
+
+:global(.vtex-account .vtex-input-prefix__group) {
+	border: none !important;
+}
+
+:global(.vtex-product-list-0-x-inputContainer input) {
+	color: $primary400;
+}
+
+:global(
+		.vtex-flex-layout-0-x-flexColChild--filter-content
+			.tuttoperlacasa-search-result-3-x-filter__container--category-2
+			.tuttoperlacasa-search-result-3-x-filterTitle
+			> span:not(.tuttoperlacasa-search-result-3-x-filterIcon)
+	) {
+	font-size: 0px;
+	height: 14px;
+}
+:global(
+		.vtex-flex-layout-0-x-flexColChild--filter-content
+			.tuttoperlacasa-search-result-3-x-filter__container--category-2
+			.tuttoperlacasa-search-result-3-x-filterTitle
+			> span:not(.tuttoperlacasa-search-result-3-x-filterIcon):after
+	) {
+	content: 'Departamento';
+	font-size: 12px;
+}
+
+:global(
+		.tuttoperlacasa-search-result-3-x-accordionFilterContainer--categoria
+			.tuttoperlacasa-search-result-3-x-accordionFilterItemTitle
+	) {
+	font-size: 0px !important;
+}
+
+:global(
+		.tuttoperlacasa-search-result-3-x-accordionFilterContainer--categoria
+			.tuttoperlacasa-search-result-3-x-accordionFilterItemTitle:after
+	) {
+	content: 'Departamento';
+	font-size: 16px;
+}
+
+:global(
+		.vtex-flex-layout-0-x-flexColChild--filter-content
+			.tuttoperlacasa-search-result-3-x-filter__container--category-3
+			.tuttoperlacasa-search-result-3-x-filterTitle
+			> span:not(.tuttoperlacasa-search-result-3-x-filterIcon)
+	) {
+	font-size: 0px;
+	height: 14px;
+}
+:global(
+		.vtex-flex-layout-0-x-flexColChild--filter-content
+			.tuttoperlacasa-search-result-3-x-filter__container--category-3
+			.tuttoperlacasa-search-result-3-x-filterTitle
+			> span:not(.tuttoperlacasa-search-result-3-x-filterIcon):after
+	) {
+	content: 'Categoria';
+	font-size: 12px;
+}
+
+
+
+:global(
+		.tuttoperlacasa-search-result-3-x-accordionFilterContainer--subcategoria
+			.tuttoperlacasa-search-result-3-x-accordionFilterItemTitle
+	) {
+	font-size: 0px !important;
+}
+
+:global(
+		.tuttoperlacasa-search-result-3-x-accordionFilterContainer--subcategoria
+			.tuttoperlacasa-search-result-3-x-accordionFilterItemTitle:after
+	) {
+	content: 'Categoria';
+	font-size: 16px;
+}
+
+
+
+:global(
+		.vtex-flex-layout-0-x-flexColChild--filter-content
+			.tuttoperlacasa-search-result-3-x-filter__container--category-4
+			.tuttoperlacasa-search-result-3-x-filterTitle
+			> span:not(.tuttoperlacasa-search-result-3-x-filterIcon)
+	) {
+	font-size: 0px;
+	height: 14px;
+}
+:global(
+		.vtex-flex-layout-0-x-flexColChild--filter-content
+			.tuttoperlacasa-search-result-3-x-filter__container--category-4
+			.tuttoperlacasa-search-result-3-x-filterTitle
+			> span:not(.tuttoperlacasa-search-result-3-x-filterIcon):after
+	) {
+	content: 'Subcategoria';
+	font-size: 12px;
+}
+
+:global(
+		.tuttoperlacasa-search-result-3-x-accordionFilterContainer--category-4
+			.tuttoperlacasa-search-result-3-x-accordionFilterItemTitle
+	) {
+	font-size: 0px !important;
+}
+
+:global(
+		.tuttoperlacasa-search-result-3-x-accordionFilterContainer--category-4
+			.tuttoperlacasa-search-result-3-x-accordionFilterItemTitle:after
+	) {
+	content: 'Subcategoria';
+	font-size: 16px;
+}
+:global(.bg-success--faded) {
+	background-color: $buyButton;
+	color: $white;
+}
+
+:global(.bg-success--faded div) {
+	color: $white;
+}
+
+:global(.bg-success--faded .vtex-alert__close-icon) {
+	color: $white !important;
+}
+
+:global(.vtex-order-placed-2-x-orderPlacedWrapper) {
+	a,
+	p,
+	strong,
+	b,
+	span,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	label,
+	li,
+	div,
+	header,
+	small,
+	time,
+	input::placeholder,
+	.vtex-pickup-points-modal-3-x-modalDetailsBackLnk {
+		color: $primary400;
+		text-shadow: none !important;
+		font-family: 'Lato';
+	}
+}
+
+:global(.vtex-order-placed-2-x-noticeListItem strong) {
+	color: $white;
+}
+
+:global(.vtex-order-placed-2-x-printButtonWrapper div) {
+	color: $white;
+}
+
+:global(.vtex-order-placed-2-x-printButtonWrapper path) {
+	fill: $white;
+}
+
+:global(.vtex-order-placed-2-x-bankInvoiceEmbedWrapper div) {
+	color: $white;
+}
+
+:global(.vtex-order-placed-2-x-bankInvoiceEmbedWrapper path) {
+	fill: $white;
+}
+
+:global(.vtex-order-placed-2-x-orderPlacedWrapper .vtex-button) {
+	border-radius: 0px;
+}
+
+:global(.vtex-sticky-layout-0-x-container--sticky-header-home) {
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+:global(.vtex-sticky-layout-0-x-container--sticky-header-home::after) {
+	content: '';
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: inherit;
+	border-radius: inherit;
+}
+
+:global(.tuttoperlacasa-search-result-3-x-filterTemplateOverflow > div) {
+	height: auto !important;
+}
+
+:global(.tuttoperlacasa-search-result-3-x-filterTemplateOverflow .vtex-slider-container) {
+	padding: 0 20px;
+}
+
+:global(.vtex-container--category-list-wrapper > .tuttoperlacasa-menu-3-x-menuContainerNav) {
+	width: 70%;
+}
+
+:global(.vtex-account__page-body .overflow-y-scroll) {
+	@include scrollbar(6px, 100px, $primary200, $primary400);
+}
+
+:global(.vtex-my-account-1-x-menuLink .hover-near-black:focus) {
+	color: $black;
+}
+
+:global(.vtex-my-account-1-x-menuLink .hover-near-black:hover) {
+	color: $black;
+}
+

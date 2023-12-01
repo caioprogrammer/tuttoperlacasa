@@ -1,0 +1,53 @@
+{
+  "menu-item#submenu-decor-vazio6": {
+    "props": {
+			"id": "menu-item-vazio6",
+			"type": "custom",
+			"hide": true,
+			"highlight": false,
+			"hasChild": true,
+			"itemProps": {
+				"type": "internal",
+				"href": "/decor/vazio6",
+				"noFollow": false,
+				"tagTitle": "vazio6",
+				"text": "vazio6"
+			}
+		},
+		"blocks": ["tuttoperlacasa.menu:submenu#submenu-vazio6"]
+  },
+
+  // !SUBMENU
+  	"tuttoperlacasa.menu:submenu#submenu-vazio6": {
+		"title": "Subcategoria",
+		"children": ["container#submenu-vazio6-category-list-wrapper"],
+		"props": {
+			"blockClass": "subcategory"
+		}
+	},
+	"container#submenu-vazio6-category-list-wrapper": {
+		"children": ["tuttoperlacasa.menu:menu#submenu-submenu-vazio6"],
+		"props": {
+			"blockClass": "subcategory-list-wrapper"
+		}
+	},
+
+  "tuttoperlacasa.menu:menu#submenu-submenu-vazio6": {
+		"props": {
+			"orientation": "vertical",
+			"items": [
+				{
+					"id": "menu-item-vela",
+					"type": "custom",
+					"highlight": false,
+					
+					"itemProps": {
+						"href": "/decor/vazio6/vazio6",
+						"text": "vazio6"
+					}
+				}
+			],
+			"blockClass": ["subcategory"]
+		}
+	}
+}

@@ -1,0 +1,105 @@
+{
+  "menu-item#submenu-bandeja-de-bar-e-drink--mobile": {
+    "props": {
+			"id": "menu-item-bandeja-de-bar-e-drink--mobile",
+			"type": "custom",
+			"highlight": false,
+			"hasChild": true,
+			"itemProps": {
+				"type": "internal",
+				"href": "/bar/bandeja-de-bar-e-drink",
+				"noFollow": false,
+				"tagTitle": "Bandeja de bar e drink",
+				"text": "Bandeja de bar e drink"
+			}
+		},
+		"blocks": ["tuttoperlacasa.menu:submenu.accordion#submenu-bandeja-de-bar-e-drink--mobile"]
+  },
+
+  // !SUBMENU
+  	"tuttoperlacasa.menu:submenu.accordion#submenu-bandeja-de-bar-e-drink--mobile": {
+		"title": "Subcategoria",
+		"children": ["container#submenu-bandeja-de-bar-e-drink-category-list-wrapper--mobile"],
+		"props": {
+			"blockClass": "subcategory"
+		}
+	},
+	"container#submenu-bandeja-de-bar-e-drink-category-list-wrapper--mobile": {
+		"children": ["tuttoperlacasa.menu:menu#submenu-submenu-bandeja-de-bar-e-drink--mobile"],
+		"props": {
+			"blockClass": "subcategory-list-wrapper"
+		}
+	},
+
+  "tuttoperlacasa.menu:menu#submenu-submenu-bandeja-de-bar-e-drink--mobile": {
+		"props": {
+			"orientation": "vertical",
+			"items": [
+				{
+					"id": "ver-todos-para-receber",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/bar/bandeja-de-bar-e-drink",
+						"text": "Ver Todos"
+					}
+				},
+				{
+					"id": "menu-item-balde-champanheira-e-balde-de-gelo",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/bar/bandeja-de-bar-e-drink/balde-champanheira-e-balde-de-gelo",
+						"text": "Balde, Champanheira e Balde de gelo"
+					}
+				},
+        {
+					"id": "menu-item-coqueteleira-e-kit-bar",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/bar/bandeja-de-bar-e-drink/coqueteleira-e-kit-bar",
+						"text": "Coqueteleira e Kit bar"
+					}
+				},
+        {
+					"id": "menu-item-decanter-garrafa-e-licoreira",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/bar/bandeja-de-bar-e-drink/decanter-garrafa-e-licoreira",
+						"text": "Decanter, Garrafa e Licoreira"
+					}
+				},
+        {
+					"id": "menu-item-saca-rolha-abridor-de-garrafa-e-tampa-de-garrafa",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/bar/bandeja-de-bar-e-drink/saca-rolha-abridor-de-garrafa-e-tampa-de-garrafa",
+						"text": "Bandeja para bar"
+					}
+				},
+        {
+					"id": "menu-item-copo-taca-e-porta-copo",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/bar/bandeja-de-bar-e-drink/copo-taca-e-porta-copo",
+						"text": "Copo, Taça e Porta copo"
+					}
+				},
+        {
+					"id": "menu-item-saca-rolha-abridor-de-garrafa-e-tampa-de-garrafa",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/bar/bandeja-de-bar-e-drink/saca-rolha-abridor-de-garrafa-e-tampa-de-garrafa",
+						"text": "Saca rolha, Abridor de garrafa e Tampa de garrafa"
+					}
+				}
+			],
+			"blockClass": ["subcategory"]
+		}
+	}
+}

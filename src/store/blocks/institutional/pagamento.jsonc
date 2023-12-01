@@ -1,0 +1,72 @@
+{
+	"store.custom#pagamento": {
+		"blocks": [
+			"responsive-layout.desktop#pagamento",
+			"responsive-layout.mobile#pagamento"
+		]
+	},
+	"responsive-layout.desktop#pagamento": {
+		"children": [
+			"flex-layout.row#breadcrumb-pagamento",
+			"flex-layout.row#pagamento-content"
+		]
+	},
+	"flex-layout.row#pagamento-content": {
+		"children": [
+			"flex-layout.col#menu-institucional",
+			"flex-layout.col#pagamento"
+		],
+		"props": {
+			"blockClass": "pagamento",
+			"paddingBottom": 8
+		}
+	},
+
+	"flex-layout.col#pagamento": {
+		"children": ["rich-text#pagamento-content"]
+	},
+	"flex-layout.row#breadcrumb-pagamento": {
+		"children": [
+			"link#breadcrumb-home",
+			"link#breadcrumb-icon",
+			"link#breadcrumb-pagamento"
+		],
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true,
+			"blockClass": "breadcrumb",
+			"colGap": 3
+		}
+	},
+	"responsive-layout.mobile#pagamento": {
+		"children": ["flex-layout.row#pagamento-mobile"]
+	},
+	"flex-layout.row#pagamento-mobile": {
+		"children": ["flex-layout.col#pagamento-mobile"],
+		"props": {
+			"blockClass": "pagamento"
+		}
+	},
+	"flex-layout.col#pagamento-mobile": {
+		"children": [
+			"flex-layout.row#breadcrumb-pagamento",
+			"flex-layout.row#disc-institucional",
+			"rich-text#pagamento-content"
+		],
+		"props": {}
+	},
+
+	"link#breadcrumb-pagamento": {
+		"props": {
+			"label": "Políticas De Pagamento",
+			"blockClass": "active-breadcrumb"
+		}
+	},
+
+	"rich-text#pagamento-content": {
+		"props": {
+			"text": "# POLÍTICAS DE PAGAMENTO\n\nO pagamento pode ser realizado através de cartão de crédito, cartão de débito, depósito bancário ou boleto bancário.\n\nAs compras podem ser parceladas em até 6X sem juros com parcela mínima de R$100,00.\n\nO pagamento por meio de depósito bancário deve ser realizado em até dois dias úteis e o comprovante enviado para o e-mail atendimento@tuttoperlacasa.com.br. Após esse prazo o pedido será cancelado automaticamente em nosso sistema.\n\nVale lembrar que o nosso sistema de cobrança por cartão de crédito é 100% seguro, os dados são criptografados e enviados diretamente para a administradora do seu cartão de crédito.\n\nBoas Compras!\n",
+			"blockClass": "institucional-content"
+		}
+	}
+}

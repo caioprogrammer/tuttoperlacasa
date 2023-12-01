@@ -1,0 +1,52 @@
+{
+  "menu-item#submenu-mesa-vazio2": {
+    "props": {
+			"id": "menu-item-mesa-vazio2",
+			"type": "custom",
+			"highlight": false,
+			"hide": true,
+			"hasChild": true,
+			"itemProps": {
+				"type": "internal",
+				"href": "/mesa/mesa-vazio2",
+				"noFollow": false,
+				"tagTitle": "Mesa vazio2",
+				"text": "Mesa vazio2"
+			}
+		},
+		"blocks": ["tuttoperlacasa.menu:submenu#submenu-mesa-vazio2"]
+  },
+
+  // !SUBMENU
+  	"tuttoperlacasa.menu:submenu#submenu-mesa-vazio2": {
+		"title": "Subcategoria",
+		"children": ["container#submenu-mesa-vazio2-category-list-wrapper"],
+		"props": {
+			"blockClass": "subcategory"
+		}
+	},
+	"container#submenu-mesa-vazio2-category-list-wrapper": {
+		"children": ["tuttoperlacasa.menu:menu#submenu-submenu-mesa-vazio2"],
+		"props": {
+			"blockClass": "subcategory-list-wrapper"
+		}
+	},
+
+  "tuttoperlacasa.menu:menu#submenu-submenu-mesa-vazio2": {
+		"props": {
+			"orientation": "vertical",
+			"items": [
+				{
+					"id": "menu-item-argola-de-guardanapo-e-porta-guardanapo",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/mesa/mesa-vazio2/argola-de-guardanapo-e-porta-guardanapo",
+						"text": ""
+					}
+				}
+			],
+			"blockClass": ["subcategory"]
+		}
+	}
+}

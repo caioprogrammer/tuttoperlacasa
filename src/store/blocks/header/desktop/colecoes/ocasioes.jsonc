@@ -1,0 +1,69 @@
+{
+  "menu-item#submenu-ocasioes": {
+    "props": {
+			"id": "menu-item-ocasioes",
+			"type": "custom",
+			"highlight": false,
+			"hasChild": true,
+			"itemProps": {
+				"type": "internal",
+				"href": "/colecoes/ocasioes",
+				"noFollow": false,
+				"tagTitle": "ocasioes",
+				"text": "ocasioes"
+			}
+		},
+		"blocks": ["tuttoperlacasa.menu:submenu#submenu-ocasioes"]
+  },
+
+  // !SUBMENU
+  	"tuttoperlacasa.menu:submenu#submenu-ocasioes": {
+		"title": "Subcategoria",
+		"children": ["container#submenu-ocasioes-category-list-wrapper"],
+		"props": {
+			"blockClass": "subcategory"
+		}
+	},
+	"container#submenu-ocasioes-category-list-wrapper": {
+		"children": ["tuttoperlacasa.menu:menu#submenu-submenu-ocasioes"],
+		"props": {
+			"blockClass": "subcategory-list-wrapper"
+		}
+	},
+
+  "tuttoperlacasa.menu:menu#submenu-submenu-ocasioes": {
+		"props": {
+			"orientation": "vertical",
+			"items": [
+				{
+					"id": "menu-item-cafe-da-manha",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/colecoes/ocasioes/cafe-da-manha",
+						"text": "Café da manhã"
+					}
+				},
+        {
+					"id": "menu-item-queijos-e-vinhos",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/colecoes/ocasioes/queijos-e-vinhos",
+						"text": "Queijos e Vinhos"
+					}
+				},
+				{
+					"id": "menu-item-churrasco",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/colecoes/ocasioes/churrasco",
+						"text": "Churrasco"
+					}
+				}
+			],
+			"blockClass": ["subcategory"]
+		}
+	}
+}

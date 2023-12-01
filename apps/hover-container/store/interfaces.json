@@ -1,0 +1,6 @@
+{
+  "hover-container": {
+    "component": "HoverContainer",
+    "composition": "children"
+  }
+}

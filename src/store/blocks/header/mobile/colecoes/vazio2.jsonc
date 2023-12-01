@@ -1,0 +1,63 @@
+{
+  "menu-item#submenu-vazio2--mobile": {
+    "props": {
+			"id": "menu-item-vazio2--mobile",
+			"type": "custom",
+			"highlight": false,
+			"hide": true,
+			"hasChild": true,
+			"itemProps": {
+				"type": "internal",
+				"href": "/colecoes/vazio2",
+				"noFollow": false,
+				"tagTitle": "vazio2",
+				"text": "vazio2"
+			}
+		},
+		"blocks": ["tuttoperlacasa.menu:submenu.accordion#submenu-vazio2--mobile"]
+  },
+
+  // !SUBMENU
+  	"tuttoperlacasa.menu:submenu.accordion#submenu-vazio2--mobile": {
+		"title": "Subcategoria",
+		"children": ["container#submenu-vazio2-colecoes-category-list-wrapper--mobile"],
+		"props": {
+			"blockClass": "subcategory"
+		}
+	},
+	"container#submenu-vazio2-colecoes-category-list-wrapper--mobile": {
+		"children": ["tuttoperlacasa.menu:menu#submenu-submenu-vazio2-colecoes--mobile"],
+		"props": {
+			"blockClass": "subcategory-list-wrapper--mobile"
+		}
+	},
+
+  "tuttoperlacasa.menu:menu#submenu-submenu-vazio2-colecoes--mobile": {
+		"props": {
+			"orientation": "vertical",
+			"items": [
+				{
+					"id": "ver-todos-vazio2",
+					"type": "custom",
+					"highlight": false,
+					"hide": true,
+					"itemProps": {
+						"href": "/colecoes/vazio2",
+						"text": "Ver Todos"
+					}
+				},
+				{
+					"id": "menu-item-cafe-da-manha",
+					"type": "custom",
+					"highlight": false,
+					"hide": true,
+					"itemProps": {
+						"href": "/colecoes/vazio2/cafe-da-manha",
+						"text": "Vazio"
+					}
+				}
+			],
+			"blockClass": ["subcategory"]
+		}
+	}
+}

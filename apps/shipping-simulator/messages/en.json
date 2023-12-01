@@ -1,0 +1,8 @@
+{
+  "store/shipping.deliveryName": "Delivery",
+  "store/shipping.deliveryEstimate": "Estimate",
+  "store/shipping.deliveryPrice": "Value",
+  "store/shipping.label": "Calculate shipping",
+  "store/shipping.free": "Free",
+  "store/shipping.empty-sla": "There's no shipping information available for the informed zip code"
+}

@@ -1,0 +1,61 @@
+{
+  "menu-item#submenu-seiscentos-mais--mobile": {
+    "props": {
+			"id": "menu-item-seiscentos",
+			"type": "custom",
+			"highlight": false,
+			"hasChild": true,
+			"itemProps": {
+				"type": "internal",
+				"href": "/para-presentear/acima-de-r-600",
+				"noFollow": false,
+				"tagTitle": "Acima de R$600",
+				"text": "Acima de R$600"
+			}
+		},
+		"blocks": ["tuttoperlacasa.menu:submenu.accordion#seiscentosmais--mobile"]
+  },
+	// !SUBMENU
+  "tuttoperlacasa.menu:submenu.accordion#seiscentosmais--mobile": {
+		"title": "Subcategoria",
+		"children": ["container#submenu-seiscentosmais-category-list-wrapper--mobile"],
+		"props": {
+			"blockClass": "subcategory"
+		}
+	},
+	"container#submenu-seiscentosmais-category-list-wrapper--mobile": {
+		"children": ["tuttoperlacasa.menu:menu#submenu-submenu-seiscentosmais--mobile"],
+		"props": {
+			"blockClass": "subcategory-list-wrapper--mobile"
+		}
+	},
+
+  "tuttoperlacasa.menu:menu#submenu-submenu-seiscentosmais--mobile": {
+		"props": {
+			"orientation": "vertical",
+			"items": [
+				{
+					"id": "ver-todos-seiscentosmais",
+					"type": "custom",
+					"highlight": false,
+					"hide": true,
+					"itemProps": {
+						"href": "/para-presentear/seiscentosmais",
+						"text": "Ver Todos"
+					}
+				},
+				{
+					"id": "menu-item-seiscentosmais",
+					"type": "custom",
+					"highlight": false,
+					"hide": true,
+					"itemProps": {
+						"href": "/para-presentear/seiscentosmais/seiscentosmais",
+						"text": "seiscentosmais"
+					}
+				}
+			],
+			"blockClass": ["subcategory"]
+		}
+	}
+}

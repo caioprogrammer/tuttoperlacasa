@@ -1,0 +1,9 @@
+node_modules
+styles-bkp
+*.Identifier
+
+src/styles/css
+src/styles/inconpacks/iconpack.svg
+
+src/styles/configs/fantasticon.scss
+src/styles/configs/font-faces.css

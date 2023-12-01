@@ -1,0 +1,54 @@
+{
+  "menu-item#mesa--mobile": {
+		"props": {
+			"id": "menu-item-mesa--mobile",
+			"type": "custom",
+			"highlight": false,
+			"hasChild": true,
+			"itemProps": {
+				"type": "internal",
+				"href": "/mesa",
+				"noFollow": false,
+				"tagTitle": "Mesa",
+				"text": "Mesa"
+			},
+			"blockClass": ["department"]
+		},
+		"blocks": ["tuttoperlacasa.menu:submenu.accordion#mesa--mobile"]
+	},
+  "tuttoperlacasa.menu:submenu.accordion#mesa--mobile": {
+		"title": "Category",
+		"children": [
+			"container#mesa-category-list-wrapper--mobile"
+		],
+		"props": {
+			"blockClass": "category"
+		}
+	},
+	"container#mesa-category-list-wrapper--mobile": {
+		"children": [
+			"tuttoperlacasa.menu:menu#submenu-mesa--mobile"
+		],
+		"props": {
+			"blockClass": "category-list-wrapper--mobile"
+		}
+	},
+
+  // !Category
+  "tuttoperlacasa.menu:menu#submenu-mesa--mobile": {
+		"children": [
+			"menu-item#mesa-ver-todos--mobile",
+			"menu-item#submenu-mesa-posta--mobile",
+			"menu-item#submenu-para-servir--mobile",
+			"menu-item#submenu-vazio1--mobile",
+			"menu-item#submenu-vazio2--mobile",
+			"menu-item#submenu-vazio3--mobile",
+			"menu-item#submenu-vazio4--mobile",
+			"menu-item#submenu-vazio5--mobile",
+			"menu-item#submenu-vazio6--mobile"
+		],
+		"props": {
+			"orientation": "vertical"
+		}
+	}
+}

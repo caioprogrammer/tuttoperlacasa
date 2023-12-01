@@ -1,0 +1,63 @@
+{
+  "menu-item#submenu-vazio2--mobile": {
+    "props": {
+			"id": "menu-item-vazio2",
+			"type": "custom",
+			"highlight": false,
+			"hide": true,
+			"hasChild": true,
+			"itemProps": {
+				"type": "internal",
+				"href": "/para-presentear/ate-r-200",
+				"noFollow": false,
+				"tagTitle": "vazio2",
+				"text": "vazio2"
+			}
+		},
+		"blocks": ["tuttoperlacasa.menu:submenu.accordion#vazio2-para-presentear--mobile"]
+  },
+
+	// !SUBMENU
+  "tuttoperlacasa.menu:submenu.accordion#vazio2-para-presentear--mobile": {
+		"title": "Subcategoria",
+		"children": ["container#submenu-vazio2-presentear-category-list-wrapper--mobile"],
+		"props": {
+			"blockClass": "subcategory"
+		}
+	},
+	"container#submenu-vazio2-presentear-category-list-wrapper--mobile": {
+		"children": ["tuttoperlacasa.menu:menu#submenu-submenu-vazio2-presentear--mobile"],
+		"props": {
+			"blockClass": "subcategory-list-wrapper--mobile"
+		}
+	},
+
+  "tuttoperlacasa.menu:menu#submenu-submenu-vazio2-presentear--mobile": {
+		"props": {
+			"orientation": "vertical",
+			"items": [
+				{
+					"id": "ver-todos-vazio2",
+					"type": "custom",
+					"highlight": false,
+					"hide": true,
+					"itemProps": {
+						"href": "/para-presentear/vazio2",
+						"text": "Ver Todos"
+					}
+				},
+				{
+					"id": "menu-item-vazio2",
+					"type": "custom",
+					"highlight": false,
+					"hide": true,
+					"itemProps": {
+						"href": "/para-presentear/vazio2/vazio2",
+						"text": "vazio2"
+					}
+				}
+			],
+			"blockClass": ["subcategory"]
+		}
+	}
+}

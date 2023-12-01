@@ -1,0 +1,29 @@
+.imageElement--institucional-somos {
+	width: 350px;
+	height: 301px;
+	margin: 100px 0 20px 15px;
+	@include media-max(1024px) {
+		margin: 10px 0 20px 15px;
+	}
+	@include media-max(400px) {
+		width: 251px;
+		height: 216px;
+	}
+}
+.imageElement--institucional-image-shipping {
+	width: 350px;
+	height: 301px;
+	margin: 100px 0 20px 15px;
+	@include media-max(1024px) {
+		margin: 10px 0 20px 15px;
+	}
+	@include media-max(400px) {
+		width: 251px;
+		height: 216px;
+	}
+}
+.imageElement--not-found {
+	@media screen and (max-width:1024px) and (min-width:768px) {
+		margin-left: 25px;
+	}
+}

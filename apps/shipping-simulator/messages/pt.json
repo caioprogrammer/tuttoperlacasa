@@ -1,0 +1,8 @@
+{
+  "store/shipping.deliveryName": "Entrega",
+  "store/shipping.deliveryEstimate": "Prazo",
+  "store/shipping.deliveryPrice": "Valor do frete",
+  "store/shipping.label": "Calcular o frete",
+  "store/shipping.free": "Grátis",
+  "store/shipping.empty-sla": "Não existe um frete disponível para o CEP informado"
+}

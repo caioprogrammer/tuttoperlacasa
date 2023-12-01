@@ -1,0 +1,16 @@
+{
+  "menu-item#area-externa-ver-todos--mobile": {
+    "props": {
+			"id": "area-externa-ver-todos--mobile",
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/area-externa",
+				"noFollow": false,
+				"tagTitle": "Ver Todos",
+				"text": "Ver Todos"
+			}
+		}
+  }
+}

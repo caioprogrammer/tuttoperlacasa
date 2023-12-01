@@ -1,0 +1,25 @@
+{
+  "menu-item#novidades": {
+		"props": {
+			"id": "menu-item-decor",
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/novidades",
+				"noFollow": false,
+				"tagTitle": "Novidades",
+				"text": "Novidades"
+			},
+			"blockClass": ["department", "no-children"]
+		},
+		"blocks": ["tuttoperlacasa.menu:submenu#novidades"]
+	},
+  "tuttoperlacasa.menu:submenu#novidades": {
+		"title": "Category",
+		"props": {
+			"blockClass": "category"
+		}
+	}
+	
+}

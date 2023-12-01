@@ -1,0 +1,112 @@
+.wrapper {
+	&--sticky-header {
+		box-shadow: -3px 4px 11px -2px rgba(0, 0, 0, 0.10);
+		z-index: 4;
+		&--stuck {
+			.container {
+				background-color: $white;
+			}
+			:global(.vtex-flex-layout-0-x-flexRow--header-desktop-top) {
+				display: none;
+			}
+		}
+		&:not(&--stuck) {
+			.container {
+				position: fixed;
+			}
+			:global(.vtex-store-link-0-x-link--wishlist-icon) {
+				display: none;
+			}
+		}
+	}
+	&--sticky-header-home {
+		height: initial !important;
+		.container {
+			position: fixed;
+			transition: background-color 0.4s;
+		}
+
+		.container:hover,
+		&--stuck .container {
+			background-color: $headerBg;
+			:global(.vtex-store-link-0-x-link--header-links),
+			:global(.vtex-rich-text-0-x-paragraph--login-text),
+			:global(.vtex-store-components-3-x-searchBarIcon--search)::after,
+			:global(.vtex-store-components-3-x-searchIcon),
+			:global(.vtex-store-icons-0-x-cartIcon),
+			:global(.vtex-category-menu-2-x-departmentLink) {
+				color: $textColor;
+			}
+
+			:global(.vtex-flex-layout-0-x-flexRowContent--menu-home-hover-desktop) {
+				border: none;
+			}
+			:global(.vtex-flex-layout-0-x-flexRowContent--header-desktop-content) {
+				:global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child {
+					:global(.vtex-text) {
+						&::after,
+						&::before {
+							color: $textColor;
+						}
+						color: $textColor;
+					}
+				}
+			}
+			:global(.vtex-store-components-3-x-logoImage--logo-image) {
+				filter: none;
+				// filter: invert(0);
+			}
+			:global(.vtex-flex-layout-0-x-flexRow--menu-desktop) {
+				display: none;
+			}
+			:global(.vtex-flex-layout-0-x-flexRow--menu-home-hover-desktop) {
+				display: block;
+			}
+		}
+		// }
+		// &--stuck {
+		// 	height: 0 !important;
+		// }
+		&:not(&--stuck) {
+			.container {
+				position: fixed;
+				transition: background-color 0.4s;
+				filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+			}
+			:global(.vtex-store-link-0-x-link--header-links),
+			:global(.vtex-rich-text-0-x-paragraph--login-text),
+			:global(.vtex-store-components-3-x-searchBarIcon--search)::after,
+			:global(.vtex-store-components-3-x-searchIcon),
+			:global(.vtex-store-icons-0-x-cartIcon) {
+				color: $textColor--inverse;
+			}
+			:global(.vtex-flex-layout-0-x-flexRowContent--header-desktop-content) {
+				:global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child {
+					:global(.vtex-text) {
+						&::after,
+						&::before {
+							color: $textColor--inverse;
+						}
+						color: $textColor--inverse;
+					}
+				}
+			}
+			:global(.vtex-store-components-3-x-logoImage--logo-image) {
+				// filter: invert(1);
+				filter: brightness(9);
+			}
+		}
+	}
+	&--sticky-header-mobile {
+		&--stuck {
+			:global(.vtex-flex-layout-0-x-flexRow--main-header-mobile) {
+				box-shadow: -3px 4px 11px -2px rgba(0, 0, 0, 0.15);
+			}
+			// :global(.vtex-flex-layout-0-x-flexRow--header-mobile-bottom) {
+			// 	transition: max-height 0.4s;
+			// 	max-height: 0;
+			// 	overflow: hidden;
+			// }
+		}
+	}
+}

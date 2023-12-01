@@ -1,0 +1,75 @@
+{
+	"colors": {
+		"primary100": "#AB8570",
+		"primary900": "#9F765F",
+		"primary200": "#A4704F",
+		"primary400": "#764b31",
+		"primary300": "#ffffff",
+		"primary500": "#9E163A",
+		"primary600": "#868686",
+		"primary700": "#A4704F",
+
+		"secondary100": "#9E163A",
+		"secondary300": "#764b31",
+		"secondary400": "#D67A44 ",
+		"secondary400-rgba": "rgba(214, 122, 68, 0.3);",
+		"secondary500": "#9A6A50",
+		"secondary600": "#2e2e2e",
+		"secondary700": "#D1A371",
+
+		"tertiary300": "#f8e384",
+		"tertiary400": "#fad73b",
+		"tertiary500": "#ffd000",
+		"tertiary600": "#760303",
+		"tertiary700": "#d8b000",
+
+		"background": "#ffffff",
+
+		"white": "#fff",
+		"gray100": "#fbf9f7",
+		"gray200": "#f0f0f0",
+		"gray300": "#d3d3d3",
+		"gray350": "#764b31",
+		"gray400": "#c0c0c0",
+		"gray450": "#999999",
+		"gray500": "#979899",
+		"gray600": "#6c6c6c",
+		"gray700": "#585959",
+		"gray800": "#764b31",
+		"gray900": "#764b31",
+		"black": "#764b31",
+
+		"neutral100": "#F3F3F3",
+		"neutral200": "#E7E7E7",
+		"neutral300": "#B7B7B7",
+		"neutral400": "#EDC8A2",
+		"neutral500": "#764b31",
+
+		"success100": "#CDF9D0",
+		"success300": "#68DD87",
+		"success500": "#8FAD65",
+		"success700": "#086646",
+		"success900": "#03443B",
+
+		"errorInput": "#A34918",
+
+		"danger100": "#FAD4CF",
+		"danger300": "#E16D75",
+		"danger500": "#9E163A",
+		"danger700": "#A4704F", 	
+		"danger900": "#4B0432",
+
+		"shelfTitle": "#764b31",
+
+		"infoCardTitle": "#764b31",
+		"infoCardButton": "#ffffff",
+
+		"buyButton": "#d67a40",
+		"buyButtonHover ": "#dd6c24",
+		"buyButtonActive": "#dd6c24",
+		"buyButtonHover-rgba": "rgba(221,108,36,.3)"
+	},
+	"vtexColors": {},
+	"vtexHoverColors": {},
+	"checkoutVars": {}
+}

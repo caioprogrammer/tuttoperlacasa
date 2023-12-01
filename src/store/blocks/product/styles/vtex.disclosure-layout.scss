@@ -1,0 +1,40 @@
+.trigger {
+  &--product-page-description,
+  &--product-page-specifications{
+    width: 100%;
+    border: 1px solid $borderColor;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    background-color: transparent;
+    padding: 0;
+    height: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+}
+
+.content{
+  &--product-page-description,
+  &--product-page-specifications{
+    transition: all 0.4s;
+    &--hidden{
+      max-height: 0;
+      overflow-y: hidden;
+    }
+    &--visible{
+      padding-bottom: 0.5rem ;
+      max-height: 1000px;
+      &:nth-child(odd){
+        background-color: #F7F7F7;
+      }
+    }
+  }
+  &--product-page-specifications{
+    &--visible{
+      padding-left: 52px;
+    }
+  }
+}

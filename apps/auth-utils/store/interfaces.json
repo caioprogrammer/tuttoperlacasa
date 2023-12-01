@@ -1,0 +1,24 @@
+{
+  "conditional-login": {
+    "component": "Login",
+    "allowed": [
+      "conditional-login.logged",
+      "conditional-login.unlogged"
+    ],
+    "composition": "children"
+  },
+  "conditional-login.logged": {
+    "component": "Logged",
+    "composition": "children"
+  },
+  "conditional-login.unlogged": {
+    "component": "UnLogged",
+    "composition": "children"
+  },
+  "conditional-login.greeting": {
+    "component": "Greetting"
+  },
+  "logout": {
+    "component": "Logout"
+  }
+}

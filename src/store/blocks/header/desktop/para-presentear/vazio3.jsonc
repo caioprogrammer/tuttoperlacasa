@@ -1,0 +1,52 @@
+{
+  "menu-item#submenu-presentear-vazio3": {
+    "props": {
+			"id": "menu-item-presentear-vazio3",
+			"type": "custom",
+			"highlight": false,
+			"hasChild": true,
+			"hide": true,
+			"itemProps": {
+				"type": "internal",
+				"href": "/para-presentear/ate-r-600",
+				"noFollow": false,
+				"tagTitle": "vazio3",
+				"text": "vazio3"
+			}
+		},
+		"blocks": ["tuttoperlacasa.menu:submenu#submenu-presentear-vazio3"]
+  },
+
+	 // !SUBMENU
+  "tuttoperlacasa.menu:submenu#submenu-presentear-vazio3": {
+		"title": "Subcategoria",
+		"children": ["container#submenu-category-list-wrapper"],
+		"props": {
+			"blockClass": "subcategory"
+		}
+	},
+	"container#submenu-category-list-wrapper": {
+		"children": ["tuttoperlacasa.menu:menu#submenu-submenu-presentear-vazio3"],
+		"props": {
+			"blockClass": "subcategory-list-wrapper"
+		}
+	},
+
+  "tuttoperlacasa.menu:menu#submenu-submenu-presentear-vazio3": {
+		"props": {
+			"orientation": "vertical",
+			"items": [
+				{
+					"id": "menu-item-cafe-da-manha",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/",
+						"text": ""
+					}
+				}
+			],
+			"blockClass": ["subcategory"]
+		}
+	}
+}

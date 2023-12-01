@@ -1,0 +1,143 @@
+.flexRow {
+	&--header-desktop-top {
+		background-color: $primary100;
+		padding: 9px 0;
+	}
+	&--main-header-mobile {
+		background-color: $primaryBg;
+	}
+	&--menu-desktop-fixed {
+		display: none;
+		height: 100%;
+		position: absolute;
+		left: 335.55px;
+		@include media-max($containerWidth + 30px) {
+			left: 290.55px;
+		}
+	}
+	&--menu-home-hover-desktop {
+		display: none;
+	}
+	&--header-mobile-bottom {
+		max-height: 53px;
+		transition: max-height 0.4s;
+		background-color: $primaryBg;
+
+		@include media-max(1024px) {
+			background-color: transparent;
+		}
+	}
+	&--minicart-product {
+		padding: 15px 0;
+		position: relative;
+
+		&::after {
+			content: '';
+			width: 100%;
+			height: 1px;
+			background-color: $textColor;
+			opacity: 0.3;
+			position: absolute;
+			bottom: 0px;
+			left: 0px;
+		}
+	}
+	&--minicart-footer {
+		box-shadow: none;
+		height: 150px;
+		background: $bg-footer-minicart;
+		padding: 20px 113px 20px 38px;
+		@include media-max(1024px) {
+			padding: 10px 20px;
+		}
+		@include media-max(638px) {
+			height: initial;
+		}
+	}
+
+	&--minicart-footer-summary {
+		margin-bottom: 19px;
+	}
+}
+.flexRowContent {
+	&--header-desktop-content {
+		position: relative;
+		height: 71px !important;
+		align-items: center;
+		& .stretchChildrenWidth {
+			height: 100%;
+			align-items: center;
+		}
+	}
+	&--header-desktop-fixed {
+		background-color: $primaryBg;
+	}
+	&--minicart-header {
+		padding: 18px 113px 23px 38px;
+		align-items: center;
+		@include media-max(1024px) {
+			padding: 10px 15px;
+		}
+	}
+	&--minicart-title {
+		.stretchChildrenWidth {
+			align-items: center;
+			:global(.vtex-store-icons-0-x-cartIcon) {
+				margin-right: 11.25px;
+				color: $primary400;
+			}
+		}
+	}
+	&--main-header-mobile {
+		padding: 18px 20px;
+	}
+	&--menu-desktop-fixed {
+		height: 100%;
+		justify-content: flex-start;
+	}
+	&--menu-desktop,
+	&--menu-home-hover-desktop {
+		// border-bottom: 1px solid rgba(186, 186, 186, 0.5);
+		border-bottom: 1px solid $secondary300;
+	}
+	&--minicart-quantity-price {
+		@include media-max(638px) {
+			flex-direction: column;
+		}
+	}
+	&--minicart-footer-quantity {
+		margin-bottom: 11px;
+	}
+	&--minicart-footer {
+		height: 100%;
+	}
+	&--minicart-footer-buttons {
+		.stretchChildrenWidth {
+			padding: 0;
+		}
+	}
+}
+.flexCol {
+	&--our-stores {
+		margin-right: 41.96px;
+	}
+	&--logo-desktop {
+		align-items: center;
+	}
+	&--sidebar-mobile {
+		height: auto;
+	}
+	&--minicart-container {
+		margin: 0 25px;
+		@include media-max(638px) {
+			margin: 0 15px;
+		}
+	}
+}
+
+.flexColChild {
+	&--header-links {
+		display: flex;
+		align-items: center;
+	}
+}

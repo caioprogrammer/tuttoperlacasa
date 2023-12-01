@@ -1,0 +1,9 @@
+{
+  "seller-link": {
+    "component": "SellerLink",
+    "composition": "children"
+  },
+  "seller-social": {
+    "component": "SellerSocial"
+  }
+}

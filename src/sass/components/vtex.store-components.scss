@@ -1,0 +1,28 @@
+.backToTopButtonContainer {
+  right: 15px;
+  margin: 0 auto;
+  max-width: 41.8px;
+
+  bottom: 103.41px;
+  z-index: 999;
+    @include media-max(1260px){
+      left: initial;
+      right: 30px;
+    }
+    @include media-max(1024px){
+      right: 19.19px;
+      bottom: 77.96px;
+    }
+  :global(.vtex-button){
+    width: 41.8px;
+    height: 41.8px;
+    border: none;
+    background: $primary--inverse;
+    box-shadow: 2px 2px 5px opacify-color($black, 0.15);
+    border-radius: 5px;
+    @include ficon-after($icon-nav-arrow-top, 22px, $textColor);
+    :global(.vtex-button__label){
+      display: none;
+    }
+  }
+}

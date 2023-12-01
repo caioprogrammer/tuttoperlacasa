@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CategoryMenu component should match snapshot 1`] = `
+<DocumentFragment>
+  <nav
+    class="container w-100 bg-base dn flex-m justify-center"
+  >
+    <ul
+      class="departmentList pa0 list ma0 flex flex-wrap flex-row t-action overflow-hidden h3"
+    >
+      <li
+        class="itemContainer itemContainer--department flex items-center db list"
+      >
+        <span
+          class="departmentLink w-100 pv5 no-underline t-small outline-0 db tc link truncate bb bw1 c-muted-1 b--transparent mh6"
+        >
+          Departments
+        </span>
+        <div
+          class="itemContainer itemContainer--category absolute w-100 left-0 bg-base pb2 bw1 bb b--muted-3"
+          style="top: 0px; display: none;"
+        >
+          <ul
+            class="submenuList w-100 flex flex-wrap pa0 list mw9 justify-center"
+          >
+            <li
+              class="submenuItem dib"
+            >
+              <ul
+                class="firstLevelList"
+              >
+                <li
+                  class="firstLevelLinkContainer list pa0"
+                >
+                  <a
+                    class="firstLevelLink db pv4 link no-underline outline-0 tl t-small truncate c-on-base underline-hover ph4"
+                    href="/category-1/s"
+                  >
+                    Category 1
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="submenuItem dib"
+            >
+              <ul
+                class="firstLevelList"
+              >
+                <li
+                  class="firstLevelLinkContainer list pa0"
+                >
+                  <a
+                    class="firstLevelLink db pv4 link no-underline outline-0 tl t-small truncate c-on-base underline-hover ph4"
+                    href="/category-2/s"
+                  >
+                    Category 2
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="submenuItem dib"
+            >
+              <ul
+                class="firstLevelList"
+              >
+                <li
+                  class="firstLevelLinkContainer list pa0"
+                >
+                  <a
+                    class="firstLevelLink db pv4 link no-underline outline-0 tl t-small truncate c-on-base underline-hover ph4"
+                    href="/category-3/s"
+                  >
+                    Category 3
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li
+        class="itemContainer itemContainer--department flex items-center db list"
+      >
+        <a
+          class="departmentLink w-100 pv5 no-underline t-small outline-0 db tc link truncate bb bw1 c-muted-1 b--transparent mh6"
+          href="/category-1/s"
+        >
+          Category 1
+        </a>
+      </li>
+      <li
+        class="itemContainer itemContainer--department flex items-center db list"
+      >
+        <a
+          class="departmentLink w-100 pv5 no-underline t-small outline-0 db tc link truncate bb bw1 c-muted-1 b--transparent mh6"
+          href="/category-2/s"
+        >
+          Category 2
+        </a>
+      </li>
+      <li
+        class="itemContainer itemContainer--department flex items-center db list"
+      >
+        <a
+          class="departmentLink w-100 pv5 no-underline t-small outline-0 db tc link truncate bb bw1 c-muted-1 b--transparent mh6"
+          href="/category-3/s"
+        >
+          Category 3
+        </a>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;

@@ -1,0 +1,15 @@
+// Reset example XD
+
+.paragraph {
+  margin: 0;
+}
+
+.wrapper {
+	& :global(.vtex-link) {
+		color: white;
+	}
+	color: $gray900;
+}
+
+.paragraph {
+}

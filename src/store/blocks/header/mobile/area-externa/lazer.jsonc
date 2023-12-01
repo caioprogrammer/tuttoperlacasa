@@ -1,0 +1,69 @@
+{
+  "menu-item#submenu-lazer--mobile": {
+    "props": {
+			"id": "menu-item-lazer",
+			"type": "custom",
+			"hasChild": true,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/area-externa/lazer",
+				"noFollow": false,
+				"tagTitle": "Lazer",
+				"text": "Lazer"
+			}
+		},
+		"blocks": ["tuttoperlacasa.menu:submenu.accordion#submenu-lazer"]
+  },
+
+  // !SUBMENU
+  	"tuttoperlacasa.menu:submenu.accordion#submenu-lazer": {
+		"title": "Subcategoria",
+		"children": ["container#submenu-lazer-category-list-wrapper--mobile"],
+		"props": {
+			"blockClass": "subcategory"
+		}
+	},
+	"container#submenu-lazer-category-list-wrapper--mobile": {
+		"children": ["tuttoperlacasa.menu:menu#submenu-submenu-lazer--mobile"],
+		"props": {
+			"blockClass": "subcategory-list-wrapper--mobile"
+		}
+	},
+
+  "tuttoperlacasa.menu:menu#submenu-submenu-lazer--mobile": {
+		"props": {
+			"orientation": "vertical",
+			"items": [
+				{
+					"id": "ver-todos-lazer",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/area-externa/lazer",
+						"text": "Ver Todos"
+					}
+				},
+				{
+					"id": "menu-item-cesta-de-piquenique",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/area-externa/lazer/cesta-de-piquenique",
+						"text": "Cesta de piquenique"
+					}
+				},
+        {
+					"id": "menu-item-churrasqueira",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/area-externa/lazer/churrasqueira",
+						"text": "Churrasqueira"
+					}
+				}
+			],
+			"blockClass": ["subcategory"]
+		}
+	}
+}

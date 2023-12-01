@@ -1,0 +1,4 @@
+{
+  "editor.conditional-login.title": "Conditional login",
+  "editor.conditional-login.description": "render different blocks according login status "
+}

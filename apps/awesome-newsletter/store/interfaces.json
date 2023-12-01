@@ -1,0 +1,15 @@
+{
+  "awesome-newsletter": {
+    "component": "Newsletter",
+    "composition": "children"
+  },
+  "awesome-newsletter.email": {
+    "component": "InputEmail"
+  },
+  "awesome-newsletter.name": {
+    "component": "InputName"
+  },
+  "awesome-newsletter.submit": {
+    "component": "ButtonSubmit"
+  }
+}

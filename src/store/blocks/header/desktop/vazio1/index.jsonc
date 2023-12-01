@@ -1,0 +1,69 @@
+{
+  "menu-item#vazio1": {
+		"props": {
+			"id": "menu-item-vazio1",
+			"type": "custom",
+			"highlight": false,
+			"hide": true,
+			"hasChild": true,
+			"itemProps": {
+				"type": "internal",
+				"href": "/vazio1",
+				"noFollow": false,
+				"tagTitle": "vazio1",
+				"text": "vazio1"
+			},
+			"blockClass": ["department", "vazio"]
+		},
+		"blocks": ["tuttoperlacasa.menu:submenu#vazio1"]
+	},
+  "tuttoperlacasa.menu:submenu#vazio1": {
+		"title": "Category",
+		"children": [
+			"container#vazio1-category-list-wrapper"
+		],
+		"props": {
+			"blockClass": "category"
+		}
+	},
+	"container#vazio1-category-list-wrapper": {
+		"children": [
+			"tuttoperlacasa.menu:menu#submenu-vazio1",
+			"container#department-image-vazio"
+		],
+		"props": {
+			"blockClass": "category-list-wrapper"
+		}
+	},
+
+  // !Category
+
+  "tuttoperlacasa.menu:menu#submenu-vazio1": {
+		"children": [
+			"menu-item#vazio1-1",
+			"menu-item#vazio1-2",
+			"menu-item#vazio1-3",
+			"menu-item#vazio1-4",
+			"menu-item#vazio1-5",
+			"menu-item#vazio1-6",
+			"menu-item#vazio1-7",
+			"menu-item#vazio1-8"
+
+		],
+		"props": {
+			"orientation": "vertical"
+		}
+	},
+	"container#department-image-vazio": {
+		"children": ["image#category-menu-vazio1"],
+		"props": {
+			"blockClass": "department-image"
+		}
+	},
+	"image#category-menu-vazio1": {
+		"props": {
+			"src": "assets/images/banner-menu-1.png",
+			"blockClass": "department-image"
+		}
+	}
+}

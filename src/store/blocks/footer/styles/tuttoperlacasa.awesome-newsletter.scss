@@ -1,0 +1,154 @@
+.formContainer {
+	max-width: 596px;
+	margin: 0 auto;
+	.form {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 48px;
+		@include media-max(1024px) {
+			flex-direction: column;
+			height: 112px;
+		}
+		&--initial {
+			.inputContainer {
+				.input {
+					color: $textColor;
+					&::placeholder {
+						color: $gray350;
+					}
+				}
+				&.error {
+					.input {
+						border-color: $errorInput;
+						color: $errorInput;
+						&::placeholder {
+							color: $errorInput;
+						}
+					}
+				}
+			}
+		}
+		&--error {
+			.inputContainer {
+				.input {
+					border-color: $errorInput;
+					color: $errorInput;
+					&::placeholder {
+						color: $errorInput;
+						opacity: 1;
+					}
+				}
+				@include ficon-after($icon-inf-warning-filled, 22px, $errorInput) {
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					right: 21px;
+					@include media-max(1024px) {
+						font-size: 17px;
+					}
+				}
+			}
+		}
+	}
+	.messageContent {
+		.successMessage {
+			font-family: $primaryFont;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 12px;
+			line-height: 15px;
+			margin: 4px 0 0;
+			color: $success500;
+			text-transform: $storeTextTransform;
+		}
+	}
+	.errorMessage {
+		font-family: $primaryFont;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 15px;
+		margin-top: 4px;
+		color: $errorInput;
+		text-transform: $storeTextTransform;
+		@include media-max(1024px) {
+			font-size: 10px;
+		}
+	}
+}
+.inputContainer {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	@include media-max(1024px) {
+		margin-bottom: 22px;
+	}
+	.input {
+		border: 1px solid transparent;
+		outline: none;
+		width: 100%;
+		height: 100%;
+		border-radius: 0;
+		background-color: $inputBg;
+		padding: 0 45px 0 18px;
+		font-family: $primaryFont;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 15px;
+		@include media-max(1024px) {
+			padding: 0 40px 0 14px;
+		}
+	}
+
+	&.error {
+		@include ficon-after($icon-inf-warning-filled, 22px, $errorInput) {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 21px;
+			@include media-max(1024px) {
+				font-size: 17px;
+			}
+		}
+	}
+}
+.submitContainer {
+	width: 100%;
+	max-width: 179px;
+	height: 100%;
+	@include media-max(1024px) {
+		max-width: 596px;
+	}
+	.submitButton {
+		height: 100%;
+		width: 100%;
+		background: $primary200;
+		border: 1px solid $primary200;
+		box-sizing: border-box;
+		border-radius: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: all 0.4s;
+		padding: 0;
+		cursor: pointer;
+		//
+		font-family: $primaryFont;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 20px;
+		text-align: center;
+		color: $white;
+		//
+		&:hover {
+			background: $primary400;
+			border-color: $primary400;
+			color: $white;
+		}
+
+		
+	}
+}

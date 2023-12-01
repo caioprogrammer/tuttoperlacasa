@@ -1,0 +1,63 @@
+.orderPlacedWrapper {
+  :global(.vtex-button) {
+    background-color: $primary100;
+    border: 1px solid $primary100;
+    transition: all 0.4s;
+    :global(.vtex-button__label) {
+      color: $buttonText;
+      transition: all 0.4s;
+      text-transform: none;
+      font-family: $primaryFont;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 17px;
+    }
+    &:hover {
+      background-color: $primary900;
+      border: 1px solid $primary900;
+      :global(.vtex-button__label) {
+        color: $buttonText;
+      }
+    }
+  }
+  
+  .noticesList {
+    background-color: $primary100;
+  }
+  .customerInfoListContainer,
+  .addressContainer,
+  .totalListItemLabel {
+    font-family: $primaryFont;
+    color: $textColor;
+  }
+  .productPrice,
+  .totalListItemValue {
+    font-family: $primaryFont;
+    color: $textColor;
+    font-weight: bold;
+  }
+.noticesList {
+  padding: 20px 0
+}
+.noticeListItem {
+  color: $white;
+  border: none;
+  padding: 10px 0 10px 0;
+}
+.cancelOrderButton, .updateOrderButton {
+  display: none !important;
+}
+
+.noticeListItem {
+  :global(.vtex-button) {
+    background-color: $buyButton;
+
+    &:hover {
+      background-color: $buyButtonHover;
+    }
+  }
+}
+}
+
+

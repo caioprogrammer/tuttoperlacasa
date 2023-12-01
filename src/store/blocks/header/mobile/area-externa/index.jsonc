@@ -1,0 +1,54 @@
+{
+  "menu-item#area-externa--mobile": {
+		"props": {
+			"id": "menu-item-area-externa--mobile",
+			"type": "custom",
+			"highlight": false,
+			"hasChild": true,
+			"itemProps": {
+				"type": "internal",
+				"href": "/area-externa",
+				"noFollow": false,
+				"tagTitle": "Area Externa",
+				"text": "Area Externa"
+			},
+			"blockClass": ["department"]
+		},
+		"blocks": ["tuttoperlacasa.menu:submenu.accordion#area-externa--mobile"]
+	},
+  "tuttoperlacasa.menu:submenu.accordion#area-externa--mobile": {
+		"title": "Category",
+		"children": [
+			"container#area-externa-category-list-wrapper--mobile"
+		],
+		"props": {
+			"blockClass": "category"
+		}
+	},
+	"container#area-externa-category-list-wrapper--mobile": {
+		"children": [
+			"tuttoperlacasa.menu:menu#submenu-area-externa--mobile"
+		],
+		"props": {
+			"blockClass": "category-list-wrapper--mobile"
+		}
+	},
+
+  // !Category
+  "tuttoperlacasa.menu:menu#submenu-area-externa--mobile": {
+		"children": [
+			"menu-item#area-externa-ver-todos--mobile",
+			"menu-item#submenu-lazer--mobile",
+			"menu-item#submenu-vazio1--mobile",
+			"menu-item#submenu-vazio2--mobile",
+			"menu-item#submenu-vazio3--mobile",
+			"menu-item#submenu-vazio4--mobile",
+			"menu-item#submenu-vazio5--mobile",
+			"menu-item#submenu-vazio6--mobile",
+			"menu-item#submenu-vazio7--mobile"
+		],
+		"props": {
+			"orientation": "vertical"
+		}
+	}
+}

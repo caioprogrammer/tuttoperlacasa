@@ -1,0 +1,38 @@
+.link{
+  &--not-found-back-home{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 249px;
+    height: 45px;
+    background: $buttonSecondary;
+    border: 1px solid $buttonBorder;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-transform: none;
+    &:hover{
+      background: $buttonBorder;
+      .label{
+        color: $buttonText;
+      }
+      :global(.vtex-store-components-3-x-backIcon){
+        color: $buttonText;
+      }
+    }
+    .label{
+      font-family: $primaryFont;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 19px;
+      color: $buttonSecondaryText;
+      padding-left: 15px;
+      transition: all 0.4s;
+    }
+    .childrenContainer {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

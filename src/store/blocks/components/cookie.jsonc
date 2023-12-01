@@ -1,0 +1,32 @@
+{
+	"cookie": {
+		"children": ["flex-layout.row#cookie-bar"]
+	},
+	"flex-layout.row#cookie-bar": {
+		"children": ["flex-layout.col#cookie-message", "cookie-autorize-button"],
+		"props": {
+			"preventHorizontalStretch": true,
+			"horizontalAlign": "center",
+			"blockClass": "cookie-bar"
+		}
+	},
+	"flex-layout.col#cookie-message": {
+		"children": ["cookie-autorize-message"],
+		"props": {
+			"verticalAlign": "middle",
+			"blockClass": "cookie-message",
+			"paddingRight": 5
+		}
+	},
+	"cookie-autorize-message": {
+		"props": {
+			"message": "ESTE SITE UTILIZA COOKIES PARA PERSONALIZAR A SUA EXPERIÊNCIA. AO CONTINUAR NAVEGANDO, VOCÊ CONCORDA COM A NOSSA {privacyPolice}.",
+      "privacyPoliceText": "POLÍTICA DE UTILIZAÇÃO DE COOKIES"
+    }
+	},
+	"cookie-autorize-button": {
+		"props": {
+			"value": "PROSSEGUIR"
+		}
+	}
+}

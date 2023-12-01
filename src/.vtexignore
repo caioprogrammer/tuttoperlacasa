@@ -1,0 +1,8 @@
+assets/icons
+sass
+*.sass
+*.scss
+styles/configs/font-faces.scss
+styles/configs/fantasticon.scss
+*.Identifier
+**/*.scss

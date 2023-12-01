@@ -1,0 +1,4 @@
+{
+  "editor.conditional-login.title": "Condicional Login",
+  "editor.conditional-login.description": "renderiza coisas diferentes de acordo como o estado de login"
+}

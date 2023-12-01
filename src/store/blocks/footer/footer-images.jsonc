@@ -1,0 +1,224 @@
+{
+	"icon#facebook": {
+		"props": {
+			"id": "bnd-facebook",
+			"size": 32,
+			"activeClassName": "vtex-store-components-3-x-socialIcon"
+		}
+	},
+	"icon#instagram": {
+		"props": {
+			"id": "bnd-instagram",
+			"size": 32,
+			"activeClassName": "vtex-store-components-3-x-socialIcon"
+		}
+	},
+	"icon#youtube": {
+		"props": {
+			"id": "bnd-youtube",
+			"size": 32,
+			"activeClassName": "vtex-store-components-3-x-socialIcon"
+		}
+	},
+	"link#facebook": {
+		// "children": ["icon#facebook"],
+		"props": {
+			"label": "Facebook",
+			"href": "https://www.facebook.com/tuttoperlacasabr",
+			"target": "_blank",
+			"blockClass": ["social-link", "facebook-link"]
+		}
+	},
+	"link#pinterest": {
+		// "children": ["icon#instagram"],
+		"props": {
+			"label": "pinterest",
+			"href": "https://br.pinterest.com/tuttoper/",
+			"target": "_blank",
+			"blockClass": ["social-link", "pinterest-link"]
+		}
+	},
+	"link#instagram": {
+		// "children": ["icon#instagram"],
+		"props": {
+			"label": "Instagram",
+			"href": "https://www.instagram.com/tuttoperlacasa/",
+			"target": "_blank",
+			"blockClass": ["social-link", "instagram-link"]
+		}
+	},
+	"link#tiktok": {
+		// "children": ["icon#instagram"],
+		"props": {
+			"label": "tiktok",
+			"href": "https://www.tiktok.com/@tuttoperlacasa",
+			"target": "_blank",
+			"blockClass": ["social-link", "tiktok-link"]
+		}
+	},
+	// "link#youtube": {
+	// 	"children": ["icon#youtube"],
+	// 	"props": {
+	// 		"href": "https://www.youtube.com/c/Ag%C3%AAnciaePlus",
+	// 		"target": "_blank",
+	// 		"blockClass": ["social-link", "youtube-link"]
+	// 	}
+	// },
+	"icon#visa": {
+		"props": {
+			"id": "bnd-visa",
+			"size": 43,
+			"activeClassName": "vtex-store-components-3-x-paymentIcon"
+		}
+	},
+	"icon#master": {
+		"props": {
+			"id": "bnd-mastercard",
+			"size": 43,
+			"activeClassName": "vtex-store-components-3-x-paymentIcon"
+		}
+	},
+	"icon#elo": {
+		"props": {
+			"id": "bnd-elo",
+			"size": 43,
+			"activeClassName": "vtex-store-components-3-x-paymentIcon"
+		}
+	},
+	"icon#paypal": {
+		"props": {
+			"id": "bnd-paypal",
+			"size": 43,
+			"activeClassName": "vtex-store-components-3-x-paymentIcon"
+		}
+	},
+	"icon#boleto": {
+		"props": {
+			"id": "bnd-boleto",
+			"size": 43,
+			"activeClassName": "vtex-store-components-3-x-paymentIcon"
+		}
+	},
+	"icon#dinners": {
+		"props": {
+			"id": "bnd-dinners",
+			"size": 43,
+			"activeClassName": "vtex-store-components-3-x-paymentIcon"
+		}
+	},
+	"icon#amex": {
+		"props": {
+			"id": "bnd-amex",
+			"size": 43,
+			"activeClassName": "vtex-store-components-3-x-paymentIcon"
+		}
+	},
+	"icon#bradesco": {
+		"props": {
+			"id": "bnd-bradesco",
+			"size": 30,
+			"activeClassName": "vtex-store-components-3-x-paymentIcon"
+		}
+	},
+	"icon#jcb": {
+		"props": {
+			"id": "bnd-jcb",
+			"size": 43,
+			"activeClassName": "vtex-store-components-3-x-paymentIcon"
+		}
+	},
+	"icon#maestro": {
+		"props": {
+			"id": "bnd-maestro",
+			"size": 43,
+			"activeClassName": "vtex-store-components-3-x-paymentIcon"
+		}
+	},
+	"icon#pix": {
+		"props": {
+			"id": "bnd-pix",
+			"size": 43,
+			"activeClassName": "vtex-store-components-3-x-paymentIcon"
+		}
+	},
+	"icon#hipercard": {
+		"props": {
+			"id": "bnd-hipercard",
+			"size": 43,
+			"activeClassName": "vtex-store-components-3-x-paymentIcon"
+		}
+	},
+	"icon#electron": {
+		"props": {
+			"id": "bnd-electron",
+			"size": 43,
+			"activeClassName": "vtex-store-components-3-x-paymentIcon"
+		}
+	},
+	"icon#letsencrypt": {
+		"props": {
+			"id": "bnd-letsencrypt",
+			"size": 53,
+			"activeClassName": "vtex-store-components-3-x-letsencryptIcon"
+		}
+	},
+	"icon#eplus": {
+		"props": {
+			"id": "bnd-agenciaeplus",
+			"size": 111,
+			"activeClassName": "vtex-store-components-3-x-eplusIcon"
+		}
+	},
+	"icon#vtex": {
+		"props": {
+			"id": "bnd-vtex",
+			"size": 55,
+			"activeClassName": "vtex-store-components-3-x-vtexIcon"
+		}
+	},
+	"logo#logo-footer": {
+		"props": {
+			"title": "Logo",
+			"href": "/",
+			"url": "assets/images/logo-tutto-branco.png",
+			"width": "194px",
+			"blockClass": ["logo-image", "logo-footer"]
+		}
+	},
+	"link#letsencrypt": {
+		"children": ["icon#letsencrypt"],
+		"props": {
+			"href": "https://letsencrypt.org/",
+			"target": "_blank",
+			"blockClass": ["footer-link", "letsencrypt-link"]
+		}
+	},
+	"link#eplus": {
+		"children": ["icon#eplus"],
+		"props": {
+			"href": "https://www.agenciaeplus.com.br/",
+			"target": "_blank",
+			"blockClass": ["footer-link", "eplus-link"]
+		}
+	},
+	"link#vtex": {
+		"children": ["icon#vtex"],
+		"props": {
+			"href": "https://vtex.com/br-pt/",
+			"target": "_blank",
+			"blockClass": ["footer-link", "vtex-link"]
+		}
+	},
+	"image#pci-vtex": {
+		"props": {
+			"src": "assets/images/icons/vtex-pci-200.png",
+			"alt": "PCI",
+			"link": {
+				"url": "https://secure.vtex.com/?an=var__vendor",
+				"openNewTab": true,
+				"title": "PCI"
+			},
+			"blockClass": "pci-image"
+		}
+	}
+}

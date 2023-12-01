@@ -1,0 +1,121 @@
+.sliderLayoutContainer {
+	&--banner-main {
+		margin-top: 34px;
+
+		// &::after {
+		// 	content: "";
+		// 	width: 100%;
+		// 	height: 100%;
+		// 	position: absolute;
+		// 	top: 0;
+		// 	left: 0;
+		// 	pointer-events: none;
+		// 	background: linear-gradient(180deg, #764b31 0%, rgba(37, 37, 37, 0) 44.77%);
+		// }
+
+		@include media-min(1025px) {
+
+			.imageElement {
+				object-fit: cover;
+			}
+		}
+
+		@include media-max(1024px) {
+			margin-top: 0;
+		}
+	}
+	&--diferentials {
+		@include media-max(1024px) {
+			height: 52px;
+		}
+	}
+}
+.slideChildrenContainer {
+	&--banner-main {
+		@include media-max(1024px) {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			overflow: hidden;
+		}
+		&::after {
+			content: '';
+			background: linear-gradient(
+				180deg,
+				rgba(35, 35, 35, 0.51) 0%,
+				rgba(58, 58, 58, 0) 44.77%
+			);
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 100%;
+			width: 100%;
+		}
+	}
+}
+
+.imageElementLink {
+	&--banner-main {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		z-index: 2;
+	}
+}
+.sliderArrows {
+	&--banner-main {
+		max-width: $containerWidth;
+		margin: 0 auto;
+		opacity: 0.5;
+		&::after {
+			border-radius: 5px;
+		}
+		&.sliderRightArrow {
+			right: 40px;
+			left: $containerWidth;
+			@include media-max($containerWidth) {
+				left: initial;
+			}
+			@include media-max(1024px) {
+				right: 15px;
+			}
+		}
+		&.sliderLeftArrow {
+			left: 40px;
+			right: $containerWidth;
+			@include media-max($containerWidth) {
+				right: initial;
+			}
+			@include media-max(1024px) {
+				left: 15px;
+			}
+		}
+		@include media-max(1024px) {
+			&::after {
+				width: 35px;
+				height: 35px;
+				font-size: 14px;
+			}
+		}
+	}
+	&--diferentials-mobile {
+		&::after {
+			width: 35px;
+			height: 35px;
+			font-size: 14px;
+		}
+	}
+}
+.paginationDotsContainer {
+	&--banner-main {
+		bottom: 33px;
+	}
+}
+.imageElement {
+	&--banner-main {
+		max-height: initial !important;
+	}
+}

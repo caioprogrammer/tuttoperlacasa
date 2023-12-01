@@ -1,0 +1,10 @@
+{
+  "container": {
+    "component": "Container",
+    "composition": "children"
+  },
+  "container.list-render": {
+    "component": "ContainerList",
+    "composition": "children"
+  }
+}

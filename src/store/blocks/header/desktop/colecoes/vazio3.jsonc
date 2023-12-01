@@ -1,0 +1,52 @@
+{
+	"menu-item#submenu-colecoes-vazio3": {
+	  "props": {
+			  "id": "vazio3",
+			  "type": "custom",
+			  "highlight": false,
+			  "hasChild": true,
+			  "hide": true,
+			  "itemProps": {
+				  "type": "internal",
+				  "href": "/vazio3/vazio3",
+				  "noFollow": false,
+				  "tagTitle": "vazio",
+				  "text": "vazio"
+			  }
+		  },
+		  "blocks": ["tuttoperlacasa.menu:submenu#submenu-colecoes--vazio3"]
+	},
+  
+	// !SUBMENU
+		"tuttoperlacasa.menu:submenu#submenu-colecoes--vazio3": {
+		  "title": "Subcategoria",
+		  "children": ["container#submenu-colecoes-vazio3-category-list-wrapper"],
+		  "props": {
+			  "blockClass": "subcategory"
+		  }
+	  },
+	  "container#submenu-colecoes-vazio3-category-list-wrapper": {
+		  "children": ["tuttoperlacasa.menu:menu#submenu-submenu-colecoes-vazio3"],
+		  "props": {
+			  "blockClass": "subcategory-list-wrapper"
+		  }
+	  },
+  
+	"tuttoperlacasa.menu:menu#submenu-submenu-colecoes-vazio3": {
+		  "props": {
+			  "orientation": "vertical",
+			  "items": [
+				  {
+					  "id": "menu-item-cesta-de-piquenique",
+					  "type": "custom",
+					  "highlight": false,
+					  "itemProps": {
+						  "href": "/vazio3/vazio3/cesta-de-piquenique",
+						  "text": ""
+					  }
+				  }
+			  ],
+			  "blockClass": ["subcategory"]
+		  }
+	  }
+  }

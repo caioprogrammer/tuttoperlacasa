@@ -1,0 +1,69 @@
+{
+  "menu-item#submenu-para-receber": {
+    "props": {
+			"id": "menu-item-para-receber",
+			"type": "custom",
+			"highlight": false,
+			"hasChild": true,
+			"itemProps": {
+				"type": "internal",
+				"href": "/bar/para-receber",
+				"noFollow": false,
+				"tagTitle": "Para Receber",
+				"text": "Para Receber"
+			}
+		},
+		"blocks": ["tuttoperlacasa.menu:submenu#submenu-para-receber"]
+  },
+
+  // !SUBMENU
+  	"tuttoperlacasa.menu:submenu#submenu-para-receber": {
+		"title": "Subcategoria",
+		"children": ["container#submenu-para-receber-category-list-wrapper"],
+		"props": {
+			"blockClass": "subcategory"
+		}
+	},
+	"container#submenu-para-receber-category-list-wrapper": {
+		"children": ["tuttoperlacasa.menu:menu#submenu-submenu-para-receber"],
+		"props": {
+			"blockClass": "subcategory-list-wrapper"
+		}
+	},
+
+  "tuttoperlacasa.menu:menu#submenu-submenu-para-receber": {
+		"props": {
+			"orientation": "vertical",
+			"items": [
+				{
+					"id": "menu-item-petisqueira-bowl-e-tabua",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/bar/para-receber/petisqueira-bowl-e-tabua",
+						"text": "Petisqueira, Bowl e Tábua"
+					}
+				},
+        {
+					"id": "menu-item-espatula-e-garfo-aperitivo",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/bar/para-receber/espatula-e-garfo-aperitivo",
+						"text": "Espátula e Garfo aperitivo"
+					}
+				},
+        {
+					"id": "menu-item-suqueira-e-cooler",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/bar/para-receber/suqueira-e-cooler",
+						"text": "Suqueira e Cooler"
+					}
+				}
+			],
+			"blockClass": ["subcategory"]
+		}
+	}
+}

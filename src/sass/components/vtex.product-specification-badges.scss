@@ -1,0 +1,38 @@
+.groupContainer {
+  margin: 0;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  &--seal-shelf{
+  }
+  &--product-page{
+    column-gap: 20px;
+    padding-top: 15px;
+    
+    .badgeContainer {
+      max-width: 215.09px;
+    }
+  }
+  .badgeContainer {
+    height: 31px;
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    &--selo-marrom {
+      background-color: $primary100;
+    }
+    &--selo-laranja{
+      background-color: $secondary400;
+    }
+    .badgeText {
+      margin: 0;
+      font-family: $primaryFont;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      color: $white;
+    }
+  }
+}

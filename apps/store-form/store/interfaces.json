@@ -1,0 +1,38 @@
+{
+  "form": {
+    "component": "Form",
+    "composition": "children",
+    "allowed": ["form-success"]
+  },
+  "form-field-group": {
+    "component": "FormFieldGroup"
+  },
+  "form-input": {
+    "component": "nop"
+  },
+  "form-input.checkbox": {
+    "component": "FormInputCheckbox"
+  },
+  "form-input.dropdown": {
+    "component": "FormInputDropdown"
+  },
+  "form-input.text": {
+    "component": "FormInputText"
+  },
+  "form-input.radiogroup": {
+    "component": "FormInputRadiogroup"
+  },
+  "form-input.textarea": {
+    "component": "FormInputTextArea"
+  },
+  "form-input.upload": {
+    "component": "FormInputUpload",
+    "render": "client"
+  },
+  "form-submit": {
+    "component": "FormSubmit"
+  },
+  "form-success": {
+    "composition": "children"
+  }
+}

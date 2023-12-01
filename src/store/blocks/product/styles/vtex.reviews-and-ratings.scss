@@ -1,0 +1,11 @@
+.summaryContainer {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+
+	.summaryButtonContainer {
+		display: none;
+	}
+}

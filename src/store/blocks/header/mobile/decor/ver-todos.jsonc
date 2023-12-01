@@ -1,0 +1,16 @@
+{
+  "menu-item#decor-ver-todos--mobile": {
+    "props": {
+			"id": "decor-ver-todos--mobile",
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/decor",
+				"noFollow": false,
+				"tagTitle": "Ver Todos",
+				"text": "Ver Todos"
+			}
+		}
+  }
+}

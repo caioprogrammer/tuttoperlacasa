@@ -1,0 +1,122 @@
+{
+	// Banner duplo
+	"image#double-banner01-desktop": {
+		"props": {
+			"src": "assets/images/db-banner-home01-desk.png",
+			"blockClass": [
+				"double-banner01-desktop",
+				"banner-home",
+				"banner-double",
+				"banner-hover"
+			]
+		}
+	},
+	"image#double-banner02-desktop": {
+		"props": {
+			"src": "assets/images/db-banner-home02-desk.png",
+			"blockClass": [
+				"double-banner02-desktop",
+				"banner-home",
+				"banner-double",
+				"banner-hover"
+			]
+		}
+	},
+	"image#double-banner01-mobile": {
+		"props": {
+			"src": "assets/images/db-banner-home01-mob.png",
+			"blockClass": ["double-banner01-mobile", "banner-home", "banner-double"]
+		}
+	},
+	"image#double-banner02-mobile": {
+		"props": {
+			"src": "assets/images/db-banner-home02-mob.png",
+			"blockClass": ["double-banner02-mobile", "banner-home", "banner-double"]
+		}
+	},
+
+	// Banner grid
+	"image#grid-banner01-desktop": {
+		"props": {
+			"src": "assets/images/gd-banner-home01-desk.png",
+			"blockClass": [
+				"grid-banner01-desktop",
+				"banner-home",
+				"banner-grid",
+				"banner-hover"
+			]
+		}
+	},
+	"image#grid-banner02-desktop": {
+		"props": {
+			"src": "assets/images/gd-banner-home02-desk.png",
+			"blockClass": [
+				"grid-banner02-desktop",
+				"banner-home",
+				"banner-grid",
+				"banner-hover"
+			]
+		}
+	},
+	"image#grid-banner03-desktop": {
+		"props": {
+			"src": "assets/images/gd-banner-home03-desk.png",
+			"blockClass": [
+				"grid-banner03-desktop",
+				"banner-home",
+				"banner-grid",
+				"banner-hover"
+			]
+		}
+	},
+	"image#grid-banner01-mobile": {
+		"props": {
+			"src": "assets/images/gd-banner-home01-mob.png",
+			"blockClass": [
+				"grid-banner01-mobile",
+				"banner-home",
+				"banner-grid",
+				"banner-grid-mobile"
+			]
+		}
+	},
+	"image#grid-banner02-mobile": {
+		"props": {
+			"src": "assets/images/gd-banner-home02-mob.png",
+			"blockClass": [
+				"grid-banner02-mobile",
+				"banner-home",
+				"banner-grid",
+				"banner-grid-mobile"
+			]
+		}
+	},
+	"image#grid-banner03-mobile": {
+		"props": {
+			"src": "assets/images/gd-banner-home03-mob.png",
+			"blockClass": [
+				"grid-banner03-mobile",
+				"banner-home",
+				"banner-grid",
+				"banner-grid-mobile"
+			]
+		}
+	},
+
+	//Banner shelf
+
+	"image#banner-shelf-desktop": {
+		"props": {
+			"src": "assets/images/sf-banner-home-desk.png",
+			"alt": "Conheça toda a coleção",
+			"blockClass": ["banner-shelf", "banner-home"]
+		}
+	},
+	"image#banner-shelf-mobile": {
+		"props": {
+			"src": "assets/images/sf-banner-home-mob.png",
+			"alt": "Conheça toda a coleção",
+			"blockClass": ["banner-shelf", "banner-home"]
+		}
+	}
+}

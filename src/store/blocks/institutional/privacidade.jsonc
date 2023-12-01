@@ -1,0 +1,72 @@
+{
+	"store.custom#privacidade": {
+		"blocks": [
+			"responsive-layout.desktop#privacidade",
+			"responsive-layout.mobile#privacidade"
+		]
+	},
+	"responsive-layout.desktop#privacidade": {
+		"children": [
+			"flex-layout.row#breadcrumb-privacidade",
+			"flex-layout.row#privacidade-content"
+		]
+	},
+	"flex-layout.row#privacidade-content": {
+		"children": [
+			"flex-layout.col#menu-institucional",
+			"flex-layout.col#privacidade"
+		],
+		"props": {
+			"blockClass": "privacidade",
+			"paddingBottom": 8
+		}
+	},
+
+	"flex-layout.col#privacidade": {
+		"children": ["rich-text#privacidade-content"]
+	},
+	"flex-layout.row#breadcrumb-privacidade": {
+		"children": [
+			"link#breadcrumb-home",
+			"link#breadcrumb-icon",
+			"link#breadcrumb-privacidade"
+		],
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true,
+			"blockClass": "breadcrumb",
+			"colGap": 3
+		}
+	},
+	"responsive-layout.mobile#privacidade": {
+		"children": ["flex-layout.row#privacidade-mobile"]
+	},
+	"flex-layout.row#privacidade-mobile": {
+		"children": ["flex-layout.col#privacidade-mobile"],
+		"props": {
+			"blockClass": "privacidade"
+		}
+	},
+	"flex-layout.col#privacidade-mobile": {
+		"children": [
+			"flex-layout.row#breadcrumb-privacidade",
+			"flex-layout.row#disc-institucional",
+			"rich-text#privacidade-content"
+		],
+		"props": {}
+	},
+
+	"link#breadcrumb-privacidade": {
+		"props": {
+			"label": "Política De Privacidade",
+			"blockClass": "active-breadcrumb"
+		}
+	},
+
+	"rich-text#privacidade-content": {
+		"props": {
+			"text": "# POLÍTICA DE PRIVACIDADE\n\nNós, da Tutto per la Casa, nos preocupamos com a segurança e a privacidade de nossos clientes. Por isso, temos o compromisso de não divulgar, vender ou alugar os dados pessoais a terceiros.\n\nOs dados do seu cartão de crédito são criptografados e usados somente no processamento da compra. Não solicitamos estes dados por nenhuma forma de contato.\n\nQueremos sempre garantir a sua segurança e privacidade.\n\nSe você tiver alguma dúvida, entre em contato conosco, teremos o prazer em te atender.\n\nSe preferir, pode nos chamar no WhatsApp.\nHorário de atendimento: 10h às 19h.\nWhatsApp:(21) 99676-4169\nEmail:atendimento@tuttoperlacasa.com.br\nEndereço: Estrada da Gávea 899, loja 112A São Conrado - Rio de janeiro – RJ",
+			"blockClass": "institucional-content"
+		}
+	}
+}

@@ -1,0 +1,25 @@
+{
+  "menu-item#listas": {
+		"props": {
+			"id": "menu-item-decor",
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/listas",
+				"noFollow": false,
+				"tagTitle": "Listas",
+				"text": "Listas"
+			},
+			"blockClass": ["department", "no-children"]
+		},
+		"blocks": ["tuttoperlacasa.menu:submenu#listas"]
+	},
+  "tuttoperlacasa.menu:submenu#listas": {
+		"title": "Category",
+		"props": {
+			"blockClass": "category"
+		}
+	}
+	
+}

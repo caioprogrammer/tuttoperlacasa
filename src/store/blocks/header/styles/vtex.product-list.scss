@@ -1,0 +1,131 @@
+.productVariationsItem {
+	display: none !important;
+}
+
+.productImageContainer {
+	width: 90px !important;
+	height: 90px;
+	overflow: hidden;
+	@include media-max(638px) {
+		width: 70px !important;
+		height: 70px;
+	}
+}
+.productImage {
+	width: auto;
+	height: 100%;
+}
+.productName {
+	font-family: $primaryFont;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 20px;
+	text-transform: none;
+	color: $primary400;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	font-weight: 400;
+	@include media-max(638px) {
+		font-size: 14px;
+		line-height: 17px;
+	}
+}
+.quantitySelectorContainer {
+	width: 94px;
+	margin-right: 20px;
+	@include media-max(638px) {
+		margin: 5px 0;
+	}
+}
+.quantitySelectorWrapper {
+	border: 1px solid $textColor;
+	box-sizing: border-box;
+	border-radius: 5px;
+	width: 100%;
+	height: 35px;
+	padding: 0 10px;
+}
+.quantitySelectorButton {
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	color: $primary400;
+	&:hover {
+		background-color: transparent;
+	}
+}
+.inputContainer {
+	padding: 0;
+	border: none;
+	width: 100%;
+	flex: 1;
+	font-family: $primaryFont;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 20px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: $textColor;
+}
+.price {
+	&--minicart-price {
+		font-family: $primaryFont;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 20px;
+		display: flex;
+		align-items: center;
+		color: $textColor;
+		@include media-max(638px) {
+			font-size: 14px;
+			line-height: 17px;
+		}
+		&::before {
+			margin-right: 4px;
+			content: 'Por:';
+		}
+	}
+}
+.productPriceCurrency {
+	&--minicart-price {
+		.currencyContainer {
+			font-family: $primaryFont;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 15px;
+			color: $textColor;
+
+			&::before {
+				content: 'De: ';
+			}
+		}
+	}
+}
+.removeButton {
+	padding: 0;
+	margin-bottom: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	.deleteIcon {
+		width: 24px;
+		height: 27px;
+		color: $primary400;
+		margin-bottom: 10px;
+	}
+
+	&::after {
+		content: 'Excluir';
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+		color: $primary400;
+	}
+}

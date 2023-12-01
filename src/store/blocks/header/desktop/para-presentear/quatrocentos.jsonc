@@ -1,0 +1,51 @@
+{
+  "menu-item#submenu-quatrocentos": {
+    "props": {
+			"id": "menu-item-quatrocentos",
+			"type": "custom",
+			"highlight": false,
+			"hasChild": true,
+			"itemProps": {
+				"type": "internal",
+				"href": "/para-presentear/ate-r-400",
+				"noFollow": false,
+				"tagTitle": "Até R$400",
+				"text": "Até R$400"
+			}
+		},
+		"blocks": ["tuttoperlacasa.menu:submenu#submenu-quatrocentos"]
+  },
+
+	 // !SUBMENU
+  "tuttoperlacasa.menu:submenu#submenu-quatrocentos": {
+		"title": "Subcategoria",
+		"children": ["container#submenu-category-list-wrapper-quatrocentos"],
+		"props": {
+			"blockClass": "subcategory"
+		}
+	},
+	"container#submenu-category-list-wrapper-quatrocentos": {
+		"children": ["tuttoperlacasa.menu:menu#submenu-submenu-quatrocentos"],
+		"props": {
+			"blockClass": "subcategory-list-wrapper"
+		}
+	},
+
+  "tuttoperlacasa.menu:menu#submenu-submenu-quatrocentos": {
+		"props": {
+			"orientation": "vertical",
+			"items": [
+				{
+					"id": "menu-item-cafe-da-manha",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/",
+						"text": ""
+					}
+				}
+			],
+			"blockClass": ["subcategory"]
+		}
+	}
+}

@@ -1,0 +1,159 @@
+{
+  "menu-item#submenu-mesa-posta": {
+    "props": {
+			"id": "menu-item-mesa-posta",
+			"type": "custom",
+			"highlight": false,
+			"hasChild": true,
+			"itemProps": {
+				"type": "internal",
+				"href": "/mesa/mesa-posta",
+				"noFollow": false,
+				"tagTitle": "Mesa Posta",
+				"text": "Mesa Posta"
+			}
+		},
+		"blocks": ["tuttoperlacasa.menu:submenu#submenu-mesa-posta"]
+  },
+
+  // !SUBMENU
+  	"tuttoperlacasa.menu:submenu#submenu-mesa-posta": {
+		"title": "Subcategoria",
+		"children": ["container#submenu-mesa-posta-category-list-wrapper"],
+		"props": {
+			"blockClass": "subcategory"
+		}
+	},
+	"container#submenu-mesa-posta-category-list-wrapper": {
+		"children": ["tuttoperlacasa.menu:menu#submenu-submenu-mesa-posta"],
+		"props": {
+			"blockClass": "subcategory-list-wrapper"
+		}
+	},
+
+  "tuttoperlacasa.menu:menu#submenu-submenu-mesa-posta": {
+		"props": {
+			"orientation": "vertical",
+			"items": [
+				{
+					"id": "menu-item-argola-de-guardanapo-e-porta-guardanapo",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/mesa/mesa-posta/argola-de-guardanapo-e-porta-guardanapo",
+						"text": "Argola de guardanapo e Porta guardanapo"
+					}
+				},
+        {
+					"id": "menu-item-aparelho-de-jantar-e-prato",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/mesa/mesa-posta/aparelho-de-jantar-e-prato",
+						"text": "Aparelho de jantar e Prato"
+					}
+				},
+        {
+					"id": "menu-item-descanso",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/mesa/mesa-posta/descanso",
+						"text": "Descanso"
+					}
+				},
+				{
+					"id": "menu-item-copo-e-taca",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/mesa/mesa-posta/copo-e-taca",
+						"text": "Copo e taça"
+					}
+				},
+				{
+					"id": "menu-item-faqueiro-e-talher",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/mesa/mesa-posta/faqueiro-e-talher",
+						"text": "Faqueiro e Talher"
+					}
+				},
+				{
+					"id": "menu-item-jogo-americano-e-guardanapo",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/mesa/mesa-posta/jogo-americano-e-guardanapo",
+						"text": "Jogo americano e Guardanapo"
+					}
+				},
+				{
+					"id": "queijeira-e-manteigueira",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/mesa/mesa-posta/queijeira-e-manteigueira",
+						"text": "Queijeira e Manteigueira"
+					}
+				},
+				{
+					"id": "menu-item-galheteiro-saleiro-pimenteiro-e-molheira",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/mesa/mesa-posta/galheteiro-saleiro-pimenteiro-e-molheira",
+						"text": "Galheteiro, saleiro, pimenteiro e molheira"
+					}
+				},
+				{
+					"id": "menu-item-bombonier",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/mesa/mesa-posta/bombonier",
+						"text": "Bombonier"
+					}
+				},
+				{
+					"id": "menu-item-jarra-e-moringa",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/mesa/mesa-posta/jarra-e-moringa",
+						"text": "Jarra e Moringa"
+					}
+				},
+				{
+					"id": "menu-item-acucareiro-e-porta-adocante",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/mesa/mesa-posta/acucareiro-e-porta-adocante",
+						"text": "Açucareiro e Porta Adoçante"
+					}
+				},
+				{
+					"id": "menu-item-porta-sorvete-e-taca-de-sobremesa",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/mesa/mesa-posta/porta-sorvete-e-taca-de-sobremesa",
+						"text": "Porta Sorvete e Taça de Sobremesa"
+					}
+				},
+				{
+					"id": "menu-item-prato-de-bolo-e-cupula",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/mesa/mesa-posta/prato-de-bolo-e-cupula",
+						"text": "Prato de bolo e Cúpula"
+					}
+				}
+			],
+			"blockClass": ["subcategory"]
+		}
+	}
+}

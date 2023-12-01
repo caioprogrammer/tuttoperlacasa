@@ -1,0 +1,50 @@
+{
+  "minicart": {
+    "allowed": [
+      "sandbox",
+      "product-summary"
+    ],
+    "component": "index"
+  },
+  "minicart.v2": {
+    "component": "Minicart",
+    "composition": "children"
+  },
+  "minicart-base-content": {
+    "component": "BaseContent",
+    "allowed": [
+      "minicart-product-list",
+      "minicart-summary",
+      "minicart-empty-state"
+    ],
+    "composition": "children",
+    "render": "lazy"
+  },
+  "minicart-product-list": {
+    "component": "ProductList",
+    "allowed": [
+      "product-list"
+    ]
+  },
+  "minicart-checkout-button": {
+    "component": "CheckoutButton"
+  },
+  "minicart-summary": {
+    "component": "Summary",
+    "allowed": [
+      "checkout-summary"
+    ],
+    "render": "lazy"
+  },
+  "minicart-empty-state": {
+    "component": "EmptyState",
+    "composition": "children",
+    "render": "lazy"
+  },
+  "minicart-close-button": {
+    "component": "CloseButton"
+  },
+  "minicart-quantity-badge": {
+    "component": "QuantityBadge"
+  }
+}

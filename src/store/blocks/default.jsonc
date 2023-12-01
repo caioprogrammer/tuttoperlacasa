@@ -1,0 +1,72 @@
+{
+	"store.orderplaced": {
+		"blocks": ["order-placed"]
+	},
+	// "order-placed": {
+	//   "props": {
+	//     "blockClass": "order-page"
+	//   }
+	// },
+
+	"store.account": {
+		"blocks": ["my-account"],
+		"parent": {
+			"challenge": "challenge.profile"
+		}
+	},
+
+	"my-account": {
+		"blocks": [
+			"my-account-pages",
+			"my-account-defaultPage",
+			"my-account-menu",
+			"profile-display-container",
+			"profile-input-container"
+		],
+		"props": {
+			"profile": {
+				"showGenders": true
+			}
+		}
+	},
+
+	"store.login": {
+		"blocks": ["login-content#default"]
+	},
+
+	"login-content#default": {
+		"props": {
+			"isInitialScreenOptionOnly": false,
+			"defaultOption": 1,
+			"showPasswordVerificationIntoTooltip": true
+		}
+	},
+	"flex-layout.col#column-spacer": {
+		"props": {
+			"width": "grow"
+		}
+	},
+	"flex-layout.row#line-spacer": {
+		"children": ["flex-layout.col#column-spacer"]
+	},
+	"back-to-top-button": {
+		"props": {
+			"display": "caret-icon"
+		}
+	},
+	"link#whatsapp-float": {
+		"children": ["icon#whatsapp"],
+		"props": {
+			"blockClass": "whatsapp-float",
+			"target": "_blank",
+			"href": "#"
+		}
+	},
+	"icon#whatsapp": {
+		"props": {
+			"id": "bnd-whatsapp",
+			"size": 51,
+			"activeClassName": "vtex-store-components-3-x-whatsappIcon"
+		}
+	}
+}

@@ -1,0 +1,72 @@
+{
+	"store.custom#quem-somos": {
+		"blocks": [
+			"responsive-layout.desktop#quem-somos",
+			"responsive-layout.mobile#quem-somos"
+		]
+	},
+	"responsive-layout.desktop#quem-somos": {
+		"children": [
+			"flex-layout.row#breadcrumb-quem-somos",
+			"flex-layout.row#quem-somos-content"
+		]
+	},
+	"flex-layout.row#quem-somos-content": {
+		"children": [
+			"flex-layout.col#menu-institucional",
+			"flex-layout.col#quem-somos"
+		],
+		"props": {
+			"blockClass": "quem-somos",
+			"paddingBottom": 8
+		}
+	},
+
+	"flex-layout.col#quem-somos": {
+		"children": ["rich-text#quem-somos-content"]
+	},
+	"flex-layout.row#breadcrumb-quem-somos": {
+		"children": [
+			"link#breadcrumb-home",
+			"link#breadcrumb-icon",
+			"link#breadcrumb-quem-somos"
+		],
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true,
+			"blockClass": "breadcrumb",
+			"colGap": 3
+		}
+	},
+	"responsive-layout.mobile#quem-somos": {
+		"children": ["flex-layout.row#quem-somos-mobile"]
+	},
+	"flex-layout.row#quem-somos-mobile": {
+		"children": ["flex-layout.col#quem-somos-mobile"],
+		"props": {
+			"blockClass": "quem-somos"
+		}
+	},
+	"flex-layout.col#quem-somos-mobile": {
+		"children": [
+			"flex-layout.row#breadcrumb-quem-somos",
+			"flex-layout.row#disc-institucional",
+			"rich-text#quem-somos-content"
+		],
+		"props": {}
+	},
+
+	"link#breadcrumb-quem-somos": {
+		"props": {
+			"label": "Sobre Nós",
+			"blockClass": "active-breadcrumb"
+		}
+	},
+
+	"rich-text#quem-somos-content": {
+		"props": {
+			"text": "# SOBRE NÓS\n\nOlá, prazer! Ficamos felizes em poder dividir a nossa história com vocês.\n\nHá quase 40 anos, seguimos a missão de vestir a sua casa com alma e deixá-la mais prática e elegante. A Tutto per la Casa trabalha com grandes marcas de mesa e decoração como Christofle, Vista Alegre, St James, Limoges, Riva, Wolff, Strauss e Schott Zwiesel.\n\nSempre com uma curadoria exigente, a Tutto une modernidade e requinte para deixar sua casa preparada, do café da manhã até um jantar especial.\n\nOferecemos um atendimento personalizado para Lista de Casamento com profissionais qualificados. Além de um serviço de decoração, na sua casa, para dar uma repaginada e organizar um ambiente da sua escolha.\n\nNós da Tutto per la Casa agradecemos sua escolha.\n\nKarina Vasilcovsky, Bruno Vasilcovsky e Marcella Birman",
+			"blockClass": "institucional-content"
+		}
+	}
+}

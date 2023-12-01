@@ -1,0 +1,71 @@
+.link {
+	&--footer-link {
+		height: 21px;
+		display: flex;
+		align-items: center;
+	}
+	&--letsencrypt-link {
+		height: 56px;
+	}
+	&--whatsapp-float {
+		position: fixed;
+		right: 10px;
+		margin: 0 auto;
+		max-width: 51px;
+		bottom: 34.5px;
+		z-index: 999;
+		max-height: 51px;
+		@include media-max(1260px) {
+			left: initial;
+			right: 30px;
+		}
+		@include media-max(1024px) {
+			right: 14.81px;
+			bottom: 9.05px;
+		}
+	}
+	&--social-link {
+		height: 30px;
+		display: flex;
+		color: $white;
+		margin-right: 22px;
+	}
+}
+
+.label {
+	&--social-link {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 16px;
+		font-size: 0px;
+		display: flex;
+		align-items: center;
+
+		// margin-right: 18px;
+	}
+
+	&--facebook-link {
+		@include ficon-before($icon-facebook-social, 30px, white);
+	}
+
+	&--instagram-link {
+		@include ficon-before($icon-instagram-social, 30px, white);
+	}
+	&--pinterest-link {
+		@include ficon-before($icon-pinterest-social, 30px, white);
+	}
+	&--tiktok-link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 30px;
+		height: 30px;
+		background-color: white;
+		border-radius: 50%;
+		@include ficon-before($icon-tiktok-social, 18px, #ab8570) {
+		}
+	}
+	// &--linkedin-link {
+	// 	margin-right: 0;
+	// }
+}

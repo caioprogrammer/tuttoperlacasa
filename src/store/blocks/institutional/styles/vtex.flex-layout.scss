@@ -1,0 +1,78 @@
+.flexRow--breadcrumb {
+	padding: 12px 0;
+	width: 100%;
+}
+.flexRow--contact,
+.flexRow--international {
+	:global(.vtex-input-prefix__group),
+	:global(.vtex-textarea__input) {
+		border: 1px solid $primary400 !important;
+
+		&:focus {
+			border-width: 2px;
+			border-color: $primary400 !important;
+		}
+
+		&::placeholder {
+			color: $primary400;
+		}
+	}
+	
+}
+
+.flexRowContent--breadcrumb {
+	width: 100%;
+}
+
+.flexRowContent--breadcrumb :global(.vtex-icon-seta) {
+	stroke-width: 0;
+}
+
+.flexCol--container-links-institucional {
+	margin-top: 40px;
+	max-width: 350px;
+}
+
+.flexCol--inst-disc-row {
+	align-items: center;
+}
+
+.flexCol--contact-container,
+.flexCol--international-container {
+	// color: $gray;
+	margin: 0 0 20px 0;
+	font-size: 0.875rem;
+}
+
+.flexColChild--contact-container :global(.vtex-input-prefix__group),
+.flexColChild--international-container :global(.vtex-input-prefix__group) {
+	margin-bottom: 15px;
+}
+
+.flexColChild--contact-container :global(.vtex-textarea__label),
+.flexColChild--international-container :global(.vtex-textarea__label) {
+	font-size: 0.875rem;
+}
+@media screen and (max-width: 1024px) {
+	.flexRow--contact-container {
+		padding: 0 15px 15px 15px;
+	}
+}
+
+.flexRowContent--contact :global(.vtex-input__label),
+.flexRowContent--international :global(.vtex-input__label) {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 15px;
+	margin-top: 28px;
+	color: $primary400;
+}
+
+.flexRowContent--contact :global(.vtex-textarea__label),
+.flexRowContent--international :global(.vtex-textarea__label) {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 15px;
+	margin-top: 28px;
+	color: $primary400;
+}

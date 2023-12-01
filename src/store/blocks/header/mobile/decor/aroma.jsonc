@@ -1,0 +1,69 @@
+{
+  "menu-item#submenu-aroma--mobile": {
+    "props": {
+			"id": "menu-item-aroma--mobile",
+			"type": "custom",
+			"highlight": false,
+			"hasChild": true,
+			"itemProps": {
+				"type": "internal",
+				"href": "/decor/aroma",
+				"noFollow": false,
+				"tagTitle": "Aroma",
+				"text": "Aroma"
+			}
+		},
+		"blocks": ["tuttoperlacasa.menu:submenu.accordion#submenu-aroma--mobile"]
+  },
+
+  // !SUBMENU
+  	"tuttoperlacasa.menu:submenu.accordion#submenu-aroma--mobile": {
+		"title": "Subcategoria",
+		"children": ["container#submenu-aroma-category-list-wrapper--mobile"],
+		"props": {
+			"blockClass": "subcategory"
+		}
+	},
+	"container#submenu-aroma-category-list-wrapper--mobile": {
+		"children": ["tuttoperlacasa.menu:menu#submenu-submenu-aroma--mobile"],
+		"props": {
+			"blockClass": "subcategory-list-wrapper--mobile"
+		}
+	},
+
+  "tuttoperlacasa.menu:menu#submenu-submenu-aroma--mobile": {
+		"props": {
+			"orientation": "vertical",
+			"items": [
+				{
+					"id": "ver-todos-aroma",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/decor/aroma",
+						"text": "Ver Todos"
+					}
+				},
+				{
+					"id": "menu-item-vela",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/decor/aroma/vela",
+						"text": "Vela"
+					}
+				},
+        {
+					"id": "menu-item-difusor-home-spray-e-sabonete-liquido",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/decor/aroma/difusor-home-spray-e-sabonete-liquido",
+						"text": "Difusor, Home spray e Sabonete liquido"
+					}
+				}
+			],
+			"blockClass": ["subcategory"]
+		}
+	}
+}

@@ -1,0 +1,20 @@
+{
+  "vendor": "tuttoperlacasa",
+  "name": "list-grid",
+  "version": "0.0.3",
+  "title": "list-grid",
+  "description": "list grid component",
+  "defaultLocale": "pt-BR",
+  "builders": {
+    "messages": "1.x",
+    "store": "0.x",
+    "react": "3.x"
+  },
+  "dependencies": {
+    "vtex.styleguide": "9.x",
+    "vtex.css-handles": "1.x",
+    "vtex.list-context": "0.x",
+    "vtex.responsive-values": "0.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

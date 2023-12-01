@@ -1,0 +1,142 @@
+.buyTogetherContainer {
+	margin: 21px 0 22px;
+
+	.buyTogetherTitleContainer {
+		justify-content: center;
+		@include media-max(638px) {
+			justify-content: center;
+		}
+		.buyTogetherTitle {
+			margin: 0 0 38px;
+			font-family: $primaryFont;
+			font-style: normal;
+			font-size: 22px;
+			line-height: 27px;
+			color: $textColor;
+			text-align: center;
+			text-transform: uppercase;
+			@include media-max(638px) {
+				margin: 0 0 10px;
+			}
+		}
+	}
+	.currentProduct {
+		padding: 0;
+	}
+	:global(.vtex-store-icons-0-x-plusIcon) {
+		width: 27px;
+		height: 27px;
+		color: $primary400;
+		@include media-max(638px) {
+			margin: 20px 0;
+		}
+	}
+	.productList {
+		padding: 0;
+		@include media-max(638px) {
+			max-width: 363px;
+		}
+		.buyTogetherProductList {
+			padding: 0 50px;
+			max-width: 393px;
+		}
+	}
+	.arrow {
+		width: 35px;
+		height: 35px;
+		background-color: $arrowColor;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: all 0.4s;
+		&.arrowDisabled {
+			pointer-events: none;
+			opacity: 0.5;
+		}
+		.caretIcon {
+			color: $arrowText;
+			transition: all 0.4s;
+		}
+		&:hover {
+			background-color: $arrowSecondary;
+			.caretIcon {
+				color: $arrowSecondaryText;
+			}
+		}
+		&.arrowNext {
+			right: 0;
+		}
+		&.arrowPrev {
+			left: 0;
+		}
+	}
+	.buyTogetherProductItem {
+		width: 100% !important;
+		max-width: 293px !important;
+		padding: 0;
+	}
+	.buyTogetherInfo {
+		font-family: $primaryFont;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 25px;
+		line-height: 25px;
+		color: $textColor;
+		text-align: center;
+		padding-bottom: 2px;
+	}
+	.totalValue {
+		margin: 25px 0 28px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		font-family: $primaryFont;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 19px;
+		color: $textColor;
+		text-transform: $storeTextTransform;
+		font-size: 0px;
+
+		&::before{
+			content: "Por:";
+			font-size: 18px;
+		}
+		.currencyContainer {
+			font-weight: bold;
+			font-size: 18px;
+      margin-left: 5px;
+		}
+	}
+	.buyButton {
+		:global(.vtex-button) {
+			width: 212px;
+			background: $primary100;
+			border: 1px solid $primary100;
+			box-sizing: border-box;
+			border-radius: 5px;
+			height: 45px;
+			transition: all 0.4s;
+			&:hover {
+				background: $secondary500 !important;
+				:global(.vtex-button__label) {
+					color: $buttonText;
+				}
+			} 
+
+			:global(.vtex-button__label) {
+				font-family: $primaryFont;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 16px;
+				line-height: 20px;
+				color: $white;
+				transition: all 0.4s;
+        text-transform: none;
+			}
+		}
+	}
+}

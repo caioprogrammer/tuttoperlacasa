@@ -1,0 +1,207 @@
+{
+  "flex-layout.col#menu-institucional": {
+    "children": [
+      "link#inst-quem-somos",
+      "link#inst-entrega",
+      "link#inst-privacidade",
+      "link#inst-pagamento",
+      "link#inst-nossas-lojas",
+      "link#inst-duvidas-frequente",
+      "link#inst-contact"
+    ],
+    "props": {
+      "blockClass": "container-links-institucional",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "width": "30%"
+    }
+  },
+  "link#breadcrumb-home": {
+    "props": {
+      "label": "Home",
+      "href": "/",
+      "blockClass": "breadcrumb-home"
+    }
+  },
+  "link#breadcrumb-icon": {
+    "props": {
+      "label": "/",
+      "href": "/",
+      "blockClass": "breadcrumb-icon"
+    }
+  },
+  "rich-text#inst-title": {
+    "props": {
+      "text": "Institucional",
+      "blockClass": "inst-title"
+    }
+  },
+  "flex-layout.row#disc-institucional": {
+    "children": [
+      "flex-layout.col#disc-institucional"
+    ]
+  },
+  "flex-layout.col#disc-institucional": {
+    "children": [
+      "disclosure-layout#institucional"
+    ],
+    "props": {
+      "blockClass": "inst-disc-row"
+    }
+  },
+  "disclosure-layout#institucional": {
+    "children": [
+      "disclosure-trigger#institucional",
+      "disclosure-content#institucional"
+    ]
+  },
+  "disclosure-trigger#institucional": {
+    "children": [
+      "rich-text#inst-trigger"
+    ],
+    "props": {
+      "blockClass": "disclosure-button"
+    }
+  },
+  "disclosure-content#institucional": {
+    "children": [
+      "link#inst-quem-somos",
+      "link#inst-entrega",
+      "link#inst-privacidade",
+      "link#inst-pagamento",
+      "link#inst-nossas-lojas",
+      "link#inst-duvidas-frequente",
+      "link#inst-contact",
+      "link#inst-contact"
+    ],
+    "props": {
+      "blockClass": "institucional-disclosure"
+    }
+  },
+  "rich-text#inst-trigger": {
+    "props": {
+      "text": "Institucional",
+      "blockClass": "inst-disc-button"
+    }
+  },
+  "link#inst-contact": {
+    "props": {
+      "label": "Contato",
+      "href": "/institucional/contact",
+      "blockClass": [
+        "institucional-links",
+        "contact"
+      ]
+    }
+  },
+  "link#inst-nossas-lojas": {
+    "props": {
+      "label": "Nossas Lojas",
+      "href": "/institucional/nossas-lojas",
+      "blockClass": [
+        "institucional-links",
+        "nossas-lojas"
+      ]
+    }
+  },
+  "link#inst-quem-somos": {
+    "props": {
+      "label": "Sobre Nós",
+      "href": "/institucional/quem-somos",
+      "blockClass": [
+        "institucional-links",
+        "quem-somos"
+      ]
+    }
+  },
+  "link#inst-sobre-nos": {
+    "props": {
+      "label": "Sobre Nós",
+      "href": "/institucional/sobre-nos",
+      "blockClass": [
+        "institucional-links",
+        "sobre-nos"
+      ]
+    }
+  },
+  "link#inst-entrega": {
+    "props": {
+      "label": "Política De Entrega",
+      "href": "/institucional/entrega",
+      "blockClass": [
+        "institucional-links",
+        "entrega"
+      ]
+    }
+  },
+  "link#inst-privacidade": {
+    "props": {
+      "label": "Política De Privacidade",
+      "href": "/institucional/privacidade",
+      "blockClass": [
+        "institucional-links",
+        "privacidade"
+      ]
+    }
+  },
+  "link#inst-garantias": {
+    "props": {
+      "label": "Garantias",
+      "href": "/institucional/garantias",
+      "blockClass": [
+        "institucional-links",
+        "garantias"
+      ]
+    }
+  },
+  "link#inst-pagamento": {
+    "props": {
+      "label": "Políticas De Pagamento",
+      "href": "/institucional/pagamento",
+      "blockClass": [
+        "institucional-links",
+        "pagamento"
+      ]
+    }
+  },
+  "link#inst-seguranca": {
+    "props": {
+      "label": "Segurança",
+      "href": "/institucional/seguranca",
+      "blockClass": [
+        "institucional-links",
+        "seguranca"
+      ]
+    }
+  },
+  "link#inst-trocas": {
+    "props": {
+      "label": "Políticas De Troca",
+      "href": "/institucional/trocas",
+      "blockClass": [
+        "institucional-links",
+        "trocas"
+      ]
+    }
+  },
+  "link#inst-duvidas-frequente": {
+    "props": {
+      "label": "Dúvidas Frequente",
+      "href": "/institucional/duvidas-frequente",
+      "blockClass": [
+        "institucional-links",
+        "duvidas-frequente"
+      ]
+    }
+  },
+  "link#inst-international": {
+    "props": {
+      "label": "Worldwide Shipping",
+      "href": "/institucional/international",
+      "blockClass": [
+        "institucional-links",
+        "international"
+      ]
+    }
+  }
+}

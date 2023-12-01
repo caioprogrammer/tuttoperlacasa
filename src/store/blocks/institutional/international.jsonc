@@ -1,0 +1,135 @@
+// 20211118172906
+// https://bitbucket.org/osfeladaeplus/fastlayout-default/raw/dbf63124f84b2aebf7ec3e152a832c5ce9660e3f/src/store/blocks/institucional/international.jsonc
+
+{
+	"store.custom#international": {
+		"blocks": [
+			"responsive-layout.desktop#international",
+			"responsive-layout.mobile#international"
+		]
+	},
+	"responsive-layout.desktop#international": {
+		"children": [
+			"flex-layout.row#breadcrumb-international",
+			"flex-layout.row#international-content"
+		]
+	},
+	"flex-layout.row#international-content": {
+		"children": [
+			"flex-layout.col#menu-institucional",
+			"flex-layout.col#international"
+		],
+		"props": {
+			"blockClass": "international",
+			"paddingBottom": 8
+		}
+	},
+	"flex-layout.col#international": {
+		"children": ["form#attendence-international"]
+	},
+	"flex-layout.row#breadcrumb-international": {
+		"children": [
+			"link#breadcrumb-home",
+			"link#breadcrumb-icon",
+			"link#breadcrumb-international"
+		],
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true,
+			"blockClass": "breadcrumb",
+			"colGap": 3
+		}
+	},
+	"responsive-layout.mobile#international": {
+		"children": ["flex-layout.row#international-mobile"]
+	},
+	"flex-layout.row#international-mobile": {
+		"children": ["flex-layout.col#international-mobile"],
+		"props": {
+			"blockClass": "international"
+		}
+	},
+	"flex-layout.col#international-mobile": {
+		"children": [
+			"flex-layout.row#breadcrumb-international",
+			"flex-layout.row#disc-institucional",
+			"form#attendence-international"
+		],
+		"props": {}
+	},
+	"link#breadcrumb-international": {
+		"props": {
+			"label": "International",
+			"blockClass": "active-breadcrumb"
+		}
+	},
+	"form#attendence-international": {
+		"props": {
+			"entity": "WS",
+			"schema": "contact"
+		},
+		"children": [
+			"rich-text#internationalTitle",
+			"form-input.text#name-international",
+			"form-input.text#email-international",
+			"form-input.textarea#message-international",
+			"form-submit#international"
+		],
+		"blocks": ["form-success#international"]
+	},
+	"rich-text#internationalTitle": {
+		"props": {
+			"text": "# WORLDWIDE SHIPPING \n CONTACT US TO ESTIMATE YOUR FAVORITE SHIPPING CHOICE! (DHL, UPS, FEDEX…) \n WE WILL REACH YOU WHEREVER YOU ARE! \n FILL THE FORM BELOW OR CONTACT US TROUGH WHATSAPP: + 55 21 97182-6707 \n\n\n",
+			"blockClass": ["contact-titulo", "international-titulo"]
+		}
+	},
+	"form-success#international": {
+		"children": [
+			"rich-text#successSubmit-international",
+			"rich-text#successButtonReload-international"
+		]
+	},
+	"rich-text#successSubmit-international": {
+		"props": {
+			"text": "Form sent successfully",
+			"textAlignment": "CENTER",
+			"textPosition": "CENTER"
+		}
+	},
+	"rich-text#successButtonReload-international": {
+		"props": {
+			"text": "[Send new form]()",
+			"textAlignment": "CENTER",
+			"textPosition": "CENTER",
+			"blockClass": "botao-reenviar"
+		}
+	},
+	"form-input.text#name-international": {
+		"props": {
+			"pointer": "#/properties/name",
+			"label": "Name",
+			"blockClass": ["contact-names", "international-names"]
+		}
+	},
+	"form-input.text#email-international": {
+		"props": {
+			"pointer": "#/properties/email",
+			"label": "E-mail",
+			"blockClass": ["contact-names", "international-names"]
+		}
+	},
+	"form-input.textarea#message-international": {
+		"props": {
+			"pointer": "#/properties/message",
+			"label": "Message",
+			"placeholder": "Enter your message here.",
+			"blockClass": ["contact-names", "international-names"]
+		}
+	},
+	"form-submit#international": {
+		"props": {
+			"label": "Send",
+			"blockClass": ["contact-button", "international-button"]
+		}
+	}
+}

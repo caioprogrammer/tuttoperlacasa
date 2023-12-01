@@ -1,0 +1,57 @@
+.quantitySelectorContainer {
+	margin: 0;
+}
+
+.quantitySelectorStepper {
+	width: 100%;
+	//max-width: 102px;
+	border: 1px solid $textColor;
+	border-radius: 5px;
+	height: 45px;
+	overflow: hidden;
+	padding: 0 5px;
+	width: 100%;
+
+	:global(.vtex-numeric-stepper-container) {
+		height: 43px;
+		:global(.vtex-numeric-stepper__input) {
+			padding: 0;
+			border: none;
+			width: 100%;
+			flex: 1;
+			font-family: $primaryFont;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 20px;
+			display: flex;
+			align-items: center;
+			text-align: center;
+			color: $textColor;
+			height: 100%;
+		}
+		:global(.vtex-numeric-stepper__plus-button),
+		:global(.vtex-numeric-stepper__minus-button) {
+			padding: 0;
+			width: initial !important;
+			border: none;
+			background-color: transparent;
+			color: $textColor;
+			width: 32.4px !important;
+			height: 100%;
+			&:hover {
+				background-color: transparent;
+			}
+		}
+		:global(.vtex-numeric-stepper__plus-button__text) {
+			font-size: 0;
+			@include ficon-after($icon-nav-plus, 16.2px, $neutral500);
+		}
+		:global(.vtex-numeric-stepper__minus-button__text) {
+			font-size: 0;
+			@include ficon-after($icon-nav-minus, 18px, $neutral500) {
+				padding-top: 3px;
+			}
+		}
+	}
+}

@@ -1,0 +1,87 @@
+{
+  "menu-item#submenu-para-servir--mobile": {
+    "props": {
+			"id": "menu-item-para-servir--mobile",
+			"type": "custom",
+			"highlight": false,
+			"hasChild": true,
+			"itemProps": {
+				"type": "internal",
+				"href": "/mesa/para-servir",
+				"noFollow": false,
+				"tagTitle": "Para Servir",
+				"text": "Para Servir"
+			}
+		},
+		"blocks": ["tuttoperlacasa.menu:submenu.accordion#submenu-para-servir--mobile"]
+  },
+
+  // !SUBMENU
+  	"tuttoperlacasa.menu:submenu.accordion#submenu-para-servir--mobile": {
+		"title": "Subcategoria",
+		"children": ["container#submenu-para-servir-category-list-wrapper--mobile"],
+		"props": {
+			"blockClass": "subcategory"
+		}
+	},
+	"container#submenu-para-servir-category-list-wrapper--mobile": {
+		"children": ["tuttoperlacasa.menu:menu#submenu-submenu-para-servir--mobile"],
+		"props": {
+			"blockClass": "subcategory-list-wrapper--mobile"
+		}
+	},
+
+  "tuttoperlacasa.menu:menu#submenu-submenu-para-servir--mobile": {
+		"props": {
+			"orientation": "vertical",
+			"items": [
+				{
+					"id": "ver-todos-para-servir",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/mesa/para-servir",
+						"text": "Ver Todos"
+					}
+				},
+				{
+					"id": "menu-item-refratario-rechaud-e-bandeja",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/mesa/para-servir/refratario-rechaud-e-bandeja",
+						"text": "Refratário, Rechaud e Bandeja"
+					}
+				},
+        {
+					"id": "menu-item-xicara-de-cha-cafe-e-garrafa-termica",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/mesa/para-servir/xicara-de-cha-cafe-e-garrafa-termica",
+						"text": "Xicara de chá/café e Garrafa térmica"
+					}
+				},
+        {
+					"id": "menu-item-saladeira-sopeira-e-travessa",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/mesa/para-servir/saladeira-sopeira-e-travessa",
+						"text": "Saladeira, Sopeira e Travessa"
+					}
+				},
+				{
+					"id": "menu-item-fondue-e-panela",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/mesa/para-servir/fondue-e-panela",
+						"text": "Fondue e Panela"
+					}
+				}
+			],
+			"blockClass": ["subcategory"]
+		}
+	}
+}

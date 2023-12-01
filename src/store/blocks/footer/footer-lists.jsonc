@@ -1,0 +1,210 @@
+{
+	"flex-layout.row#footer-content-lists": {
+		"children": [
+			"flex-layout.col#footer-for-you",
+			"flex-layout.col#footer-institutional",
+			"flex-layout.col#footer-informations",
+			"flex-layout.col#footer-payments",
+			"flex-layout.col#footer-security"
+		],
+		"props": {
+			"blockClass": "footer-content-lists",
+			"preventHorizontalStretch": true,
+			"preventVerticalStretch": true
+		}
+	},
+	"flex-layout.col#footer-for-you": {
+		"children": [
+			"rich-text#footer-for-you",
+			"rich-text#footer-for-you-content"
+		],
+		"props": {
+			"blockClass": "footer-for-you",
+			"preventVerticalStretch": true,
+			"width": "grow"
+		}
+	},
+	"flex-layout.col#footer-institutional": {
+		"children": [
+			"rich-text#footer-institutional",
+			"rich-text#footer-institutional-content"
+		],
+		"props": {
+			"blockClass": "footer-institutional",
+			"preventVerticalStretch": true,
+			"width": "grow"
+		}
+	},
+	"flex-layout.col#footer-informations": {
+		"children": [
+			"rich-text#footer-informations",
+			"rich-text#footer-informations-content"
+		],
+		"props": {
+			"blockClass": "footer-informations",
+			"preventVerticalStretch": true,
+			"width": "grow"
+		}
+	},
+	"flex-layout.col#footer-payments": {
+		"children": [
+			"rich-text#footer-payments",
+			"flex-layout.row#footer-payments-content"
+		],
+		"props": {
+			"blockClass": "footer-payments",
+			"preventVerticalStretch": true,
+			"width": "grow"
+		}
+	},
+	"flex-layout.col#footer-security": {
+		"children": [
+			"rich-text#footer-security",
+			"flex-layout.row#footer-security-content"
+		],
+		"props": {
+			"blockClass": "footer-security",
+			"preventVerticalStretch": true,
+			"width": "grow"
+		}
+	},
+	"rich-text#footer-for-you": {
+		"props": {
+			"text": "#### Para você",
+			"blockClass": ["footer-for-you", "footer-title", "footer-right-title"]
+		}
+	},
+	"rich-text#footer-for-you-content": {
+		"props": {
+			"text": "- [Minha conta](/account#/profile)\n- [Pedidos](/account#/orders)\n- [Minha sacola](/checkout#/cart)",
+			"blockClass": ["footer-for-you-content", "footer-list"]
+		}
+	},
+	"rich-text#footer-institutional": {
+		"props": {
+			"text": "#### Institucional",
+			"blockClass": [
+				"footer-institutional",
+				"footer-title",
+				"footer-right-title"
+			]
+		}
+	},
+	"rich-text#footer-institutional-content": {
+		"props": {
+			"text": "- [Quem somos](/institucional/quem-somos)\n- [Trabalhe conosco](/institucional/contact)\n- [Fale conosco](/institucional/contact)\n-[Nossas lojas](/institucional/nossas-lojas)",
+			"blockClass": ["footer-institutional-content", "footer-list"]
+		}
+	},
+	"rich-text#footer-informations": {
+		"props": {
+			"text": "#### Informações",
+			"blockClass": [
+				"footer-informations",
+				"footer-title",
+				"footer-right-title"
+			]
+		}
+	},
+	"rich-text#footer-informations-content": {
+		"props": {
+			"text": "- [Política de entrega](/institucional/entrega)\n- [Política de privacidade](/institucional/privacidade)\n- [Garantias](/institucional/pagamento)\n- [Formas de pagamento](/institucional/pagamento)\n- [Segurança](/institucional/seguranca)",
+			"blockClass": ["footer-informations-content", "footer-list"]
+		}
+	},
+	"rich-text#footer-payments": {
+		"props": {
+			"text": "#### Pagamentos",
+			"blockClass": ["footer-payments", "footer-title", "footer-right-title"]
+		}
+	},
+	"flex-layout.row#footer-payments-content": {
+		"children": [
+			"icon#visa",
+			"icon#master",
+			"icon#amex",
+			"icon#dinners",
+			"icon#hipercard",
+			"icon#electron",
+			"icon#jcb",
+			"icon#maestro",
+			"icon#elo",
+			"icon#boleto",
+			// ,"icon#bradesco"
+			"icon#pix"
+		],
+		"props": {
+			"blockClass": [
+				"footer-payments-content",
+				"footer-list",
+				"footer-payments-list"
+			],
+			"colSizing": "auto",
+			"preventHorizontalStretch": true,
+			"preventVerticalStretch": true,
+			"preserveLayoutOnMobile": true
+		}
+	},
+	"rich-text#footer-security": {
+		"props": {
+			"text": "#### Segurança",
+			"blockClass": ["footer-security", "footer-title", "footer-right-title"]
+		}
+	},
+	"rich-text#footer-social": {
+		"props": {
+			"text": "#### Siga nossas redes",
+			"blockClass": ["footer-social", "footer-title"]
+		}
+	},
+	"flex-layout.row#footer-social-content": {
+		"children": [
+			"link#instagram",
+			"link#facebook",
+			"link#pinterest",
+			"link#tiktok"
+		],
+		"props": {
+			"blockClass": "footer-social-content",
+			"preventHorizontalStretch": true,
+			"preventVerticalStretch": true,
+			"preserveLayoutOnMobile": true,
+			"colJustify": "between"
+		}
+	},
+	"rich-text#footer-schedules": {
+		"props": {
+			"text": "#### Horário de Atendimento",
+			"blockClass": ["footer-schedules", "footer-title"]
+		}
+	},
+	"rich-text#footer-schedules-content": {
+		"props": {
+			"text": "De Segunda à Sexta das 8h às 18h\nDe Sábado e domingo das 8h às 15h\n\nDúvidas? Entre em contato:\n(11) 2373-5471\ncontato@agenciaeplus.com.br",
+			"textAlignment": "CENTER",
+			"blockClass": "footer-schedules-content"
+		}
+	},
+	"flex-layout.row#footer-security-content": {
+		"children": ["link#letsencrypt", "image#pci-vtex"],
+		"props": {
+			"blockClass": [
+				"footer-security-content",
+				"footer-list",
+				"footer-security-list"
+			],
+			"colSizing": "auto",
+			"preserveLayoutOnMobile": true,
+			"colGap": 4
+		}
+	},
+	"flex-layout.row#footer-images-bottom": {
+		"children": ["link#vtex", "link#eplus"],
+		"props": {
+			"blockClass": "footer-images-bottom",
+			"preventHorizontalStretch": true,
+			"preventVerticalStretch": true,
+			"preserveLayoutOnMobile": true
+		}
+	}
+}

@@ -1,0 +1,176 @@
+@function calculadora-rem($font-size) {
+	$tamanhoRem: $font-size/16;
+	@return $tamanhoRem + rem;
+}
+
+@mixin bg-red() {
+	background-color: red;
+}
+
+@mixin icomoon-before($icon, $size, $color: '') {
+	&::before {
+		display: inline-flex;
+		content: $icon;
+		font-size: $size;
+		font-family: 'Icomoon';
+		font-style: normal;
+		@if $color != '' {
+			color: $color;
+		}
+		@content;
+	}
+}
+
+@mixin icomoon-after($icon, $size, $color: '') {
+	&::after {
+		display: inline-flex;
+		content: $icon;
+		font-size: $size;
+		font-family: 'Icomoon';
+		font-style: normal;
+		@if $color != '' {
+			color: $color;
+		}
+		@content;
+	}
+}
+
+@mixin reset-before() {
+	&::before {
+		content: '' !important;
+		font-size: 0 !important;
+		margin: 0 !important;
+	}
+}
+
+@mixin reset-after() {
+	&::after {
+		content: '' !important;
+		font-size: 0 !important;
+		margin: 0 !important;
+	}
+}
+
+@mixin reset-pseudo() {
+	@include reset-before();
+	@include reset-after();
+}
+
+@mixin bright() {
+	transition: filter 0.2s;
+	&:hover {
+		filter: brightness(1.2);
+	}
+}
+
+@mixin media-max($max-width) {
+	@media screen and (max-width: $max-width) {
+		@content;
+	}
+}
+
+@mixin media-min($min-width) {
+	@media screen and (min-width: $min-width) {
+		@content;
+	}
+}
+
+@mixin media-between($min-width, $max-width) {
+	@media screen and (min-width: $min-width) and (max-width: $max-width) {
+		@content;
+	}
+}
+
+@mixin container-center($max-width: $containerWidth, $padding-mobile: 15px) {
+	max-width: $max-width;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	@media screen and (max-width: #{$max-width + 2 * $padding-mobile}) {
+		padding-left: $padding-mobile;
+		padding-right: $padding-mobile;
+	}
+}
+
+@mixin limit-lines($lines) {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: $lines;
+	overflow: hidden;
+}
+
+@mixin scrollbar(
+	$width: 10px,
+	$border-radius: 5px,
+	$thumb-color: #777777,
+	$bg-color: #e5e5e5
+) {
+	scrollbar-width: $width;
+	scrollbar-color: $thumb-color $bg-color;
+
+	&::-webkit-scrollbar {
+		width: $width;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: $thumb-color;
+		border-radius: $border-radius;
+		&:hover {
+			background: lighten($color: $thumb-color, $amount: 10%);
+		}
+	}
+
+	&::-webkit-scrollbar-track {
+		background: $bg-color;
+		border-radius: $border-radius;
+	}
+	::-webkit-scrollbar {
+		width: $width;
+	}
+	::-webkit-scrollbar-thumb {
+		background: $thumb-color;
+		border-radius: $border-radius;
+		&:hover {
+			background: lighten($color: $thumb-color, $amount: 10%);
+		}
+	}
+
+	::-webkit-scrollbar-track {
+		background: $bg-color;
+		border-radius: $border-radius;
+	}
+}
+
+@function opacify-color($color, $percent) {
+	@return rgba($color, $percent);
+}
+
+@mixin icomoon-before($icon, $size, $color: inherit) {
+	&::before {
+		display: inline-flex;
+		content: $icon;
+		font-size: $size;
+		font-family: $fantasticon-font;
+		font-style: normal;
+		line-height: 1;
+		@if $color != '' {
+			color: $color;
+		}
+		@content;
+	}
+}
+
+@mixin icomoon-after($icon, $size, $color: inherit) {
+	&::after {
+		display: inline-flex;
+		content: $icon;
+		font-size: $size;
+		font-family: $fantasticon-font;
+		font-style: normal;
+		line-height: 1;
+		@if $color != '' {
+			color: $color;
+		}
+		@content;
+	}
+}

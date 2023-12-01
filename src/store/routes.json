@@ -1,0 +1,24 @@
+{
+  "store.custom#quem-somos": {
+    "path": "/institucional/quem-somos"
+  },
+  "store.custom#entrega": {
+    "path": "/institucional/entrega"
+  },
+  "store.custom#privacidade": {
+    "path": "/institucional/privacidade"
+  },
+  "store.custom#pagamento": {
+    "path": "/institucional/pagamento"
+  },
+  "store.custom#nossas-lojas": {
+    "path": "/institucional/nossas-lojas"
+  },
+  "store.custom#duvidas-frequente": {
+    "path": "/institucional/duvidas-frequente"
+  },
+  "store.custom#contact": {
+    "path": "/institucional/contact",
+    "title": "Contato"
+  }
+}

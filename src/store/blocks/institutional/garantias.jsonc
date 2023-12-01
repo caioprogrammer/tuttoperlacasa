@@ -1,0 +1,72 @@
+{
+	"store.custom#garantias": {
+		"blocks": [
+			"responsive-layout.desktop#garantias",
+			"responsive-layout.mobile#garantias"
+		]
+	},
+	"responsive-layout.desktop#garantias": {
+		"children": [
+			"flex-layout.row#breadcrumb-garantias",
+			"flex-layout.row#garantias-content"
+		]
+	},
+	"flex-layout.row#garantias-content": {
+		"children": [
+			"flex-layout.col#menu-institucional",
+			"flex-layout.col#garantias"
+		],
+		"props": {
+			"blockClass": "garantias",
+			"paddingBottom": 8
+		}
+	},
+
+	"flex-layout.col#garantias": {
+		"children": ["rich-text#garantias-content"]
+	},
+	"flex-layout.row#breadcrumb-garantias": {
+		"children": [
+			"link#breadcrumb-home",
+			"link#breadcrumb-icon",
+			"link#breadcrumb-garantias"
+		],
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true,
+			"blockClass": "breadcrumb",
+			"colGap": 3
+		}
+	},
+	"responsive-layout.mobile#garantias": {
+		"children": ["flex-layout.row#garantias-mobile"]
+	},
+	"flex-layout.row#garantias-mobile": {
+		"children": ["flex-layout.col#garantias-mobile"],
+		"props": {
+			"blockClass": "garantias"
+		}
+	},
+	"flex-layout.col#garantias-mobile": {
+		"children": [
+			"flex-layout.row#breadcrumb-garantias",
+			"flex-layout.row#disc-institucional",
+			"rich-text#garantias-content"
+		],
+		"props": {}
+	},
+
+	"link#breadcrumb-garantias": {
+		"props": {
+			"label": "Garantias",
+			"blockClass": "active-breadcrumb"
+		}
+	},
+
+	"rich-text#garantias-content": {
+		"props": {
+			"text": "# Garantias\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\n",
+			"blockClass": "institucional-content"
+		}
+	}
+}

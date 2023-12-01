@@ -1,0 +1,15 @@
+{
+  "wishlist-selection": {
+    "component": "WishListSearch",
+    "composition": "children"
+  },
+  "wishlist-selection.content": {
+    "component": "WishListContent"
+  },
+  "wishlist-selection.product-select": {
+    "component": "WishListProduct"
+  },
+  "wishlist-selection.list-quantity": {
+    "component": "WishListQuantity"
+  }
+}

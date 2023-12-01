@@ -1,0 +1,35 @@
+.wrapper {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 55;
+  background: #00000071;
+  padding: 15px;
+}
+
+.message {}
+.privacyLink {
+  color: currentColor;
+}
+.account {}
+.autorizeButton {}
+
+.closeButton{
+  position: absolute;
+  right: 20px;
+  color: #FFF;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0000001f;
+  z-index: 999;
+
+}

@@ -1,0 +1,70 @@
+.wrapper{
+  display: none !important;
+  padding: 12px 26px 13px;
+  max-width: 802px;
+  margin: 0 auto;
+  background: opacify-color($primary100, 0.9);
+  border-radius: 5px;
+  z-index: 9999;
+  bottom: 20px;
+  :global(.vtex-store-components-3-x-container){
+    @include media-max(638px){
+      padding: 0;
+    }
+  }
+}
+
+.message{
+  font-family: $primaryFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: $textColor--inverse;
+  display: block;
+  @include media-max(638px){
+    text-align: center;
+  }
+  .privacyLink{
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+
+.autorizeButton {
+  padding: 0;
+  margin-left: 4px;
+  @include media-max(638px){
+    margin-left: auto;
+    margin-top: 20px;
+    margin-right: auto;
+  }
+  :global(.vtex-button){
+    background: $primary300;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 190px;
+    height: 100%;
+    transition: all 0.4s;
+    @include media-max(638px){
+      max-height: 45px;
+    }
+    :global(.vtex-button__label){
+      font-family: $primaryFont;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: $primary400;
+      transition: all 0.4s;
+    }
+    &:hover{
+      background: $primary900;
+      :global(.vtex-button__label){
+        color: $primary300;
+      }
+    }
+  }
+}

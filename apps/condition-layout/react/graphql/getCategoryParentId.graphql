@@ -1,0 +1,11 @@
+query getCategoryParentId {
+  categories {
+    id
+    children {
+      id
+      children {
+        id
+      }
+    }
+  }
+}

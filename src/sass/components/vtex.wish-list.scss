@@ -1,0 +1,41 @@
+:global(.vtex-flex-layout-0-x-flexRow--wishlist-content){
+	:global(.vtex-button__label) {
+		padding: 0 !important;
+		text-decoration: none !important;
+	}
+}
+.wishlistIconContainer {
+	:global(.vtex-button) {
+		background-color: transparent;
+		border: none;
+		padding: 0;
+		min-height: initial;
+		:global(.vtex-button__label) {
+			padding: 0 !important;
+			text-decoration: none !important;
+			background-color: transparent !important;
+		}
+	}
+	.wishlistIcon {
+		background: transparent !important;
+		&.outline {
+			@include ficon-after($icon-inf-heart, 27.88px, $danger700);
+
+			&:hover {
+				@include ficon-after($icon-inf-heart-filled, 27.88px, $danger700);
+			}
+		}
+		&.fill {
+			@include ficon-after($icon-inf-heart-filled, 26.88px, $danger700);
+		}
+	}
+	.iconSize {
+		width: 27.88px;
+		height: 24.35px;
+		&--product-page {
+			width: 21.08px;
+			height: 18.41px;
+		}
+	}
+} 
+ 

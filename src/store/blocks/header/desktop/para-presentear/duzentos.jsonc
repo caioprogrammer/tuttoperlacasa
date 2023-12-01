@@ -1,0 +1,51 @@
+{
+  "menu-item#submenu-duzentos": {
+    "props": {
+			"id": "menu-item-duzentos",
+			"type": "custom",
+			"highlight": false,
+			"hasChild": true,
+			"itemProps": {
+				"type": "internal",
+				"href": "/para-presentear/ate-r-200",
+				"noFollow": false,
+				"tagTitle": "Até R$200",
+				"text": "Até R$200"
+			}
+		},
+		"blocks": ["tuttoperlacasa.menu:submenu#submenu-duzentos"]
+  },
+
+  // !SUBMENU
+  "tuttoperlacasa.menu:submenu#submenu-duzentos": {
+		"title": "Subcategoria",
+		"children": ["container#submenu-category-list-wrapper"],
+		"props": {
+			"blockClass": "subcategory"
+		}
+	},
+	"container#submenu-category-list-wrapper": {
+		"children": ["tuttoperlacasa.menu:menu#submenu-submenu-duzentos"],
+		"props": {
+			"blockClass": "subcategory-list-wrapper"
+		}
+	},
+
+  "tuttoperlacasa.menu:menu#submenu-submenu-duzentos": {
+		"props": {
+			"orientation": "vertical",
+			"items": [
+				{
+					"id": "menu-item-cafe-da-manha",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/",
+						"text": ""
+					}
+				}
+			],
+			"blockClass": ["subcategory"]
+		}
+	}
+}

@@ -1,0 +1,61 @@
+{
+  "menu-item#submenu-seiscentos--mobile": {
+    "props": {
+			"id": "menu-item-seiscentos",
+			"type": "custom",
+			"highlight": false,
+			"hasChild": true,
+			"itemProps": {
+				"type": "internal",
+				"href": "/para-presentear/ate-r-600",
+				"noFollow": false,
+				"tagTitle": "Até R$600",
+				"text": "Até R$600"
+			}
+		},
+		"blocks": ["tuttoperlacasa.menu:submenu.accordion#seiscentos--mobile"]
+  },
+	// !SUBMENU
+  "tuttoperlacasa.menu:submenu.accordion#seiscentos--mobile": {
+		"title": "Subcategoria",
+		"children": ["container#submenu-seiscentos-category-list-wrapper--mobile"],
+		"props": {
+			"blockClass": "subcategory"
+		}
+	},
+	"container#submenu-seiscentos-category-list-wrapper--mobile": {
+		"children": ["tuttoperlacasa.menu:menu#submenu-submenu-seiscentos--mobile"],
+		"props": {
+			"blockClass": "subcategory-list-wrapper--mobile"
+		}
+	},
+
+  "tuttoperlacasa.menu:menu#submenu-submenu-seiscentos--mobile": {
+		"props": {
+			"orientation": "vertical",
+			"items": [
+				{
+					"id": "ver-todos-seiscentos",
+					"type": "custom",
+					"highlight": false,
+					"hide": true,
+					"itemProps": {
+						"href": "/para-presentear/seiscentos",
+						"text": "Ver Todos"
+					}
+				},
+				{
+					"id": "menu-item-seiscentos",
+					"type": "custom",
+					"highlight": false,
+					"hide": true,
+					"itemProps": {
+						"href": "/para-presentear/seiscentos/seiscentos",
+						"text": "seiscentos"
+					}
+				}
+			],
+			"blockClass": ["subcategory"]
+		}
+	}
+}

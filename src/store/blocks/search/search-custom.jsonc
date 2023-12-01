@@ -1,0 +1,14 @@
+{
+    "store.custom#colecoes":{
+        "children": [
+            "search-result-layout.customQuery"
+        ]
+    },
+    "search-result-layout.customQuery": {
+        "blocks": [
+            "search-result-layout.desktop",
+			"search-result-layout.mobile",
+			"search-not-found-layout"
+        ]
+    }
+}

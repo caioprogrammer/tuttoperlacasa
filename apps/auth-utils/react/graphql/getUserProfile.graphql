@@ -1,0 +1,7 @@
+query getUserProfile {
+ profile {
+   id,
+   firstName,
+   email
+ }
+}

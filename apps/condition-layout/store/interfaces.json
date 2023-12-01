@@ -1,0 +1,20 @@
+{
+  "condition-layout": {
+    "component": "Noop"
+  },
+  "condition-layout.product": {
+    "component": "ConditionLayoutProduct",
+    "composition": "children",
+    "content": {
+      "$ref": "app:tuttoperlacasa.condition-layout#/definitions/ConditionLayoutProduct"
+    }
+  },
+  "condition-layout.binding": {
+    "component": "ConditionLayoutBinding",
+    "composition": "children"
+  },
+  "condition-layout.category": {
+    "component": "ConditionLayoutCategory",
+    "composition": "children"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "category-menu": {
+    "component": "index",
+    "composition": "children"
+  },
+  "category-menu.mobile": {
+    "allowed": [
+      "menu-header",
+      "menu-footer"
+    ],
+    "component": "MobileMode",
+    "composition": "children"
+  },
+  "category-menu-custom-item": {
+    "component": "CustomItem",
+    "composition": "children"
+  },
+  "category-menu-custom-content": {
+    "composition": "children",
+    "component": "VoidBlock"
+  },
+  "menu-header": {
+    "component": "VoidBlock",
+    "composition": "children"
+  },
+  "menu-footer": {
+    "component": "VoidBlock",
+    "composition": "children"
+  }
+}

@@ -1,0 +1,68 @@
+.container {
+	display: flex;
+	align-items: center;
+
+	@include scrollbar(6px, 100px, $primary200, $primary400);
+	&::-webkit-scrollbar {
+		height: 6px;
+	}
+
+	&--search-result {
+		padding: 10px 0 8px;
+	}
+	&--search-not-found {
+		padding: 28px 0 22px;
+	}
+	&--product-page {
+		padding: 0;
+		margin-bottom: 18px;
+		overflow-x: auto;
+		white-space: nowrap;
+		@include media-max(1024px) {
+			margin: 15px 0;
+		}
+	}
+	.arrow {
+		display: flex;
+		align-items: center;
+		&:last-child {
+			.link {
+				font-weight: 700;
+			}
+		}
+	}
+	.link {
+		font-family: $primaryFont;
+		font-style: normal;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 14px;
+		text-align: center;
+		color: $primary400;
+		text-transform: $storeTextTransform;
+		&--search-not-found--1 {
+			line-height: unset;
+			font-size: 0;
+			&::after {
+				content: 'Busca não encontrada';
+				font-size: 12px;
+			}
+		}
+	}
+	.term--product-page {
+		font-family: $primaryFont;
+		font-style: normal;
+		font-size: 12px;
+		font-weight: 700;
+		line-height: 14px;
+		text-align: center;
+		color: $primary400;
+		text-transform: $storeTextTransform;
+	}
+	.caretIcon {
+		height: 9px;
+		width: 9px;
+		color: $textColor;
+		padding-right: 0.25rem;
+	}
+}

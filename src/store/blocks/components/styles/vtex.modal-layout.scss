@@ -1,0 +1,48 @@
+.paper {
+	&--quick-view {
+		max-width: 1111px;
+		height: auto;
+		padding: 24px 63.85px;
+		position: relative;
+		@include media-max(1024px) {
+			padding: 15px;
+			max-height: 100%;
+		}
+		.headerContainer {
+			border: none;
+			width: 19.2px;
+			height: 19.2px;
+			position: absolute;
+			top: 17.9px;
+			right: 17.58px;
+			@include media-max(638px) {
+				top: 8px;
+				right: 8px;
+			}
+			.closeButton {
+				padding: 0;
+				.closeIcon {
+					width: 19.2px;
+					height: 19.2px;
+					color: $textColor;
+				}
+			}
+		}
+		:global(.vtex-flex-layout-0-x-flexRowContent--product-infos) {
+			padding-bottom: 61px;
+			margin-bottom: 24px;
+			border-bottom: 1px solid $borderColor;
+			@include media-max(638px) {
+				padding-bottom: 20px;
+				margin-bottom: 20px;
+			}
+		}
+		:global(.vtex-flex-layout-0-x-flexRowContent--buy-container) {
+			margin: 15px 0 10px;
+		}
+	}
+}
+
+.backdropContainer--quick-view {
+	opacity: 0.1 !important;
+}

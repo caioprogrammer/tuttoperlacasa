@@ -1,0 +1,17 @@
+{
+  "menu-item#vazio1-ver-todos--mobile": {
+    "props": {
+			"id": "area-externa-ver-todos--mobile",
+			"type": "custom",
+			"highlight": false,
+			"hide": true,
+			"itemProps": {
+				"type": "internal",
+				"href": "/vazio1",
+				"noFollow": false,
+				"tagTitle": "Ver Todos",
+				"text": "Ver Todos"
+			}
+		}
+  }
+}

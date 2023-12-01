@@ -1,0 +1,25 @@
+{
+  "menu-item#novidades--mobile": {
+		"props": {
+			"id": "menu-item-decor--mobile",
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/novidades",
+				"noFollow": false,
+				"tagTitle": "Novidades",
+				"text": "Novidades"
+			},
+			"blockClass": ["department", "no-children"]
+		},
+		"blocks": ["tuttoperlacasa.menu:submenu#novidades--mobile"]
+	},
+  "tuttoperlacasa.menu:submenu#novidades--mobile": {
+		"title": "Category",
+		"props": {
+			"blockClass": "category"
+		}
+	}
+	
+}

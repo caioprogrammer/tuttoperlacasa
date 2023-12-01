@@ -1,0 +1,41 @@
+# Política de entrega
+
+Sentimos muito que você esteja tendo problemas com o seu pedido!
+
+Aqui você pode conferir como podemos ajudar a solucioná-los.
+Antes de qualquer procedimento, a troca ou devolução de qualquer produto deverá ser informada a nossa equipe de atendimento através do e-mail atendimento@tuttoperlacasa.com.br, onde explicaremos procedimento.
+ARREPENDIMENTO
+
+- Caso o cliente queira exercer seu direito de arrependimento, ele poderá cancelar a compra ainda que sem motivação, no prazo de 7 (sete) dias corridos a ser contado a partir da entrega do produto. Para solicitações de trocas, o prazo é de 30 (trinta) dias corridos a contar do recebimento do produto.
+
+CONDIÇÕES PARA A TROCA E DEVOLUÇÕES.
+
+O cliente poderá trocar ou devolver os produtos adquiridos observando as seguintes condições:
+
+1. Os produtos deverão apresentar as etiquetas e lacres originais de fabricação;
+
+2. O produto deve ser enviado na embalagem original, não danificada e de forma segura para o transporte. Caso a forma como o produto tenha sido embalado o coloque em risco, a troca pode não ser aceita. Neste caso, o produto será reenviado ao cliente;
+
+3. A Nota Fiscal Eletrônica (DANFE) ou cópia dela deve acompanhar o produto.
+
+-Todos os produtos recebidos serão submetidos a uma avaliação, com o objetivo de averiguar se a devolução ou troca preenche os requisitos estipulados nesta Política.
+
+No caso de trocas, o cliente receberá, através do Serviço de Atendimento ao Cliente, todas as informações necessárias. A troca por outro produto será feita no valor pago pelo cliente, excluindo o frete.
+
+No caso de devolução de produtos, os valores serão reembolsados de acordo com a forma de pagamento utilizada na ocasião da compra.
+
+ATENÇÃO: CASO O PRODUTO COMPRADO NÃO ESTEJA DISPONÍVEL EM ESTOQUE OU NÃO ESTEJA EM PERFEITAS CONDIÇÕES DE ENVIO, A TUTTO PER LA CASA PODERÁ CANCELAR O SEU PEDIDO.
+
+REEMBOLSOS
+
+O valor dos produtos adquiridos, quando admitido reembolso, será sempre devolvido de acordo com a forma de pagamento utilizada na ocasião da compra. Caso o reembolso seja em cartão de crédito, o valor poderá retornar em até 2 faturas, de acordo com a regra da operadora do cartão.
+
+Caso o reembolso seja através de depósito bancário, boleto bancário e/ou cartão de débito, o valor será creditado em conta corrente, em até 15 dias úteis.
+
+Outras Disposições
+
+- Não serão aceitas trocas ou devoluções de produtos custom made, personalizados ou pedidos sob encomenda.
+
+- Produtos que fazem parte da campanha do mês não poderão ser trocados. Com exceção de casos em que a peça apresente defeitos de fabricação.
+
+A Tutto per la Casa isenta-se da obrigação de realizar troca de qualquer produto que não preencha os requisitos apresentados acima.

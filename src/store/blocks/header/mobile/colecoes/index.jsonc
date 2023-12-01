@@ -1,0 +1,54 @@
+{
+  "menu-item#colecoes--mobile": {
+		"props": {
+			"id": "menu-item-colecoes--mobile",
+			"type": "custom",
+			"highlight": false,
+			"hasChild": true,
+			"itemProps": {
+				"type": "internal",
+				"href": "/colecoes",
+				"noFollow": false,
+				"tagTitle": "Coleções",
+				"text": "Coleções"
+			},
+			"blockClass": ["department"]
+		},
+		"blocks": ["tuttoperlacasa.menu:submenu.accordion#colecoes--mobile"]
+	},
+  "tuttoperlacasa.menu:submenu.accordion#colecoes--mobile": {
+		"title": "Category",
+		"children": [
+			"container#colecoes-category-list---mobile"
+		],
+		"props": {
+			"blockClass": "category"
+		}
+	},
+	"container#colecoes-category-list---mobile": {
+		"children": [
+			"tuttoperlacasa.menu:menu#submenu-colecoes--mobile"
+		],
+		"props": {
+			"blockClass": "category-list-wrapper--mobile"
+		}
+	},
+
+  // !Category
+  "tuttoperlacasa.menu:menu#submenu-colecoes--mobile": {
+		"children": [
+			"menu-item#colecoes-ver-todos--mobile",
+			"menu-item#submenu-material--mobile",
+			"menu-item#submenu-ocasioes--mobile",
+			"menu-item#submenu-vazio1--mobile",
+			"menu-item#submenu-vazio2--mobile",
+			"menu-item#submenu-vazio3--mobile",
+			"menu-item#submenu-vazio4--mobile",
+			"menu-item#submenu-vazio5--mobile",
+			"menu-item#submenu-vazio6--mobile"
+		],
+		"props": {
+			"orientation": "vertical"
+		}
+	}
+}

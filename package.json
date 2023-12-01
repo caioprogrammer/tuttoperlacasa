@@ -1,0 +1,23 @@
+{
+	"name": "tuttoperlacasa",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"scripts": {
+		"setup": "gulp setup --gulpfile ./node_modules/@pluslab/gulpfile-io/index.js --cwd .",
+		"dev": "eplus dev init",
+		"style": "gulp style-dev --gulpfile ./node_modules/@pluslab/gulpfile-io/index.js --cwd .",
+		"build": "gulp build --gulpfile ./node_modules/@pluslab/gulpfile-io/index.js --cwd .",
+		"plus-dev": "io-builder dev",
+		"gulp": "gulp --gulpfile ./node_modules/@pluslab/gulpfile-io/index.js --cwd ."
+	},
+	"devDependencies": {
+		"@pluslab/gulpfile-io": "^1.0.2",
+		"@pluslab/io-builder": "^1.0.4",
+		"gulp": "^4.0.2"
+	},
+	"dependencies": {
+		"eplus-cli": "^1.23.2",
+		"vtex": "^3.0.0"
+	}
+}

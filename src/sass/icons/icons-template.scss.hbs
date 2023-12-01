@@ -1,0 +1,44 @@
+// File generated automatically with Fantasticon lib.
+// Only edit it if you know what you are doing.
+// Template used is at src/sass/icons/icons-template.scss.hbs
+
+{{!-- ${{ name }}-font: "{{ name }}"; --}}
+${{ name }}-font: "fantasticon";
+$fantasticon-font: "fantasticon";
+
+${{ name }}-map: (
+{{# each codepoints }}
+  "{{ @key }}": "\\{{ codepoint this }}",
+{{/ each }}
+);
+
+{{# each codepoints }}
+$icon-{{ @key }}: "\\{{ codepoint this }}";
+{{/ each }}
+
+
+@mixin ficon-before($icon, $size: 14px, $color: inherit) {
+	&::before {
+		display: inline-flex;
+		content: $icon;
+		font-size: $size;
+		font-family: ${{ name }}-font;
+		font-style: normal;
+		font-weight: 400;
+		color: $color;
+		@content;
+	}
+}
+
+@mixin ficon-after($icon, $size: 14px, $color: inherit) {
+	&::after {
+		display: inline-flex;
+		content: $icon;
+		font-size: $size;
+		font-family: ${{ name }}-font;
+		font-style: normal;
+		font-weight: 400;
+		color: $color;
+		@content;
+	}
+}

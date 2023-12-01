@@ -1,0 +1,11 @@
+{
+  "breadcrumb": {
+    "component": "Breadcrumb"
+  },
+  "breadcrumb.product": {
+    "component": "ProductBreadcrumb"
+  },
+  "breadcrumb.search": {
+    "component": "SearchBreadcrumb"
+  }
+}

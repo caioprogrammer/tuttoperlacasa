@@ -1,0 +1,10 @@
+{
+  "image-flip-list": {
+    "component": "ImageFlipList"
+  },
+
+  "list-context.image-flip-list": {
+    "composition": "children",
+    "component": "ImageFlipListContext"
+  }
+}

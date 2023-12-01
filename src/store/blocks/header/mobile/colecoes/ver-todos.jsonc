@@ -1,0 +1,17 @@
+{
+  "menu-item#colecoes-ver-todos--mobile": {
+    "props": {
+			"id": "colecoes-ver-todos--mobile",
+			"type": "custom",
+			"highlight": false,
+			"hasChild": true,
+			"itemProps": {
+				"type": "internal",
+				"href": "/colecoes",
+				"noFollow": false,
+				"tagTitle": "Ver Todos",
+				"text": "Ver Todos"
+			}
+		}
+  }
+}

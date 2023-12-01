@@ -1,0 +1,27 @@
+{
+  "vendor": "tuttoperlacasa",
+  "name": "cookie",
+  "version": "0.2.2",
+  "title": "cookie",
+  "description": "cookie component",
+  "defaultLocale": "pt-BR",
+  "builders": {
+    "react": "3.x",
+    "store": "0.x",
+    "messages": "1.x",
+    "docs": "0.x"
+  },
+  "dependencies": {
+    "vtex.store": "2.x",
+    "vtex.styleguide": "9.x",
+    "vtex.session-client": "1.x",
+    "vtex.flex-layout": "0.x",
+    "vtex.rich-text": "0.x",
+    "vtex.native-types": "0.x",
+    "vtex.admin-graphql": "1.x",
+    "vtex.css-handles": "1.x"
+  },
+  "registries": ["smartcheckout"],
+  "policies": [],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

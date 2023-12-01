@@ -1,0 +1,132 @@
+.wishlistSelectionNavbar {
+	position: relative;
+	justify-content: flex-start;
+	@include media-max(440px) {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+
+.checkIcon--wishlist-product-select {
+	color: $primary400;
+}
+
+.wishlistSelectionCheckbox {
+	:global(.vtex-checkbox__inner-container) {
+		border: 1px solid $secondaryBorderColor;
+		border-radius: 3px;
+		margin-right: 4.64px;
+	}
+	:global(.vtex-checkbox__label) {
+		font-family: $primaryFont;
+		font-style: normal;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+		color: $textColor;
+		white-space: nowrap;
+	}
+	@include media-max(1024px) {
+		margin-right: 10px;
+	}
+	@include media-max(440px) {
+		margin: 0 0 10px;
+	}
+}
+
+.wishlistAddToCart {
+	background-color: $success500;
+	color: $textColor--inverse;
+	border-radius: 50%;
+	padding: 7px 8.5px;
+	display: flex;
+	display: none;
+	align-items: center;
+	cursor: pointer;
+	max-width: 35px;
+	height: 35px;
+	overflow: hidden;
+	transition: max-width 0.4s;
+
+	position: absolute;
+	left: 184.63px;
+	&.wishlistAddToCartDisabled {
+		pointer-events: none;
+		background-color: $gray900;
+	}
+
+	.cartIcon {
+		width: 22px;
+		height: 22px;
+	}
+	:global(.vtex-button) {
+		min-height: initial;
+		border: none;
+		background-color: transparent;
+		color: inherit;
+		width: 0;
+		overflow: hidden;
+		:global(.vtex-button__label) {
+			padding: 0 !important;
+			text-transform: none;
+			font-family: $primaryFont;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 17px;
+			text-transform: uppercase;
+			white-space: nowrap;
+		}
+		:hover {
+			border: none;
+			background-color: transparent;
+			color: inherit;
+		}
+	}
+
+	&:hover {
+		max-width: 254.03px;
+		width: 100%;
+		border-radius: 20px 4px 4px 20px;
+		:global(.vtex-button) {
+			width: initial;
+			margin-left: 5.48px;
+		}
+	}
+	@include media-max(1024px) {
+		position: static;
+		max-width: 225px;
+		min-width: 225px;
+		width: 100%;
+		border-radius: 20px 4px 4px 20px;
+
+		.cartIcon {
+			width: 16px;
+			height: 16px;
+		}
+		:global(.vtex-button) {
+			width: initial;
+			margin-left: 5.48px;
+			:global(.vtex-button__label) {
+				font-size: 11px;
+				line-height: 16px;
+			}
+		}
+	}
+}
+
+.wishlistProductSelect {
+	position: absolute;
+	.wishlistProductSelectButton {
+		width: 36px;
+		height: 36px;
+		display: flex;
+		align-items: center;
+		justify-content: end;
+		padding: 0;
+		.checkIcon {
+			margin: 0 auto;
+		}
+	}
+}

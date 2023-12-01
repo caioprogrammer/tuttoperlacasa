@@ -1,0 +1,148 @@
+.flexRow {
+	&--product-main {
+		padding: 28px 0;
+	}
+	&--product-zoom-text {
+		margin-top: 12.76px;
+	}
+	&--shelf-buy-too {
+		margin: 26px 0 54px;
+	}
+
+	&--product-code-brand {
+		margin-bottom: 24px;
+	}
+}
+
+.flexRowContent {
+	&--product-zoom-text {
+		align-items: center;
+		color: $textColor;
+		opacity: 0.5;
+	}
+	&--product-page-price {
+		align-items: flex-end;
+		.stretchChildrenWidth {
+			&:last-child {
+				flex: 1;
+				justify-content: flex-end;
+			}
+		}
+	}
+	&--buy-container {
+		justify-content: space-between;
+		@include media-max(1024px) {
+			align-items: flex-end;
+			margin-top: 0;
+		}
+	}
+
+	&--product-top-infos {
+		position: relative;
+		align-items: flex-start;
+	}
+
+	&--installments-title,
+	&--product-security-buy-text,
+	&--shipping-simulator-title,
+	&--buyTogetherContainer,
+	&--measurement-guide-header,
+	&--measurement-guide-text {
+		align-items: center;
+	}
+	&--measurement-guide-content {
+		@include media-max(906px) {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+}
+
+.flexCol {
+	&--product-buy-button {
+		:global(.vtex-button) {
+			&:hover {
+				background: $buttonBorder;
+				:global(.vtex-button__label) {
+					color: $buttonText !important;
+				}
+			}
+		}
+	}
+	&--product-main-left {
+		position: sticky;
+		top: 100px;
+		box-sizing: border-box;
+		height: fit-content;
+	}
+	&--product-main-right {
+		// max-height: 500px;
+		// overflow-y: auto;
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
+
+	&--product-available,
+	&--product-unavailable {
+		padding-top: 24px;
+		margin-top: 15px;
+		border-top: 1px solid $gray350;
+	}
+
+	&--product-unavailable {
+		margin-bottom: 20px;
+	}
+
+	&--buy-together-info {
+		max-width: 246px;
+		padding: 39px 17px;
+		background-color: $buyTogetherBg;
+		@include media-max(638px) {
+			margin-top: 20px;
+		}
+	}
+	&--measurement-guide-content {
+		max-width: 487px;
+		justify-content: space-between;
+	}
+	&--product-main-left {
+		@include media-max(calc(#{$containerWidth} + 30px)) {
+			padding-right: 1rem;
+		}
+		@include media-max(1180px) {
+			padding-right: 0;
+		}
+	}
+}
+
+.flexColChild {
+	&--installments-overlay {
+	}
+	&--measurement-guide-texts {
+		display: flex;
+		flex-direction: column;
+		max-width: 158px;
+		margin: 0 30px;
+	}
+}
+
+.flexRow--installments-item {
+	&:nth-child(2n + 1) {
+		background-color: rgba(200, 200, 200, 0.2);
+	}
+}
+.flexRowContent--shipping-simulator-title {
+	margin-bottom: 18px;
+}
+
+.flexCol--shipping-simulator-first-row-left {
+	width: 250px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.flexRowContent--shipping-simulator-first-row {
+	justify-content: flex-start;
+}

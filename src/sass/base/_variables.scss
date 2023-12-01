@@ -1,0 +1,152 @@
+$containerWidth: 1218px;
+
+$containerPadding: calc((100vw - #{$containerWidth}) / 2);
+
+// Variables from .eplusrc.json
+
+$primary100: #AB8570;
+$primary200: #A4704F;
+$primary300: #ffffff;
+$primary400: #764b31;
+$primary400-rgba: rgb(80, 66, 52, 0.5);
+$primary500: #9E163A;
+$primary600: #868686;
+$primary700: #A4704F;
+$primary900: #9F765F;
+
+$secondary100: #9E163A;
+$secondary300: #764b31;
+$secondary400: #D67A44 ;
+
+$secondary400-rgba: rgba(214, 122, 68, 0.3);;;
+$secondary500: #9A6A50;
+$secondary600: #2e2e2e;
+$secondary700: #D1A371;
+
+$tertiary300: #f8e384;
+$tertiary400: #fad73b;
+$tertiary500: #ffd000;
+$tertiary600: #760303;
+$tertiary700: #d8b000;
+
+$background: #ffffff;
+
+$white: #fff;
+$gray100: #fbf9f7;
+$gray200: #f0f0f0;
+$gray300: #d3d3d3;
+$gray350: #764b31;
+$gray400: #c0c0c0;
+$gray450: #999999;
+$gray500: #979899;
+$gray600: #6c6c6c;
+$gray700: #585959;
+$gray800: #764b31;
+$gray900: #764b31;
+$black: #764b31;
+
+$neutral100: #F3F3F3;
+$neutral200: #E7E7E7;
+$neutral300: #B7B7B7;
+$neutral400: #EDC8A2;
+$neutral500: #764b31;
+
+$success100: #CDF9D0;
+$success300: #68DD87;
+$success500: #8FAD65;
+$success700: #086646;
+$success900: #03443B;
+
+$errorInput: #A34918;
+
+$danger100: #FAD4CF;
+$danger300: #E16D75;
+$danger500: #9E163A;
+$danger700: #A4704F;
+$danger900: #4B0432;
+
+$shelfTitle: #764b31;
+
+$infoCardTitle: #764b31;
+$infoCardButton: #ffffff;
+
+$buyButton: #d67a40;
+$buyButtonHover: #dd6c24;
+$buyButtonActive: #dd6c24;
+$buyButtonHover-rgba: rgba(221,108,36,.3);
+
+// Store variables
+
+$primary: $primary400;
+$primary--inverse: $white;
+$secondary: $primary400;
+$textColor: $primary400;
+$borderColor: $primary400;
+$primaryBg: $white;
+$secondaryBg: $secondary300;
+$footerBg: $primary100;
+$headerBg: $white;
+$secondaryBorderColor: $primary100;
+$textColor--inverse: $white;
+
+$primaryFont: 'Lato', sans-serif;
+$secondaryFont: 'Playfair Display', sans-serif;
+
+$storeTextTransform: unset;
+
+$highlightColor: #faed27;
+$vtexColor: #f71963;
+
+//botões
+$button: $primary;
+$buttonBorder: $primary100;
+$buttonText: $primary--inverse;
+$buttonSecondary: $primary--inverse;
+$buttonSecondaryText: $primary100;
+
+//selos
+$primarySealBg: $primary200;
+$secondarySealBg: $primary100;
+$sealText: $highlightColor;
+
+//setas
+$arrowColor: $white;
+$arrowText: #946346;
+$arrowDisabledColor: $white;
+$arrowDisabledText: $primary;
+$arrowSecondary: $primary;
+$arrowSecondaryText: $white;
+
+//input
+$inputBorder: $secondary300;
+$inputBg: $white;
+$inputText: $primary400;
+
+//Scrol
+$scollColor: $textColor;
+$scrollBg: $primary100;
+$scrollBgSecondary: $primary300;
+
+//menu
+$menuHoverBg: $primary100;
+$menuBgMobile: $primary100;
+$menuBgMobileSecondary: #ede8ec;
+$menuMobileBorder: $white;
+$menuHoverBorder: $primary100;
+
+//produto
+$buyTogetherBg: #f7f5f3;
+$installmentsBg: $secondary300;
+$measurementGuideBg: $primary100;
+$notFoundBg: $secondary300;
+$nextPageBg: $secondary300;
+$teste: #fafafe;
+
+//filtros
+
+$bg-filters: #f7f5f3;
+$border-filters: #a4704f;
+
+//minicart
+
+$bg-footer-minicart: #f7f5f3;

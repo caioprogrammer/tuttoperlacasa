@@ -1,0 +1,63 @@
+{
+  "menu-item#submenu-bar-vazio3--mobile": {
+    "props": {
+			"id": "menu-item-vazio3--mobile",
+			"type": "custom",
+			"highlight": false,
+			"hide": true,
+			"hasChild": true,
+			"itemProps": {
+				"type": "internal",
+				"href": "/bar/vazio3",
+				"noFollow": false,
+				"tagTitle": "Vazio",
+				"text": "Vazio"
+			}
+		},
+		"blocks": ["tuttoperlacasa.menu:submenu.accordion#submenu-vazio3--mobile"]
+  },
+
+  // !SUBMENU
+  	"tuttoperlacasa.menu:submenu.accordion#submenu-vazio3--mobile": {
+		"title": "Subcategoria",
+		"children": ["container#submenu-vazio3-category-list-wrapper-bar--mobile"],
+		"props": {
+			"blockClass": "subcategory"
+		}
+	},
+	"container#submenu-vazio3-category-list-wrapper-bar--mobile": {
+		"children": ["tuttoperlacasa.menu:menu#submenu-submenu-vazio3-bar--mobile"],
+		"props": {
+			"blockClass": "subcategory-list-wrapper--mobile"
+		}
+	},
+
+  "tuttoperlacasa.menu:menu#submenu-submenu-vazio3-bar--mobile": {
+		"props": {
+			"orientation": "vertical",
+			"items": [
+				{
+					"id": "ver-todos-vazio3",
+					"type": "custom",
+					"highlight": false,
+					"hide": true,
+					"itemProps": {
+						"href": "/bar/vazio3",
+						"text": "Ver Todos"
+					}
+				},
+				{
+					"id": "menu-item-petisqueira-bowl-e-tabua",
+					"type": "custom",
+					"highlight": false,
+					"hide": true,
+					"itemProps": {
+						"href": "/bar/vazio3/petisqueira-bowl-e-tabua",
+						"text": "Vazio"
+					}
+				}
+			],
+			"blockClass": ["subcategory"]
+		}
+	}
+}

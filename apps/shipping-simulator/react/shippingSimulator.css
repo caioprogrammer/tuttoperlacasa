@@ -1,0 +1,42 @@
+.shippingContainer {}
+.shippingUnknownPostalWrapper {}
+.shippingUnknownPostalLink {}
+.shippingForm {}
+.shippingFormContainer {}
+.shippingContainerLoader {}
+.shippingCTA {}
+.shippingInputLoader {}
+.shippingNoMessage {}
+.shippingTable {}
+.shippingTableBody {}
+.shippingTableCell {}
+.shippingTableCellDeliveryEstimate {}
+.shippingTableCellDeliveryName {}
+.shippingTableCellDeliveryPrice {}
+.shippingTableHead
+.shippingTableHead {
+  /* Use the following CSS rule to display correctly */
+  /* display: table-header-group */
+}
+.shippingTableHeadDeliveryEstimate {}
+.shippingTableHeadDeliveryName {}
+.shippingTableHeadDeliveryPrice {}
+.shippingTableLabel {}
+.shippingTableRadioBtn {}
+.shippingTableRow {}
+.shippingZipcodeLabel {}
+.shippingZipcodeLabelLoader {}
+
+/* seller */
+.sellerShippingContainer {}
+.sellerShippingUnknownPostalWrapper {}
+.sellerShippingUnknownPostalLink {}
+.sellerShippingForm {}
+.sellerShippingFormContainer {}
+.sellerShippingContainerLoader {}
+.sellerShippingCTA {}
+.sellerShippingInputLoader {}
+.sellerShippingNoMessage {}
+.checked {}
+.unchecked {}
+.shippingTableRowSelected {}

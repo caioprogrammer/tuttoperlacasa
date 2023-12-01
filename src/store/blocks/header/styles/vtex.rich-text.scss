@@ -1,0 +1,209 @@
+.container {
+	&--text-unlogged, &--overlay-login {
+		justify-content: center;
+		width: 100%;
+		height: 31px;
+
+		.wrapper {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			height: 100%;
+		}
+		@include media-max(1024px) {
+			align-items: center;
+			justify-content: flex-start;
+			height: 100%;
+			background-color: $primary100;
+			padding-left: 25px;
+
+			.wrapper {
+				flex-direction: column;
+				align-items: center;
+				justify-content: flex-start;
+				margin-left: 16px;
+
+				&::before {
+					content: 'LOGIN';
+					font-family: 'Lato';
+					font-style: normal;
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 17px;
+					display: flex;
+					align-items: center;
+					color: #ffffff;
+					width: 100%;
+				}
+			}
+
+			.paragraph {
+				height: auto;
+			}
+
+			.link {
+				display: block;
+				height: auto;
+				text-align: start;
+
+				@include ficon-after($icon-login, 15px, white) {
+					position: absolute;
+					left: -24px;
+				}
+
+				.strong {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+.wrapper {
+	&--login-text-overlay {
+		width: 100%;
+	}
+}
+.paragraph {
+	&--top-header {
+		font-family: $primaryFont;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+		text-align: center;
+		color: $textColor--inverse;
+		margin: 0;
+
+		.link {
+			color: $textColor--inverse;
+			text-decoration: none;
+		}
+	}
+	&--login-text {
+		font-family: 'Urbanist';
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 15px;
+		text-align: center;
+		cursor: pointer;
+		margin: 0;
+		color: $textColor;
+
+		@include ficon-before($icon-login, 17.5px) {
+			margin-right: 9.5px;
+		}
+	}
+	&--login-text-overlay {
+		width: 100%;
+		text-align: center;
+		margin: 0 0 15px 0;
+		font-family: $primaryFont;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 15px;
+		text-align: center;
+		color: $textColor;
+
+		@include ficon-before($icon-login, 17.5px) {
+			margin-right: 9.5px;
+		}
+	}
+	&--text-unlogged, &--overlay-login {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+	}
+	&--minicart-title {
+		font-family: $primaryFont;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 17px;
+		color: $textColor;
+		margin: 0;
+	}
+	&--minicart-remove {
+		font-family: $primaryFont;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 17px;
+		color: $textColor;
+
+		@include media-max(638px) {
+			font-size: 12px;
+			line-height: 14px;
+		}
+	}
+	&--footer-quantity {
+		font-family: $primary400;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 17px;
+		display: flex;
+		align-items: center;
+		color: $textColor;
+	}
+}
+.strong {
+	&--top-header {
+		font-family: $primaryFont;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 17px;
+		text-align: center;
+		color: $textColor--inverse;
+	}
+}
+.link {
+	&--text-unlogged, &--overlay-login {
+		display: flex;
+		gap: 2px;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		font-family: $primaryFont;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 15px;
+		text-align: center;
+		color: $textColor;
+		text-decoration: none;
+		transition: all 0.4s;
+		isolation: isolate;
+		position: relative;
+
+		@include media-max(1024px) {
+			color: $textColor--inverse;
+			font-size: 14px;
+			line-height: 17px;
+		}
+
+		&::before {
+			content: '';
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			inset: 0;
+			z-index: -1;
+			opacity: 0;
+			background-color: $neutral400;
+			transition: 300ms;
+		}
+
+		&:hover {
+			font-weight: bold;
+
+			&::before {
+				opacity: 0.2;
+			}
+		}
+	}
+}

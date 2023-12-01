@@ -1,0 +1,72 @@
+{
+	"store.custom#seguranca": {
+		"blocks": [
+			"responsive-layout.desktop#seguranca",
+			"responsive-layout.mobile#seguranca"
+		]
+	},
+	"responsive-layout.desktop#seguranca": {
+		"children": [
+			"flex-layout.row#breadcrumb-seguranca",
+			"flex-layout.row#seguranca-content"
+		]
+	},
+	"flex-layout.row#seguranca-content": {
+		"children": [
+			"flex-layout.col#menu-institucional",
+			"flex-layout.col#seguranca"
+		],
+		"props": {
+			"blockClass": "seguranca",
+			"paddingBottom": 8
+		}
+	},
+
+	"flex-layout.col#seguranca": {
+		"children": ["rich-text#seguranca-content"]
+	},
+	"flex-layout.row#breadcrumb-seguranca": {
+		"children": [
+			"link#breadcrumb-home",
+			"link#breadcrumb-icon",
+			"link#breadcrumb-seguranca"
+		],
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true,
+			"blockClass": "breadcrumb",
+			"colGap": 3
+		}
+	},
+	"responsive-layout.mobile#seguranca": {
+		"children": ["flex-layout.row#seguranca-mobile"]
+	},
+	"flex-layout.row#seguranca-mobile": {
+		"children": ["flex-layout.col#seguranca-mobile"],
+		"props": {
+			"blockClass": "seguranca"
+		}
+	},
+	"flex-layout.col#seguranca-mobile": {
+		"children": [
+			"flex-layout.row#breadcrumb-seguranca",
+			"flex-layout.row#disc-institucional",
+			"rich-text#seguranca-content"
+		],
+		"props": {}
+	},
+
+	"link#breadcrumb-seguranca": {
+		"props": {
+			"label": "Segurança",
+			"blockClass": "active-breadcrumb"
+		}
+	},
+
+	"rich-text#seguranca-content": {
+		"props": {
+			"text": "# Segurança\n\n## Et esse\n\nLorem markdownum, narrarent, in *domus* Cephenum apertum bicorni aequora, hos.\nSenatum adhuc plenaque tota doce carmen pariter videres, ruinas **inludens**\ntamen.\n\n1. Ubi fieri sedes pollice visa ni mihi\n2. Iter inquit\n3. Nam senior manus praesentis posse\n4. Postquam agros adflata caelamina montis Lyciamque\n5. Terra promissi ab pressos fecit\n6. Labant biformis\n\nAliis vagina qui reppulit nuper obscuram minus indigenae miseram tacitaque verba\nevulsum subvecta. Dixit dum summe functus videtur, Achivae sanguine furtiva\nbisque aethere: cum. Non **terras quam** pulcherrime quae.\n\n## Hac finiat ventis resonabilis hederae nullo\n\nUtinam video erant ego Achille dentes certate Petraeum quos dimisit nomine\ndumosaque. Et turbam, ire, se gemitus signa deorum disposuit; his habitavit.\n**Ipse Britannos varios**, voto nulla flenti, **introrsus latrator** ponitur\nIuno! Casus nati locum valeant ab conveniunt discenda placidos: **omne saevit\nfreta**? Nullam unus dicta tuas, incessere placet superabitur arentis?\n\n> Vicerat caelo radiare cunctis silvestribus quoque. A **lustro o nitenti**\n> patre me coegi corpore cruore Astyages et corpore duobus, a faciemque tegit\n> desistere fallor. Abeunt exsistunt, super quid palmis fuit fulminis citra\n> lacrimas postquam tutus.\n\nUt puerum lacrimas citharae eripui lacrimis lacrimas minores fiuntque aevum,\nconanti Sardibus patrium. Fessa nocte aversata ab demisit iamque. Post auctor\nfemineos oculos fabricataque pulvere, modo aera per abluit legati fugam patris,\npraetentaque, flectentem. Mihi dei **sim** accipiter nunc pedum *extrema*\nviridem delapsa; et novem.\n\n## Anima ipse manu\n\nCarbasa ferunt, illac taurorum degravat, unda navigii rapiunt in terra campoque\nsalientis agitque. [Temporis et](http://sub.com/pomis-sunt) illo sic litat,\nevanuit: fecerat: corpore ululatibus *reperta artibus*, Cynthus [mirabile\nbella](http://sola-furit.com/). Ac verti [umbra](http://legum.net/).\n\n> In Libycas septem volucrum vertice hic. Qui suis litore aliqua: inque [faxo\n> habeto](http://moriens.org/eodem) et Cereris.\n\nIlla in modo. Non ova! An scit delapsus en ambiguo dextrum sparsa, plus in.\n",
+			"blockClass": "institucional-content"
+		}
+	}
+}

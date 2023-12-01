@@ -1,0 +1,367 @@
+{
+	"header": {
+		"blocks": ["header-layout.desktop", "header-layout.mobile"]
+	},
+	"header.full": {
+		"blocks": ["header-layout.desktop", "header-layout.mobile"]
+	},
+	"header-layout.desktop": {
+		"children": ["sticky-layout#desktop", "back-to-top-button", "cookie"]
+	},
+	"sticky-layout#desktop": {
+		"title": "header-desktop",
+		"props": {
+			"blockClass": ["sticky-header", "default"]
+		},
+		"children": [
+			"flex-layout.row#header-topbar",
+			"flex-layout.row#header-desktop-content",
+			"tuttoperlacasa.menu:menu#desktop"
+		]
+	},
+
+	////////////////////////////////
+		"tuttoperlacasa.menu:menu#desktop": {
+		"children": [
+			"menu-item#novidades",
+			"menu-item#vazio1",
+			"menu-item#mesa",
+			"menu-item#bar",
+			"menu-item#decor",
+			"menu-item#area-externa",
+			"menu-item#colecoes",
+			"menu-item#para-presentear",
+			"menu-item#listas",
+			"menu-item#vazio2",
+			"menu-item#vazio3",
+			"menu-item#vazio4"
+		],
+		"title": "Menu Desktop dinâmico",
+		"props": {
+			"blockClass": "menu-dynamic-desktop",
+			"hasChild": true
+		}
+	},
+	////////////////////////////////
+	"tuttoperlacasa.menu:menu#mobile": {
+		"children": [
+			"menu-item#novidades--mobile",
+			"menu-item#vazio1--mobile",
+			"menu-item#mesa--mobile",
+			"menu-item#bar--mobile",
+			"menu-item#decor--mobile",
+			"menu-item#area-externa--mobile",
+			"menu-item#colecoes--mobile",
+			"menu-item#para-presentear--mobile",
+			"menu-item#listas--mobile",
+			"menu-item#vazio2--mobile",
+			"menu-item#vazio3--mobile",
+			"menu-item#vazio4--mobile"
+		],
+		"props": {
+			"blockClass": "menu-dynamic-mobile"
+		}
+	},
+	////////////////////////////////
+
+	"flex-layout.row#header-topbar": {
+		"title": "Topbar Carrossel",
+		"children": ["slider-layout##header-topbar"],
+		"props": {
+			"blockClass": "header-desktop-top",
+			"horizontalAlign": "center",
+			"verticalAlign": "center",
+			"preventHorizontalStretch": true,
+			"fullWidth": true
+		}
+	},
+	"slider-layout##header-topbar": {
+		"props": {
+			"itemsPerPage": {
+				"desktop": 1,
+				"tablet": 1,
+				"phone": 1
+			},
+			"infinite": true,
+			"showNavigationArrows": "never",
+			"usePagination": false,
+			"blockClass": "header-topbar",
+			"autoplay": {
+					"stopOnHover": true,
+					"timeout": 5000
+			}
+		},
+		"children": [
+			"rich-text#top-header01",
+			"rich-text#top-header02",
+			"rich-text#top-header03"
+		]
+	},
+	"rich-text#top-header01": {
+		"props": {
+			"text": "Frete Grátis para pedidos acima de __R$150,00__",
+			"blockClass": "top-header"
+		}
+	},
+	"rich-text#top-header02": {
+		"props": {
+			"text": "__Entrega expressa para todos os pedidos__",
+			"blockClass": "top-header"
+		}
+	},
+	"rich-text#top-header03": {
+		"props": {
+			"text": "MADE IN RIO",
+			"blockClass": "top-header"
+		}
+	},
+	"flex-layout.row#menu-desktop": {
+		"children": ["category-menu#menu-desktop"],
+		"props": {
+			"blockClass": "menu-desktop",
+			"horizontalAlign": "center",
+			"verticalAlign": "center",
+			"preventHorizontalStretch": true,
+			"preventVerticalStretch": true,
+			"fullWidth": false
+		}
+	},
+
+	"flex-layout.row#header-desktop-content": {
+		"props": {
+			"horizontalAlign": "center",
+			"verticalAlign": "center",
+			"colSizing": "auto",
+			"preventVerticalStretch": true,
+			"fullWidth": false,
+			"blockClass": "header-desktop-content"
+		},
+		"children": [
+			"flex-layout.col#our-stores",
+			"flex-layout.col#wishlist",
+			"flex-layout.col#logo-desktop",
+			// "flex-layout.row#menu-desktop-fixed",
+			// "link#wishlist-icon",
+			"flex-layout.col#login-desktop",
+			"tuttoperlacasa.store-components:search-bar",
+			"minicart.v2#main"
+		]
+	},
+
+	// "flex-layout.row#menu-desktop-fixed": {
+	// 	"children": ["tuttoperlacasa.menu:menu#desktop"],
+	// 	"props": {
+	// 		"blockClass": "menu-desktop-fixed",
+	// 		"horizontalAlign": "center",
+	// 		"verticalAlign": "center",
+	// 		"preventHorizontalStretch": true,
+	// 		"preventVerticalStretch": true,
+	// 		"fullWidth": true
+	// 	}
+	// },
+	"flex-layout.col#our-stores": {
+		"children": ["link#our-stores"],
+		"props": {
+			"blockClass": ["our-stores", "header-links"]
+		}
+	},
+	"flex-layout.col#wishlist": {
+		"children": ["link#wishlist"],
+		"props": {
+			"blockClass": ["wishlist", "header-links"]
+		}
+	},
+	"flex-layout.col#wishlist-mobile": {
+		"children": ["link#wishlist"],
+		"props": {
+			"blockClass": ["wishlist", "header-links", "wishlist-mobile"],
+			"width": "100%",
+			"verticalAlign": "middle"
+		}
+	},
+	"link#our-stores": {
+		"children": ["icon#our-stores", "icon#our-stores-filled"],
+		"props": {
+			"label": "LOJAS",
+			"href": "/institucional/nossas-lojas",
+			"blockClass": ["our-stores", "header-links"]
+		}
+	},
+	"link#wishlist": {
+		"children": ["icon#wishlist", "icon#wishlist-filled"],
+		"props": {
+			"label": "FAVORITOS",
+			"href": "/account#/wishlist",
+			"blockClass": ["wishlist", "header-links"]
+		}
+	},
+	"icon#our-stores": {
+		"props": {
+			"id": "inf-location",
+			"size": 18,
+			"activeClassName": "vtex-store-components-3-x-locationIcon"
+		}
+	},
+	"icon#our-stores-filled": {
+		"props": {
+			"id": "inf-location--filled",
+			"size": 18,
+			"activeClassName": "vtex-store-components-3-x-locationFilledIcon"
+		}
+	},
+	"icon#wishlist": {
+		"props": {
+			"id": "inf-heart",
+			"size": 21,
+			"activeClassName": "vtex-store-components-3-x-heartIcon"
+		}
+	},
+	"icon#wishlist-filled": {
+		"props": {
+			"id": "inf-heart--filled",
+			"size": 21,
+			"activeClassName": "vtex-store-components-3-x-heartFilledIcon"
+		}
+	},
+
+	"flex-layout.col#logo-desktop": {
+		"props": {
+			"verticalAlign": "middle",
+			"width": "grow",
+			"blockClass": ["logo-desktop", "logo-black"]
+		},
+		"children": ["logo#logo-desktop"]
+	},
+
+	"logo#logo-desktop": {
+		"props": {
+			"title": "Logo",
+			"href": "/",
+			"url": "assets/images/logo-tutto-marrom.svg",
+			"width": "187",
+			"blockClass": ["logo-image", "logo-black"]
+		}
+	},
+	"logo#logo-mobile": {
+		"props": {
+			"title": "Logo",
+			"href": "/",
+			"url": "assets/images/logo-tutto-marrom.svg",
+			"width": "110",
+			"blockClass": ["logo-image", "logo-mobile"]
+		}
+	},
+	"flex-layout.col#logo-mobile": {
+		"props": {
+			"verticalAlign": "middle",
+			"blockClass": ["logo-mobile"]
+		},
+		"children": ["logo#logo-mobile"]
+	},
+	"tuttoperlacasa.store-components:search-bar": {
+		"blocks": ["tuttoperlacasa.store-components:autocomplete-result-list"],
+		"props": {
+			"displayMode": "search-button",
+			"placeholder": "O que você procura hoje?",
+			"emptyPlaceholder": "O que você procura hoje?",
+			"autoFocus": false,
+			"disableBlurAndTouchEndHandler": true,
+			"maxWidth": "376px",
+			"autocompleteAlignment": "left",
+			"blockClass": "search-bar"
+		},
+		"children": ["speech-to-text"]
+	},
+
+	"tuttoperlacasa.store-components:autocomplete-result-list": {},
+
+	"speech-to-text": {
+		"props": {
+			"lang": "pt-BR",
+			"height": "23px",
+			"width": "15px",
+			"imgSrc": "assets/images/microphone-icon.png"
+		}
+	},
+	//Mobile
+	"header-layout.mobile": {
+		"children": ["sticky-layout#mobile", "back-to-top-button", "cookie"]
+	},
+	"sticky-layout#mobile": {
+		"props": {
+			"blockClass": "sticky-header-mobile"
+		},
+		"children": [
+			"flex-layout.row#header-topbar",
+			"flex-layout.row#header-mobile-middle"
+		]
+	},
+	"flex-layout.row#header-mobile-middle": {
+		"children": [
+			"category-menu.mobile#menu-mobile",
+			"flex-layout.col#column-spacer",
+			"flex-layout.col#logo-mobile",
+			"overlay-trigger#search-mobile",
+			"minicart.v2#main"
+		],
+		"props": {
+			"blockClass": "main-header-mobile",
+			"preventHorizontalStretch": true,
+			"preserveLayoutOnMobile": true,
+			"fullWidth": true
+		}
+	},
+	"overlay-trigger#search-mobile": {
+		"props": {
+			"trigger": "click",
+			"blockClass": "search-mobile"
+		},
+		"children": ["icon#search-mobile", "overlay-layout#search-mobile"]
+	},
+
+	"icon#search-mobile": {
+		"props": {
+			"id": "hpa-search",
+			"size": 16,
+			"activeClassName": "tuttoperlacasa-store-components-3-x-searchIcon--search-bar"
+		}
+	},
+
+	"overlay-layout#search-mobile": {
+		"children": ["flex-layout.row#header-mobile-bottom"],
+		"props": {
+			"blockClass": "search-mobile"
+		}
+	},
+
+	"flex-layout.row#header-mobile-bottom": {
+		"children": ["tuttoperlacasa.store-components:search-bar"],
+		"props": {
+			"blockClass": "header-mobile-bottom"
+		}
+	},
+	"flex-layout.row#wishlist-sidebar": {
+		"children": ["flex-layout.col#wishlist-mobile"],
+		"props": {
+			"fullWidth": true,
+			"colSizing": "auto",
+			"horizontalAlign": "center"
+		}
+	},
+	"flex-layout.row#minicart-sidebar": {
+		"children": ["minicart.v2#sidebar"]
+	},
+	"flex-layout.col#sidebar-mobile": {
+		"children": [
+			"flex-layout.row#login-mobile",
+			"flex-layout.row#minicart-sidebar",
+			"flex-layout.row#wishlist-sidebar",
+			"tuttoperlacasa.menu:menu#mobile"
+		],
+		"props": {
+			"preventVerticalStretch": true,
+			"verticalAlign": "top",
+			"blockClass": "sidebar-mobile"
+		}
+	}
+}

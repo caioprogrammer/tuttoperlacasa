@@ -1,0 +1,72 @@
+{
+	"store.custom#trocas": {
+		"blocks": [
+			"responsive-layout.desktop#trocas",
+			"responsive-layout.mobile#trocas"
+		]
+	},
+	"responsive-layout.desktop#trocas": {
+		"children": [
+			"flex-layout.row#breadcrumb-trocas",
+			"flex-layout.row#trocas-content"
+		]
+	},
+	"flex-layout.row#trocas-content": {
+		"children": [
+			"flex-layout.col#menu-institucional",
+			"flex-layout.col#trocas"
+		],
+		"props": {
+			"blockClass": "trocas",
+			"paddingBottom": 8
+		}
+	},
+
+	"flex-layout.col#trocas": {
+		"children": ["rich-text#trocas-content"]
+	},
+	"flex-layout.row#breadcrumb-trocas": {
+		"children": [
+			"link#breadcrumb-home",
+			"link#breadcrumb-icon",
+			"link#breadcrumb-trocas"
+		],
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true,
+			"blockClass": "breadcrumb",
+			"colGap": 3
+		}
+	},
+	"responsive-layout.mobile#trocas": {
+		"children": ["flex-layout.row#trocas-mobile"]
+	},
+	"flex-layout.row#trocas-mobile": {
+		"children": ["flex-layout.col#trocas-mobile"],
+		"props": {
+			"blockClass": "trocas"
+		}
+	},
+	"flex-layout.col#trocas-mobile": {
+		"children": [
+			"flex-layout.row#breadcrumb-trocas",
+			"flex-layout.row#disc-institucional",
+			"rich-text#trocas-content"
+		],
+		"props": {}
+	},
+
+	"link#breadcrumb-trocas": {
+		"props": {
+			"label": "Políticas De Troca",
+			"blockClass": "active-breadcrumb"
+		}
+	},
+
+	"rich-text#trocas-content": {
+		"props": {
+			"text": "# POLÍTICAS DE TROCA\n\n## Lacrimas modum ignes aequor\n\nLorem markdownum aureus convexum: est praesens tactis, **ora**. Actis est\n[dicique maxima](http://meumrelevare.org/vectabanturhuic) Boreas fer non\nparensque, quam currus quoque invenit. Proprium transitus genuum litora illi\nvideri ne sed palmis meritis, faciente quam, spiritus mersura vixque. Refugit\nhac manu quia, sonumque Hymenaeon ab plurima munusque.\n\n- Ignorat hunc\n- Pomaque cum et mittere effodiuntur ceperat\n- Deum Didymeque haesura vindicet aquis pressus ipsa\n- Nedymnum Tyriis\n- Tuta ictu est a accipitrem terra hamadryadas\n- Quantum ingens similesque dictas qui fingit ducitur\n\nArsit spatiantes vosque spectabilis dominum, repetendus ore ardet regno? Oppida\nmea, occupat manente totaque. Noster suo evanuit neque. Amensque o *transit*\ndixerat solent in leonem in adeunt staret coniunx.\n\n## Hoc inlaesas vecta\n\nDeum habet facinus, inpius ipso, mihi partes. Plus excutit victus et eadem\ntacitaque audaci?\n\n- In frater ensis in avidos\n- Aurataque sustinet accipit concordes corpora\n- Os Agenorides verba\n- Comes quoniam Delonque\n- Simulati meam ponto si deae sanguinea adice\n- Ferrumque cum ipsa facundia sedens ut quies\n\nFactas et rupit respicit, tantaque, fulva vectus utque. Tua de aut conprensam\nsidus, luctu, solitam perpetuo altis, Melicerta turaque submoverat vidit cives\nac occidit. Fluxit hoc quamquam o victa dabo invita flore; est animi. Erat\nsuperest vipereis illic; communis exsiluere terris repletum dispar rogat fessum,\nnec excutiuntque. In *missus aurum* succedit ad ulla ille vulnere ore isset in.\n\nFlamina sertaque succedit, viroque sincera ad refero *metusque* quorum, ipsa\nflectat. Ore per, avis atrorum. Alte quies nigrior! Procrusten fuit Stygiam;\nlegit per quae contingent indelebile saepe, faciat mea optat crines imitamina.\nMediis condiderat rauco glaebas promissis iamque *tuetur fero* cui transit.",
+			"blockClass": "institucional-content"
+		}
+	}
+}

@@ -1,0 +1,61 @@
+{
+  "menu-item#submenu-quatrocentos--mobile": {
+    "props": {
+			"id": "menu-item-quatrocentos",
+			"type": "custom",
+			"highlight": false,
+			"hasChild": true,
+			"itemProps": {
+				"type": "internal",
+				"href": "/para-presentear/ate-r-400",
+				"noFollow": false,
+				"tagTitle": "Até R$400",
+				"text": "Até R$400"
+			}
+		},
+		"blocks": ["tuttoperlacasa.menu:submenu.accordion#quatrocentos--mobile"]
+  },
+	// !SUBMENU
+  "tuttoperlacasa.menu:submenu.accordion#quatrocentos--mobile": {
+		"title": "Subcategoria",
+		"children": ["container#submenu-quatrocentos-category-list-wrapper--mobile"],
+		"props": {
+			"blockClass": "subcategory"
+		}
+	},
+	"container#submenu-quatrocentos-category-list-wrapper--mobile": {
+		"children": ["tuttoperlacasa.menu:menu#submenu-submenu-quatrocentos--mobile"],
+		"props": {
+			"blockClass": "subcategory-list-wrapper--mobile"
+		}
+	},
+
+  "tuttoperlacasa.menu:menu#submenu-submenu-quatrocentos--mobile": {
+		"props": {
+			"orientation": "vertical",
+			"items": [
+				{
+					"id": "ver-todos-quatrocentos",
+					"type": "custom",
+					"highlight": false,
+					"hide": true,
+					"itemProps": {
+						"href": "/para-presentear/quatrocentos",
+						"text": "Ver Todos"
+					}
+				},
+				{
+					"id": "menu-item-quatrocentos",
+					"type": "custom",
+					"highlight": false,
+					"hide": true,
+					"itemProps": {
+						"href": "/para-presentear/quatrocentos/quatrocentos",
+						"text": "quatrocentos"
+					}
+				}
+			],
+			"blockClass": ["subcategory"]
+		}
+	}
+}

@@ -1,0 +1,54 @@
+{
+  "menu-item#bar--mobile": {
+		"props": {
+			"id": "menu-item-bar--mobile",
+			"type": "custom",
+			"highlight": false,
+			"hasChild": true,
+			"itemProps": {
+				"type": "internal",
+				"href": "/bar",
+				"noFollow": false,
+				"tagTitle": "Bar",
+				"text": "Bar"
+			},
+			"blockClass": ["department"]
+		},
+		"blocks": ["tuttoperlacasa.menu:submenu.accordion#bar--mobile"]
+	},
+  "tuttoperlacasa.menu:submenu.accordion#bar--mobile": {
+		"title": "Category",
+		"children": [
+			"container#bar-category-list---mobile"
+		],
+		"props": {
+			"blockClass": "category"
+		}
+	},
+	"container#bar-category-list---mobile": {
+		"children": [
+			"tuttoperlacasa.menu:menu#submenu---mobile"
+		],
+		"props": {
+			"blockClass": "category-list-wrapper--mobile"
+		}
+	},
+
+  // !Category
+  "tuttoperlacasa.menu:menu#submenu---mobile": {
+		"children": [
+			"menu-item#bar-ver-todos--mobile",
+			"menu-item#submenu-para-receber--mobile",
+			"menu-item#submenu-bandeja-de-bar-e-drink--mobile",
+			"menu-item#submenu-bar-vazio1--mobile",
+			"menu-item#submenu-bar-vazio2--mobile",
+			"menu-item#submenu-bar-vazio3--mobile",
+			"menu-item#submenu-bar-vazio4--mobile",
+			"menu-item#submenu-bar-vazio5--mobile",
+			"menu-item#submenu-bar-vazio6--mobile"
+		],
+		"props": {
+			"orientation": "vertical"
+		}
+	}
+}

@@ -1,0 +1,219 @@
+.itemContainer {
+  max-height: 21.875rem;
+}
+
+
+.animation {
+  left: -0.5rem;
+}
+
+@media only screen and (max-width: 40rem) {
+  body.sidebarOpen {
+      overflow-y: hidden;
+  }
+}
+
+.nonVisible {
+  visibility: hidden;
+  opacity: 0
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1
+}
+
+/* CategoryItem */
+
+/* Fim CategoryItem */
+.itemContainer--department--open {
+
+}
+
+.itemContainer--department--open {
+}
+
+.itemContainer--department--closed {
+
+}
+
+.departmentLink {
+  transition: color .2s;
+  border-bottom: none;
+}
+
+.itemContainer--department--open .departmentLink {
+  color: #DCB38E;
+}
+
+/* ItemContainer */
+.itemContainer {
+  display: block !important;
+  align-items: center;
+
+  transition: opacity 0.2s,  visibility 0.2s
+}
+
+.itemContainer--open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.itemContainer--closed {
+  visibility: hidden;
+  opacity: 0;
+
+  transition-delay: .1s;
+}
+
+.subItemsContainerWrapper {
+  background-color: #fff;
+  width: 100vw;
+  height: 350px;
+  padding: 23px 0;
+
+  border: 0.5px solid #A7A9AB;
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.1);
+}
+
+.subItemsContainer {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+}
+
+.itemList {
+  margin-right: auto;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  list-style: none;
+  /* max-height: 250px; */
+}
+
+.itemListContainer {
+  width: 9.75rem;
+}
+
+.itemListLink {
+  display: block;
+  padding: 0.375rem 0;
+  padding-left: .75rem;
+
+  font-size: .875rem;
+  font-weight: 400;
+  text-transform: none;
+  text-decoration: none;
+
+  transition-delay: .2s;
+  transition: background-color .2s;
+}
+
+.itemListLink:hover {
+  transition-delay: 0s;
+  background-color: #97D4C8;
+}
+
+/* Fim ItemContainer */
+
+.itemContainer--department {}
+.itemContainer--category {}
+
+.container {}
+
+.section--department {}
+.section--category {}
+
+.departmentList {}
+.departmentLink {}
+
+.firstLevelList {}
+.firstLevelLinkContainer {}
+.firstLevelLink {}
+
+.secondLevelList {}
+.secondLevelLinkContainer {}
+.secondLevelLink {}
+
+.submenuList {}
+.submenuItem {}
+
+.sidebarOpen {}
+
+.sidebarScrim {}
+
+.sidebar {}
+.sidebarTrigger {}
+.sidebarTriggerLabel {}
+.sidebarHeader {}
+
+.sidebarContent {}
+
+.sidebarListItem {}
+.sidebarListItem--1 {}
+.sidebarListItem--2 {}
+.sidebarListItem--3 {}
+.sidebarListItem--4 {}
+.sidebarListItem--5 {}
+.sidebarListItem--6 {}
+
+.sidebarItem {}
+
+.sidebarContainer {}
+.mobile {}
+.sidebarContainerVisible {}
+
+.menuContainer {}
+
+.sidebarItemContainer {}
+.sidebarItemContainer--opened {}
+.sidebarItemContainer--closed {}
+.sidebarItemContainer--1 {}
+.sidebarItemContainer--2 {}
+.sidebarItemContainer--3 {}
+.sidebarItemContainer--4 {}
+.sidebarItemContainer--5 {}
+.sidebarItemContainer--6 {}
+
+.sidebarItemTitle {}
+.sidebarItemTitle--1 {}
+.sidebarItemTitle--2 {}
+.sidebarItemTitle--3 {}
+.sidebarItemTitle--4 {}
+.sidebarItemTitle--5 {}
+.sidebarItemTitle--6 {}
+
+.sidebarItemWrapper {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sidebarItemWrapper--1 {}
+.sidebarItemWrapper--2 {}
+.sidebarItemWrapper--3 {}
+.sidebarItemWrapper--4 {}
+.sidebarItemWrapper--5 {}
+.sidebarItemWrapper--6 {}
+
+.wrapperOutside {}
+
+.itemContainer--isOpen {}
+
+.itemContainer--isClose {}
+
+.complementWrapper {}
+
+.sidebarItemIcon {}
+
+.sidebarItemSeeAll {}
+
+.sidebarItemSeeAllText {}
+
+.subCategoryContainer {}
+.subCategoryList {}

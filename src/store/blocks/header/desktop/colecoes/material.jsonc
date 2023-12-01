@@ -1,0 +1,87 @@
+{
+  "menu-item#submenu-material": {
+    "props": {
+			"id": "menu-item-material",
+			"type": "custom",
+			"highlight": false,
+			"hasChild": true,
+			"itemProps": {
+				"type": "internal",
+				"href": "/colecoes/material",
+				"noFollow": false,
+				"tagTitle": "material",
+				"text": "material"
+			}
+		},
+		"blocks": ["tuttoperlacasa.menu:submenu#submenu-material"]
+  },
+
+  // !SUBMENU
+  	"tuttoperlacasa.menu:submenu#submenu-material": {
+		"title": "Subcategoria",
+		"children": ["container#submenu-material-category-list-wrapper"],
+		"props": {
+			"blockClass": "subcategory"
+		}
+	},
+	"container#submenu-material-category-list-wrapper": {
+		"children": ["tuttoperlacasa.menu:menu#submenu-submenu-material"],
+		"props": {
+			"blockClass": "subcategory-list-wrapper"
+		}
+	},
+
+  "tuttoperlacasa.menu:menu#submenu-submenu-material": {
+		"props": {
+			"orientation": "vertical",
+			"items": [
+				{
+					"id": "menu-item-bambu",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/colecoes/material/bambu",
+						"text": "Bambu"
+					}
+				},
+        {
+					"id": "menu-item-prataria",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/colecoes/material/prataria",
+						"text": "Prataria"
+					}
+				},
+				{
+					"id": "menu-item-rattan",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/colecoes/material/rattan",
+						"text": "Ratan"
+					}
+				},
+        {
+					"id": "menu-item-murano",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/colecoes/material/murano",
+						"text": "Murano"
+					}
+				},
+				{
+					"id": "menu-item-acrilico",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/colecoes/material/acrilico",
+						"text": "Acrílico"
+					}
+				}
+			],
+			"blockClass": ["subcategory"]
+		}
+	}
+}

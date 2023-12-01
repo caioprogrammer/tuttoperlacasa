@@ -1,0 +1,63 @@
+{
+  "menu-item#submenu-vazio1--mobile": {
+    "props": {
+			"id": "menu-item-vazio1--mobile",
+			"type": "custom",
+			"highlight": false,
+			"hide": true,
+			"hasChild": true,
+			"itemProps": {
+				"type": "internal",
+				"href": "/mesa/vazio1",
+				"noFollow": false,
+				"tagTitle": "vazio1",
+				"text": "vazio1"
+			}
+		},
+		"blocks": ["tuttoperlacasa.menu:submenu.accordion#submenu-vazio1--mobile"]
+  },
+
+  // !SUBMENU
+  	"tuttoperlacasa.menu:submenu.accordion#submenu-vazio1--mobile": {
+		"title": "Subcategoria",
+		"children": ["container#submenu-vazio1-mesa-category-list-wrapper--mobile"],
+		"props": {
+			"blockClass": "subcategory"
+		}
+	},
+	"container#submenu-vazio1-mesa-category-list-wrapper--mobile": {
+		"children": ["tuttoperlacasa.menu:menu#submenu-submenu-vazio1-mesa--mobile"],
+		"props": {
+			"blockClass": "subcategory-list-wrapper--mobile"
+		}
+	},
+
+  "tuttoperlacasa.menu:menu#submenu-submenu-vazio1-mesa--mobile": {
+		"props": {
+			"orientation": "vertical",
+			"items": [
+				{
+					"id": "ver-todos-vazio1",
+					"type": "custom",
+					"highlight": false,
+					"hide": true,
+					"itemProps": {
+						"href": "/mesa/vazio1",
+						"text": "Ver Todos"
+					}
+				},
+				{
+					"id": "menu-item-refratario-rechaud-e-bandeja",
+					"type": "custom",
+					"highlight": false,
+					"hide": true,
+					"itemProps": {
+						"href": "/mesa/vazio1/vazio1",
+						"text": "vazio1"
+					}
+				}
+			],
+			"blockClass": ["subcategory"]
+		}
+	}
+}

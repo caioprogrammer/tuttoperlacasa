@@ -1,0 +1,78 @@
+{
+  "menu-item#submenu-para-receber--mobile": {
+    "props": {
+			"id": "menu-item-para-receber--mobile",
+			"type": "custom",
+			"highlight": false,
+			"hasChild": true,
+			"itemProps": {
+				"type": "internal",
+				"href": "/bar/para-receber",
+				"noFollow": false,
+				"tagTitle": "Para Receber",
+				"text": "Para Receber"
+			}
+		},
+		"blocks": ["tuttoperlacasa.menu:submenu.accordion#submenu-para-receber--mobile"]
+  },
+
+  // !SUBMENU
+  	"tuttoperlacasa.menu:submenu.accordion#submenu-para-receber--mobile": {
+		"title": "Subcategoria",
+		"children": ["container#submenu-para-receber-category-list-wrapper--mobile"],
+		"props": {
+			"blockClass": "subcategory"
+		}
+	},
+	"container#submenu-para-receber-category-list-wrapper--mobile": {
+		"children": ["tuttoperlacasa.menu:menu#submenu-submenu-para-receber--mobile"],
+		"props": {
+			"blockClass": "subcategory-list-wrapper--mobile"
+		}
+	},
+
+  "tuttoperlacasa.menu:menu#submenu-submenu-para-receber--mobile": {
+		"props": {
+			"orientation": "vertical",
+			"items": [
+				{
+					"id": "ver-todos-para-receber",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/bar/para-receber",
+						"text": "Ver Todos"
+					}
+				},
+				{
+					"id": "menu-item-petisqueira-bowl-e-tabua",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/bar/para-receber/petisqueira-bowl-e-tabua",
+						"text": "Petisqueira, Bowl e Tábua"
+					}
+				},
+        {
+					"id": "menu-item-espatula-e-garfo-aperitivo",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/bar/para-receber/espatula-e-garfo-aperitivo",
+						"text": "Espátula e Garfo aperitivo"
+					}
+				},
+        {
+					"id": "menu-item-suqueira-e-cooler",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/bar/para-receber/suqueira-e-cooler",
+						"text": "Suqueira e Cooler"
+					}
+				}
+			],
+			"blockClass": ["subcategory"]
+		}
+	}
+}

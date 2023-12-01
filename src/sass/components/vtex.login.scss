@@ -1,0 +1,158 @@
+.formTitle {
+	font-family: $primaryFont;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: $primary400;
+}
+
+.formFooter {
+	border: none;
+}
+
+
+
+.loginOptionsContainer {
+	.optionsList {
+		margin-top: 0px;
+	}
+	.optionsListItem {
+		:global(.vtex-button) {
+			background-color: $buttonSecondary;
+			border: 1px solid $buttonBorder;
+			transition: all 0.4s;
+			:global(.vtex-button__label) {
+				color: $buttonSecondaryText;
+				transition: all 0.4s;
+				text-transform: none;
+				font-family: $primaryFont;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 14px;
+				line-height: 17px;
+				.oauthLabel {
+					font-family: $primaryFont;
+					font-size: 14px;
+					line-height: 17px;
+					text-transform: none;
+				}
+			}
+			&:hover {
+				background-color: $buttonBorder;
+				:global(.vtex-button__label) {
+					color: $buttonText;
+				}
+			}
+		}
+
+		.emailPasswordOptionBtn {
+			:global(.vtex-button) {
+				background-color: $primary200;
+				border-color: $primary200;
+				color: #fff;
+		
+				&:hover {
+					background-color: $primary400;
+					border-color: $primary400;
+		
+				}
+
+			:global(.vtex-button__label) {
+				color: $white;
+			}
+
+			}
+		}
+
+		.accessCodeOptionBtn {
+			:global(.vtex-button) {
+				background-color: $buyButton;
+				border-color: $buyButton;
+				color: #fff;
+		
+				&:hover {
+					background-color: $buyButtonHover;
+					border-color: $buyButtonHover;
+		
+				}
+
+			:global(.vtex-button__label) {
+				color: $white;
+			}
+
+			}
+		}
+	}
+}
+
+
+
+
+.contentForm {
+	.inputContainer {
+		:global(.vtex-input-prefix__group) {
+			border: 1px solid $primary100;
+			:global(.vtex-styleguide-9-x-input) {
+				font-family: $primaryFont;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 12px;
+				line-height: 15px;
+				color: $inputText !important;
+				height: 40px;
+			}
+		}
+	}
+	.formSubtitle {
+		font-family: $primaryFont;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 14px;
+	}
+	.formFooter .sendButton {
+		:global(.vtex-button) {
+			background-color: $buttonSecondary;
+			border: 1px solid $buttonBorder;
+			transition: all 0.4s;
+			:global(.vtex-button__label) {
+				color: $buttonSecondaryText;
+				transition: all 0.4s;
+
+				font-family: $primaryFont;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 14px;
+				line-height: 17px;
+			}
+			&:hover {
+				background-color: $buttonBorder;
+				:global(.vtex-button__label) {
+					color: $buttonText;
+				}
+			}
+		}
+	}
+}
+
+.forgotPasswordLink,
+.dontHaveAccount {
+	font-family: $primaryFont;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+:global(.c-link) {
+	color: $primary400;
+
+	svg {
+		fill: $primary400;
+	}
+}
+
+.inputContainerAccessCode {
+	padding: 0px !important;
+}

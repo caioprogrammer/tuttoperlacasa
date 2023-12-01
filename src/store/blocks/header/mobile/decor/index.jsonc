@@ -1,0 +1,54 @@
+{
+  "menu-item#decor--mobile": {
+		"props": {
+			"id": "menu-item-decor--mobile",
+			"hasChild": true,
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/decor",
+				"noFollow": false,
+				"tagTitle": "Decor",
+				"text": "Decor"
+			},
+			"blockClass": ["department"]
+		},
+		"blocks": ["tuttoperlacasa.menu:submenu.accordion#decor--mobile"]
+	},
+  "tuttoperlacasa.menu:submenu.accordion#decor--mobile": {
+		"title": "Category",
+		"children": [
+			"container#decor-category-list-wrapper--mobile"
+		],
+		"props": {
+			"blockClass": "category"
+		}
+	},
+	"container#decor-category-list-wrapper--mobile": {
+		"children": [
+			"tuttoperlacasa.menu:menu#submenu-decor--mobile"
+		],
+		"props": {
+			"blockClass": "category-list-wrapper--mobile"
+		}
+	},
+
+  // !Category
+  "tuttoperlacasa.menu:menu#submenu-decor--mobile": {
+		"children": [
+			"menu-item#decor-ver-todos--mobile",
+			"menu-item#submenu-decoracao--mobile",
+			"menu-item#submenu-aroma--mobile",
+			"menu-item#submenu-vazio1--mobile",
+			"menu-item#submenu-vazio2--mobile",
+			"menu-item#submenu-vazio3--mobile",
+			"menu-item#submenu-vazio4--mobile",
+			"menu-item#submenu-vazio5--mobile",
+			"menu-item#submenu-vazio6--mobile"
+		],
+		"props": {
+			"orientation": "vertical"
+		}
+	}
+}

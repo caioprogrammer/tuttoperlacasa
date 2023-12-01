@@ -1,0 +1,38 @@
+.summarySmallDisclaimer {
+	display: none;
+}
+.summaryItemContainer {
+	margin: 0;
+	padding: 0;
+	justify-content: space-between;
+	&:last-child {
+		display: none;
+	}
+	.summaryItemLabel {
+		font-family: $primaryFont;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 17px;
+		display: flex;
+		align-items: center;
+		color: $textColor;
+		&::after {
+			content: '(Sem frete):';
+			font-weight: 400;
+			margin-left: 3px;
+		}
+	}
+	.summaryItemPrice {
+		font-family: $primaryFont;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 20px;
+		display: flex;
+		align-items: center;
+		text-transform: uppercase;
+		color: $textColor;
+		flex: initial;
+	}
+}

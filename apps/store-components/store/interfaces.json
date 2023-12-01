@@ -1,0 +1,25 @@
+{
+  "search-bar": {
+    "component": "SearchBar",
+    "allowed": ["autocomplete-result-list", "icon-search", "icon-close"],
+    "content": {
+      "$ref": "app:tuttoperlacasa.store-components#/definitions/SearchBar"
+    },
+    "composition": "children"
+  },
+
+  "autocomplete-result-list": {
+    "component": "AutocompleteResults"
+  },
+
+  "product-images": {
+    "component": "ProductImages",
+    "composition": "children"
+  },
+  "product-images-swiper": {
+    "component": "MainImageSwiper"
+  },
+  "complement-name": {
+    "component": "ComplementName"
+  }
+}

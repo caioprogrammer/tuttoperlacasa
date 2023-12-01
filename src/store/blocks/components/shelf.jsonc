@@ -1,0 +1,685 @@
+{
+	"flex-layout.row#shelf-home01": {
+		"title": "Prateleira 01 container",
+		"children": ["flex-layout.col#shelf-home01"],
+		"props": {
+			"blockClass": ["shelf-home01", "shelf-container"],
+			"fullWidth": true
+		}
+	},
+	"flex-layout.row#shelf-home01.mobile": {
+		"title": "Prateleira 01 container mobile",
+		"children": ["flex-layout.col#shelf-home01.mobile"],
+		"props": {
+			"blockClass": ["shelf-home01", "shelf-container"],
+			"fullWidth": true
+		}
+	},
+	"flex-layout.row#shelf-home02": {
+		"title": "Prateleira 02 container",
+		"children": ["flex-layout.col#shelf-home02"],
+		"props": {
+			"blockClass": ["shelf-home02", "shelf-container"],
+			"fullWidth": true
+		}
+	},
+	"flex-layout.row#shelf-home02.mobile": {
+		"title": "Prateleira 02 container mobile",
+		"children": ["flex-layout.col#shelf-home02.mobile"],
+		"props": {
+			"blockClass": ["shelf-home02", "shelf-container"]
+		}
+	},
+	"flex-layout.row#shelf-banner-desktop": {
+		"title": "Prateleira com banner desktop",
+		"children": [
+			"flex-layout.col#shelf-banner-cta",
+			"flex-layout.col#shelf-banner-content"
+		],
+		"props": {
+			"blockClass": ["shelf-banner", "shelf-container"],
+			"colSizing": "auto",
+			"colGap": 8
+		}
+	},
+	"flex-layout.row#shelf-banner-mobile": {
+		"title": "Prateleira com banner mobile",
+		"children": ["flex-layout.col#shelf-banner-mobile"],
+		"props": {
+			"blockClass": ["shelf-banner", "shelf-container"],
+			"fullWidth": true
+		}
+	},
+	"flex-layout.row#shelf-suggestions": {
+		"title": "Prateleira sugestões container",
+		"children": ["flex-layout.col#shelf-suggestions"],
+		"props": {
+			"blockClass": ["shelf-suggestions", "shelf-container"],
+			"fullWidth": true
+		}
+	},
+	"flex-layout.row#shelf-suggestions.mobile": {
+		"title": "Prateleira sugestões container mobile",
+		"children": ["flex-layout.col#shelf-suggestions.mobile"],
+		"props": {
+			"blockClass": ["shelf-suggestions", "shelf-container"]
+		}
+	},
+	//
+	"flex-layout.col#shelf-home01": {
+		"title": "Prateleira 01",
+		"children": ["rich-text#shelf-home01", "hover-container#shelf-home01"],
+		"props": {
+			"blockClass": "shelf-home01"
+		}
+	},
+	"flex-layout.col#shelf-home01.mobile": {
+		"title": "Prateleira 01",
+		"children": [
+			"rich-text#shelf-home01",
+			"list-context.product-list#shelf-home01.mobile"
+		],
+		"props": {
+			"blockClass": "shelf-home01"
+		}
+	},
+	"flex-layout.col#shelf-home02": {
+		"title": "Prateleira 02",
+		"children": ["rich-text#shelf-home02", "hover-container#shelf-home02"],
+		"props": {
+			"blockClass": "shelf-home02"
+		}
+	},
+	"flex-layout.col#shelf-home02.mobile": {
+		"title": "Prateleira 02",
+		"children": [
+			"rich-text#shelf-home02",
+			"list-context.product-list#shelf-home02.mobile"
+		],
+		"props": {
+			"blockClass": "shelf-home02"
+		}
+	},
+	"flex-layout.col#shelf-banner-mobile": {
+		"title": "Prateleira com banner mobile",
+		"children": [
+			"stack-layout#shelf-banner-cta.mobile",
+			"list-context.product-list#shelf-banner.mobile"
+		],
+		"props": {
+			"blockClass": ["shelf-banner", "shelf-container", "shelf-banner-mobile"]
+		}
+	},
+	"flex-layout.col#shelf-suggestions": {
+		"title": "Prateleira sugestões",
+		"children": [
+			"rich-text#shelf-suggestions",
+			"hover-container#shelf-suggestions"
+		],
+		"props": {
+			"blockClass": "shelf-suggestions"
+		}
+	},
+	"flex-layout.col#shelf-suggestions.mobile": {
+		"title": "Prateleira sugestões mobile",
+		"children": [
+			"rich-text#shelf-suggestions",
+			"list-context.product-list#shelf-suggestions.mobile"
+		],
+		"props": {
+			"blockClass": "shelf-suggestions"
+		}
+	},
+	"flex-layout.col#shelf-banner-cta": {
+		"title": "Banner Prateleira desktop",
+		"children": ["stack-layout#shelf-banner-cta.desktop"],
+		"props": {
+			"width": "44%"
+		}
+	},
+	"flex-layout.col#shelf-banner-content": {
+		"title": "Prateleira com banner",
+		"children": ["hover-container#shelf-banner"],
+		"props": {
+			"blockClass": "shelf-banner-content",
+			"width": "56%"
+		}
+	},
+	"rich-text#shelf-home01": {
+		"title": "Prateleira 01 título",
+		"props": {
+			"text": "### Os mais vendidos\nUma seleção de produtos mais vendidos para trazer requinte ao seu ambiente",
+			"blockClass": ["shelf-home01", "common-title"]
+		}
+	},
+	"rich-text#shelf-home02": {
+		"title": "Prateleira 02 título",
+		"props": {
+			"text": "### Marcas dos sonhos\nProdutos feitos por marcas renomadas agora na Tutto",
+			"blockClass": ["shelf-home02", "common-title"]
+		}
+	},
+	"rich-text#shelf-suggestions": {
+		"title": "Prateleira sugestões título",
+		"props": {
+			"text": "### Os queridinhos da nossa loja\nSe você se interessou pelo produto maravilhoso acima, vai se interessar por esses também:",
+			"blockClass": ["shelf-suggestions", "common-title"]
+		}
+	},
+	"stack-layout#shelf-banner-cta.desktop": {
+		"title": "Banner prateleira desktop",
+		"children": ["image#banner-shelf-desktop"],
+		"props": {
+			"blockClass": "shelf-banner-cta"
+		}
+	},
+	"stack-layout#shelf-banner-cta.mobile": {
+		"title": "Banner prateleira mobile",
+		"children": ["image#banner-shelf-mobile"],
+		"props": {
+			"blockClass": "shelf-banner-cta"
+		}
+	},
+	"link#shelf-banner-button": {
+		"title": "Botão banner prateleira",
+		"children": ["rich-text#shelf-banner-button-text", "icon#arrow-cta-shelf"],
+		"props": {
+			"href": "",
+			"label": "",
+			"blockClass": "shelf-banner-button"
+		}
+	},
+	"rich-text#shelf-banner-button-text": {
+		"props": {
+			"text": "__CONHEÇA TODA A COLEÇÃO__",
+			"blockClass": "shelf-banner-button-text"
+		}
+	},
+	"icon#arrow-cta-shelf": {
+		"props": {
+			"id": "nav-arrow-right",
+			"size": 14,
+			"activeClassName": "vtex-store-components-3-x-arrowCTAIcon"
+		}
+	},
+	"hover-container#shelf-home01": {
+		"children": ["list-context.product-list#shelf-home01"],
+		"props": {
+			"blockClass": ["shelf-home01", "hover-shelf-list"]
+		}
+	},
+	"hover-container#shelf-home02": {
+		"children": ["list-context.product-list#shelf-home02"],
+		"props": {
+			"blockClass": ["shelf-home02", "hover-shelf-list"]
+		}
+	},
+	"hover-container#shelf-banner": {
+		"children": ["list-context.product-list#shelf-banner"],
+		"props": {
+			"blockClass": ["shelf-banner", "hover-shelf-list"]
+		}
+	},
+	"hover-container#shelf-suggestions": {
+		"children": ["list-context.product-list#shelf-suggestions"],
+		"props": {
+			"blockClass": ["shelf-suggestions", "hover-shelf-list"]
+		}
+	},
+	"list-context.product-list#shelf-home01": {
+		"title": "Prateleira 01",
+		"blocks": ["product-summary.shelf#main-product"],
+		"children": ["slider-layout#main-shelf"],
+		"props": {
+			"maxItems": 16
+		}
+	},
+	"list-context.product-list#shelf-home02": {
+		"title": "Prateleira 02",
+		"blocks": ["product-summary.shelf#main-product"],
+		"children": ["slider-layout#main-shelf"],
+		"props": {
+			"maxItems": 16
+		}
+	},
+	"list-context.product-list#shelf-banner": {
+		"title": "Prateleira com banner",
+		"blocks": ["product-summary.shelf#main-product"],
+		"children": ["slider-layout#banner-shelf"],
+		"props": {
+			"maxItems": 16
+		}
+	},
+	"list-context.product-list#shelf-suggestions": {
+		"title": "Prateleira sugestões",
+		"blocks": ["product-summary.shelf#main-product"],
+		"children": ["slider-layout#main-shelf"],
+		"props": {
+			"maxItems": 16
+		}
+	},
+	"list-context.product-list#shelf-home01.mobile": {
+		"title": "Prateleira 01 mobile",
+		"blocks": ["product-summary.shelf#main-product"],
+		"children": ["slider-layout#shelf-mobile"],
+		"props": {
+			"maxItems": 16
+		}
+	},
+	"list-context.product-list#shelf-home02.mobile": {
+		"title": "Prateleira 02 mobile",
+		"blocks": ["product-summary.shelf#main-product"],
+		"children": ["slider-layout#shelf-mobile"],
+		"props": {
+			"maxItems": 16
+		}
+	},
+	"list-context.product-list#shelf-banner.mobile": {
+		"title": "Prateleira com banner mobile",
+		"blocks": ["product-summary.shelf#main-product"],
+		"children": ["slider-layout#shelf-mobile"],
+		"props": {
+			"maxItems": 16
+		}
+	},
+	"list-context.product-list#shelf-suggestions.mobile": {
+		"title": "Prateleira sugestões mobile",
+		"blocks": ["product-summary.shelf#main-product"],
+		"children": ["slider-layout#shelf-mobile"],
+		"props": {
+			"maxItems": 16
+		}
+	},
+
+	"slider-layout#shelf-mobile": {
+		"title": "Carossel da prateleira com banner",
+		"props": {
+			"itemsPerPage": {
+				"tablet": 2,
+				"phone": 2
+			},
+			"showPaginationDots": "desktopOnly",
+			"showNavigationArrows": "always",
+			"infinite": true,
+			"blockClass": ["shelf", "banner-shelf"]
+		}
+	},
+	"slider-layout#main-shelf": {
+		"title": "Carossel das prateleiras principais",
+		"props": {
+			"itemsPerPage": {
+				"desktop": 4,
+				"tablet": 2,
+				"phone": 2
+			},
+			"showPaginationDots": "desktopOnly",
+			"showNavigationArrows": "always",
+			"infinite": true,
+			"blockClass": ["shelf", "main-shelf"]
+		}
+	},
+	"slider-layout#countdown-shelf": {
+		"title": "Carossel do countdown",
+		"props": {
+			"itemsPerPage": {
+				"desktop": 2
+			},
+			"showPaginationDots": "always",
+			"showNavigationArrows": "desktopOnly",
+			"infinite": false,
+			"blockClass": ["shelf", "countdown-shelf"]
+		}
+	},
+	"slider-layout#banner-shelf": {
+		"title": "Carossel da prateleira com banner",
+		"props": {
+			"itemsPerPage": {
+				"desktop": 2
+			},
+			"showPaginationDots": "never",
+			"showNavigationArrows": "desktopOnly",
+			"infinite": true,
+			"blockClass": ["shelf", "banner-shelf"]
+		}
+	},
+	"product-summary.shelf#main-product": {
+		"title": "Produto vitrine",
+		"children": [
+			"stack-layout#shelf-product-image",
+			"product-specification-badges#shelf",
+			"product-summary-name",
+			"condition-layout.product#shelf-product-availability",
+			"hover-container#quick-view"
+		],
+		"props": {
+			"blockClass": "main-shelf"
+		}
+	},
+	"hover-container#quick-view": {
+		"title": "Home botão quick view",
+		"children": ["modal-trigger#quick-view"],
+		"props": {
+			"blockClass": "quick-view"
+		}
+	},
+	"product-summary-name": {
+		"props": {
+			"blockClass": "main-shelf"
+		}
+	},
+	"stack-layout#shelf-product-image": {
+		"title": "Imagem do produto vitrine",
+		"children": ["product-summary-image", "add-to-list-btn#main-shelf"],
+		"props": {
+			"blockClass": "shelf-product-image"
+		}
+	},
+	"add-to-list-btn#main-shelf": {
+		"title": "Botão adicionar a lista de desejos",
+		"props": {
+			"blockClass": "main-shelf"
+		}
+	},
+	"product-summary-image": {
+		"title": "Imagem do produto vitrine",
+		"props": {
+			//"aspectRatio": "1:1",
+			"width": {
+				"desktop": 1000,
+				"mobile": 1000
+			},
+			"height": {
+				"desktop": 1000,
+				"mobile": 1000
+			},
+			"hoverImage": {
+				"criteria": "index",
+				"index": 1
+			},
+			"badgeText": "OFF",
+			"blockClass": "main-shelf"
+		}
+	},
+
+	"product-specification-badges#shelf": {
+		"title": "Selos do produto vitrine",
+		"props": {
+			"specificationGroupName": "Selos",
+			"specificationsOptions": [
+				{
+					"specificationName": "Selo marrom",
+					"displayValue": "SPECIFICATION_VALUE"
+				},
+				{
+					"specificationName": "Selo laranja",
+					"displayValue": "SPECIFICATION_VALUE"
+				}
+			],
+			"blockClass": "seal-shelf"
+		}
+	},
+	"condition-layout.product#shelf-product-availability": {
+		"props": {
+			"conditions": [
+				{
+					"subject": "isProductAvailable"
+				}
+			],
+			"Then": "flex-layout.col#shelf-product-available",
+			"Else": "flex-layout.col#shelf-product-unavailable"
+		}
+	},
+
+	"flex-layout.col#shelf-product-available": {
+		"title": "Produto vitrine disponível",
+		"children": [
+			"condition-layout.product#shelf-product-haslistPrice",
+			"product-installments#shelf",
+			"hover-container#actions"
+			// "condition-layout.product#shelf-product-sku-variation"
+			// "flex-layout.col#shelf-product-with-variation"
+		],
+		"props": {
+			"blockClass": "shelf-product-available"
+		}
+	},
+
+	"hover-container#actions": {
+		"title": "Ações Prateleira",
+		"children": ["condition-layout.product#shelf-product-sku-variation"],
+		"props": {
+			"blockClass": "actions"
+		}
+	},
+
+	"condition-layout.product#shelf-product-haslistPrice": {
+		"props": {
+			"conditions": [
+				{
+					"subject": "hasListPrice"
+				}
+			],
+			"Then": "flex-layout.row#shelf-product-listPrice",
+			"Else": "flex-layout.row#shelf-product-bestPrice"
+		}
+	},
+	"flex-layout.row#shelf-product-listPrice": {
+		"title": "Preço (com preço de lista) produto vitrine",
+		"children": ["product-list-price#shelf", "product-selling-price#shelf"],
+		"props": {
+			"preventHorizontalStretch": true,
+			"preserveLayoutOnMobile": true,
+			"horizontalAlign": "left",
+			"blockClass": "shelf-product-listPrice"
+		}
+	},
+	"flex-layout.row#shelf-product-bestPrice": {
+		"title": "Preço produto vitrine",
+		"children": ["product-selling-price"],
+		"props": {
+			"preventHorizontalStretch": true,
+			"preserveLayoutOnMobile": true,
+			"horizontalAlign": "left",
+			"blockClass": "shelf-product-bestPrice"
+		}
+	},
+	"product-list-price#shelf": {
+		"title": "Preço de lista produto vitrine",
+		"props": {
+			"message": "De: {listPriceValue}",
+			"blockClass": "product-shelf-price"
+		}
+	},
+	"product-selling-price": {
+		"title": "Preço (sem preço de lista) produto vitrine",
+		"props": {
+			"message": "<bold>Por: {sellingPriceValue}</bold>",
+			"markers": ["bold"],
+			"blockClass": "product-shelf-price"
+		}
+	},
+	"product-selling-price#shelf": {
+		"title": "Preço (com preço de lista) produto vitrine",
+		"props": {
+			"message": "<bold>Por: {sellingPriceValue}</bold>",
+			"markers": ["bold"],
+			"blockClass": "product-shelf-price"
+		}
+	},
+
+	"product-installments#shelf": {
+		"props": {
+			"markers": ["bold"],
+			"message": "Ou <bold>{installmentsNumber}x</bold> de <bold>{installmentValue} </bold> sem juros",
+			"installmentsCriteria": "max-quantity-without-interest",
+			"blockClass": "shelf"
+		}
+	},
+	"flex-layout.col#shelf-product-unavailable": {
+		"title": "Produto vitrine indisponível",
+		"children": [
+			"rich-text#shelf-product-unavailable",
+			"hover-container#shelf-product-unavailable-button"
+		],
+		"props": {
+			"preventVerticalStretch": true,
+			"verticalAlign": "top",
+			"blockClass": "shelf-product-unavailable"
+		}
+	},
+	"rich-text#shelf-product-unavailable": {
+		"title": "Texto produto indisponível vitrine",
+		"props": {
+			"text": "__Produto Indisponível__",
+			"blockClass": "shelf-product-unavailable"
+		}
+	},
+	"hover-container#shelf-product-unavailable-button": {
+		"title": "Hover botão avise-me prateleira",
+		"children": ["rich-text#shelf-product-unavailable-button"],
+		"props": {
+			"blockClass": "shelf-product-unavailable-button",
+			"hoverItem": false
+		}
+	},
+	"rich-text#shelf-product-unavailable-button": {
+		"title": "Botão produto indisponível vitrine",
+		"props": {
+			"text": "__AVISE-ME QUANDO CHEGAR__",
+			"blockClass": "shelf-product-unavailable-button"
+		}
+	},
+
+	"condition-layout.product#shelf-product-sku-variation": {
+		"props": {
+			"conditions": [
+				{
+					"subject": "isUniqueSku"
+				}
+			],
+			"Then": "flex-layout.col#shelf-product-without-variation",
+			"Else": "flex-layout.col#shelf-product-with-variation"
+		}
+	},
+
+	"flex-layout.col#shelf-product-without-variation": {
+		"title": "Produto vitrine sem variação de sku",
+		"children": ["hover-container#shelf-product-buy-quantity"],
+		"props": {
+			"blockClass": "shelf-product-without-variation"
+		}
+	},
+	"flex-layout.col#shelf-product-with-variation": {
+		"title": "Produto vitrine com variação de sku",
+		"children": [
+			"hover-container#shelf-sku-selector",
+			"condition-layout.product#shelf-product-selected-variation"
+		],
+		"props": {
+			"blockClass": "shelf-product-with-variation",
+			"preventVerticalStretch": true
+		}
+	},
+
+	"condition-layout.product#shelf-product-selected-variation": {
+		"props": {
+			"conditions": [
+				{
+					"subject": "areAllVariationsSelected"
+				}
+			],
+			"Then": "hover-container#shelf-product-buy-quantity",
+			"Else": "hover-container#shelf-buy-button"
+		}
+	},
+	"flex-layout.row#shelf-sku-selector": {
+		"title": "Seletor de sku produto vitrine",
+		"children": ["product-summary-sku-selector"],
+		"props": {
+			"blockClass": "shelf-sku-selector"
+		}
+	},
+	"product-summary-sku-selector": {
+		"props": {
+			"initialSelection": "empty",
+			"visibility": "always",
+			"blockClass": "shelf-sku-selector"
+		}
+	},
+	"hover-container#shelf-product-buy-quantity": {
+		"title": "Hover botão comprar/quantidade prateleira",
+		"children": ["flex-layout.row#shelf-product-buy-quantity"],
+		"props": {
+			"blockClass": "shelf-product-buy-quantity",
+			"hoverItem": false
+		}
+	},
+	"hover-container#shelf-buy-button": {
+		"title": "Hover botão comprar prateleira",
+		"children": ["flex-layout.row#shelf-buy-button"],
+		"props": {
+			"blockClass": "shelf-buy-button",
+			"hoverItem": false
+		}
+	},
+	"hover-container#shelf-sku-selector": {
+		"title": "Hover seletor de sku prateleira",
+		"children": ["flex-layout.row#shelf-sku-selector"],
+		"props": {
+			"blockClass": "shelf-sku-selector",
+			"hoverItem": true
+		}
+	},
+	"flex-layout.row#shelf-product-buy-quantity": {
+		"title": "Seletor de quantidade/botão comprar produto vitrine",
+		"children": [
+			"flex-layout.col#shelf-quantity",
+			"flex-layout.col#shelf-buy-button"
+		],
+		"props": {
+			"blockClass": "shelf-product-buy-quantity",
+			"colSizing": "auto",
+			"preventHorizontalStretch": true,
+			"preserveLayoutOnMobile": true,
+			"colGap": 0
+		}
+	},
+	"flex-layout.col#shelf-quantity": {
+		"children": ["product-summary-quantity#shelf-quantity"],
+		"props": {
+			"blockClass": "shelf-quantity",
+			"marginRight": 4,
+			"paddingRight": 0
+		}
+	},
+	"flex-layout.row#shelf-buy-button": {
+		"children": ["flex-layout.col#shelf-buy-button"],
+		"props": {
+			"blockClass": ["shelf-buy-button", "buy-button"],
+			"width": "grow"
+		}
+	},
+	"flex-layout.col#shelf-buy-button": {
+		"children": ["add-to-cart-button#shelf-buy"],
+		"props": {
+			"blockClass": ["shelf-buy-button", "buy-button"],
+			"width": "grow"
+		}
+	},
+	"product-summary-quantity#shelf-quantity": {
+		"title": "Seletor de quantidade produto vitrine",
+		"props": {
+			"size": "small",
+			"showLabel": false,
+			"blockClass": "shelf-quantity"
+		}
+	},
+	"add-to-cart-button#shelf-buy": {
+		"title": "Botão comprar produto vitrine",
+		"props": {
+			"onClickBehavior": "add-to-cart",
+			"text": "Comprar",
+			"blockClass": "shelf-buy"
+		}
+	}
+}

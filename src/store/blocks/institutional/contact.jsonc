@@ -1,0 +1,132 @@
+// 20211118172906
+// https://bitbucket.org/osfeladaeplus/fastlayout-default/raw/dbf63124f84b2aebf7ec3e152a832c5ce9660e3f/src/store/blocks/institucional/contact.jsonc
+
+{
+	"store.custom#contact": {
+		"blocks": [
+			"responsive-layout.desktop#contact",
+			"responsive-layout.mobile#contact"
+		]
+	},
+	"responsive-layout.desktop#contact": {
+		"children": [
+			"flex-layout.row#breadcrumb-contact",
+			"flex-layout.row#contact-content"
+		]
+	},
+	"flex-layout.row#contact-content": {
+		"children": [
+			"flex-layout.col#menu-institucional",
+			"flex-layout.col#contact"
+		],
+		"props": {
+			"blockClass": "contact",
+			"paddingBottom": 8
+		}
+	},
+	"flex-layout.col#contact": {
+		"children": ["form#attendence"]
+	},
+	"flex-layout.row#breadcrumb-contact": {
+		"children": [
+			"link#breadcrumb-home",
+			"link#breadcrumb-icon",
+			"link#breadcrumb-contact"
+		],
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true,
+			"blockClass": "breadcrumb",
+			"colGap": 3
+		}
+	},
+	"responsive-layout.mobile#contact": {
+		"children": ["flex-layout.row#contact-mobile"]
+	},
+	"flex-layout.row#contact-mobile": {
+		"children": ["flex-layout.col#contact-mobile"],
+		"props": {
+			"blockClass": "contact"
+		}
+	},
+	"flex-layout.col#contact-mobile": {
+		"children": [
+			"flex-layout.row#breadcrumb-contact",
+			"flex-layout.row#disc-institucional",
+			"form#attendence"
+		],
+		"props": {}
+	},
+	"link#breadcrumb-contact": {
+		"props": {
+			"label": "Contato",
+			"blockClass": "active-breadcrumb"
+		}
+	},
+	"form#attendence": {
+		"props": {
+			"entity": "FC",
+			"schema": "contato"
+		},
+		"children": [
+			"rich-text#contactTitle",
+			"form-input.text#name",
+			"form-input.text#email",
+			"form-input.textarea#message",
+			"form-submit"
+		],
+		"blocks": ["form-success"]
+	},
+	"rich-text#contactTitle": {
+		"props": {
+			"text": "# Formulário de Contato",
+			"blockClass": "contact-titulo"
+		}
+	},
+	"form-success": {
+		"children": ["rich-text#successSubmit", "rich-text#successButtonReload"]
+	},
+	"rich-text#successSubmit": {
+		"props": {
+			"text": "Formulário enviado com sucesso",
+			"textAlignment": "CENTER",
+			"textPosition": "CENTER"
+		}
+	},
+	"rich-text#successButtonReload": {
+		"props": {
+			"text": "[Enviar novo formulÃ¡rio]()",
+			"textAlignment": "CENTER",
+			"textPosition": "CENTER",
+			"blockClass": "botao-reenviar"
+		}
+	},
+	"form-input.text#name": {
+		"props": {
+			"pointer": "#/properties/name",
+			"label": "Nome",
+			"blockClass": "contact-names"
+		}
+	},
+	"form-input.text#email": {
+		"props": {
+			"pointer": "#/properties/email",
+			"label": "Email",
+			"blockClass": "contact-names"
+		}
+	},
+	"form-input.textarea#message": {
+		"props": {
+			"pointer": "#/properties/message",
+			"label": "Mensagem",
+			"placeholder": "Digite sua mensagem aqui.",
+			"blockClass": "contact-names"
+		}
+	},
+	"form-submit": {
+		"props": {
+			"label": "Enviar",
+			"blockClass": "contact-button"
+		}
+	}
+}

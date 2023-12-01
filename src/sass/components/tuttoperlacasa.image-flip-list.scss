@@ -1,0 +1,36 @@
+.sliderArrows {
+	&--shelf {
+		top: 57%;
+	}
+
+	padding: 0;
+	margin: 0;
+	width: 35px;
+	height: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.4s;
+	.caretIcon {
+		width: 14px;
+		height: 14px;
+		color: $arrowText;
+		transition: all 0.4s;
+	}
+	&:not(:hover) {
+		background: $white !important;
+	}
+	&:not(:disabled):hover {
+		background: $primary400 !important;
+		opacity: .5;
+		.caretIcon {
+			color: $arrowSecondaryText;
+		}
+	}
+	&:disabled {
+		background: $arrowDisabledColor !important;
+		.caretIcon {
+			color: $arrowDisabledText;
+		}
+	}
+}

@@ -1,0 +1,52 @@
+{
+  "menu-item#submenu-lazer-vazio4": {
+    "props": {
+			"id": "menu-item-lazer-vazio4",
+			"type": "custom",
+			"highlight": false,
+			"hide": true,
+			"hasChild": true,
+			"itemProps": {
+				"type": "internal",
+				"href": "/area-externa/lazer-vazio4",
+				"noFollow": false,
+				"tagTitle": "lazer-vazio4",
+				"text": "lazer-vazio4"
+			}
+		},
+		"blocks": ["tuttoperlacasa.menu:submenu#submenu-lazer-vazio4"]
+  },
+
+  // !SUBMENU
+  	"tuttoperlacasa.menu:submenu#submenu-lazer-vazio4": {
+		"title": "Subcategoria",
+		"children": ["container#submenu-lazer-vazio4-category-list-wrapper"],
+		"props": {
+			"blockClass": "subcategory"
+		}
+	},
+	"container#submenu-lazer-vazio4-category-list-wrapper": {
+		"children": ["tuttoperlacasa.menu:menu#submenu-submenu-lazer-vazio4"],
+		"props": {
+			"blockClass": "subcategory-list-wrapper"
+		}
+	},
+
+  "tuttoperlacasa.menu:menu#submenu-submenu-lazer-vazio4": {
+		"props": {
+			"orientation": "vertical",
+			"items": [
+				{
+					"id": "menu-item-cesta-de-piquenique",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/area-externa/lazer-vazio4/cesta-de-piquenique",
+						"text": ""
+					}
+				}
+			],
+			"blockClass": ["subcategory"]
+		}
+	}
+}

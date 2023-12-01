@@ -1,0 +1,30 @@
+{
+  "shipping-simulator": {
+    "component": "ShippingSimulator"
+  },
+
+  "seller-simulate-shipping": {
+    "component": "SellerSelectorShippingSimulator"
+  },
+
+  "shipping-simulator.wrapper": {
+    "component": "ShippingSimulatorWrapper",
+    "composition": "children"
+  },
+
+  "shipping-simulator.input": {
+    "component": "ShippingSimulatorInput"
+  },
+
+  "shipping-simulator.button": {
+    "component": "ShippingSimulatorSubmitButton"
+  },
+
+  "shipping-simulator.table": {
+    "component": "ShippingSimulatorTable"
+  },
+
+  "shipping-simulator.search": {
+    "component": "ShippingUnknownPostalLink"
+  }
+}

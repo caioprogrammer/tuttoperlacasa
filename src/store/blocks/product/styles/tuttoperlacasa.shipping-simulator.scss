@@ -1,0 +1,119 @@
+.shippingContainer {
+	display: flex;
+	align-items: flex-start;
+	margin-top: 20px;
+	flex-direction: column;
+	.shippingFormContainer {
+		width: 100%;
+		.shippingForm {
+			flex-direction: column;
+			:global(.vtex-input) {
+				width: 100%;
+				max-width: 250px;
+				:global(.vtex-input__label) {
+					display: none;
+				}
+				:global(.vtex-input-prefix__group) {
+					border: none;
+					background: transparent;
+					height: initial;
+					:global(.vtex-styleguide-9-x-input) {
+						height: 46px;
+						background: $primaryBg;
+						border: 0.5px solid $borderColor;
+						box-sizing: border-box;
+						border-radius: 7px;
+						padding: 0 19px;
+						font-family: $primaryFont;
+						font-style: normal;
+						font-weight: normal;
+						font-size: 14px;
+						line-height: 17px;
+						color: $secondary;
+					}
+				}
+			}
+			:global(.vtex-input__error) {
+				font-family: $primaryFont;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 12px;
+				line-height: 15px;
+				text-transform: $storeTextTransform;
+				color: $danger500;
+				margin-top: 4px;
+			}
+			:global(.vtex-button) {
+				height: 46px;
+				border: 1px solid $primary200;
+				background-color: $primary200;
+				border-radius: 7px;
+				max-width: 200px;
+				cursor: pointer;
+				transition: all 0.4s;
+
+				@include media-max(1024px) {
+					margin-left: 0px;
+					margin-top: 10px;
+				}
+
+				:global(.vtex-button__label) {
+					font-family: $primaryFont;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 16px;
+					line-height: 19px;
+					text-align: center;
+					color: $buttonText;
+					transition: all 0.4s;
+					text-transform: none;
+					padding: 0px;
+					width: 200px;
+				}
+				&:hover {
+					background-color: $primary400;
+					:global(.vtex-button__label) {
+						color: $white;
+					}
+				}
+			}
+		}
+		.shippingUnknownPostalWrapper {
+			margin-top: 14px;
+			@include ficon-after($icon-nav-arrow-right-filled, 10px, $textColor) {
+				padding-left: 10px;
+			}
+			.shippingUnknownPostalLink {
+				font-family: $primaryFont;
+				font-style: italic;
+				font-weight: normal;
+				font-size: 12px;
+				line-height: 14px;
+				text-decoration-line: underline;
+				color: $textColor;
+			}
+		}
+	}
+	.shippingTable {
+		border-color: $borderColor;
+		border-bottom: unset;
+		.shippingTableLabel,
+		.shippingTableCell {
+			font-family: $primaryFont;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 17px;
+			text-align: center;
+			color: #946346;
+		}
+	}
+}
+
+.shippingTableRadioBtn {
+	display: none;
+}
+
+.shippingTableHead {
+	display: table-header-group;
+}

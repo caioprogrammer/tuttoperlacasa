@@ -1,0 +1,55 @@
+.sliderArrows {
+	&--shelf {
+		// top: 50%;
+		top: calc(293px / 2);
+		transform: translateY(-50%);
+	}
+
+	padding: 0;
+	margin: 0;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.4s;
+	.caretIcon {
+		width: 16px;
+		height: 16px;
+		color: $arrowText;
+		transition: all 0.4s;
+	}
+	&:not(:hover) {
+		background: $arrowColor !important;
+	}
+	&:not(:disabled):hover {
+		background: $arrowSecondary !important;
+		opacity: .5;
+		.caretIcon {
+			color: $arrowSecondaryText;
+		}
+	}
+	&:disabled {
+		background: $arrowDisabledColor !important;
+		.caretIcon {
+			color: $black;
+		}
+	}
+}
+
+.paginationDotsContainer { 
+	.paginationDot {
+		border: 1px solid $secondary400;
+		background-color: transparent;
+		border-radius: 15px;
+		min-width: 15px;
+		height: 5px !important;
+		transition: all 0.4s;
+		padding: 0;
+		box-sizing: content-box;
+		&--isActive {
+			min-width: 37px;
+			background-color: $secondary400;
+		}
+	}
+}

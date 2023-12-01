@@ -1,0 +1,333 @@
+// File generated automatically with Fantasticon lib.
+// Only edit it if you know what you are doing.
+// Template used is at src/sass/icons/icons-template.scss.hbs
+
+$fantasticon_4GMjbTWvE5-font: "fantasticon";
+$fantasticon-font: "fantasticon";
+
+$fantasticon_4GMjbTWvE5-map: (
+  "arrow-departament": "\f101",
+  "bnd-agenciaeplus": "\f102",
+  "bnd-amex": "\f103",
+  "bnd-boleto": "\f104",
+  "bnd-bradesco": "\f105",
+  "bnd-dinners": "\f106",
+  "bnd-electron": "\f107",
+  "bnd-elo": "\f108",
+  "bnd-facebook": "\f109",
+  "bnd-hipercard": "\f10a",
+  "bnd-instagram": "\f10b",
+  "bnd-jcb": "\f10c",
+  "bnd-letsencrypt-wide": "\f10d",
+  "bnd-letsencrypt": "\f10e",
+  "bnd-logo": "\f10f",
+  "bnd-maestro": "\f110",
+  "bnd-mastercard": "\f111",
+  "bnd-paypal": "\f112",
+  "bnd-pci": "\f113",
+  "bnd-pix": "\f114",
+  "bnd-visa": "\f115",
+  "bnd-vtex": "\f116",
+  "bnd-whatsapp": "\f117",
+  "bnd-youtube": "\f118",
+  "delivery": "\f119",
+  "expand-less": "\f11a",
+  "expand-more": "\f11b",
+  "facebook-social": "\f11c",
+  "facebook": "\f11d",
+  "fluent-right-arrow": "\f11e",
+  "hpa-arrow-back": "\f11f",
+  "hpa-arrow-from-bottom": "\f120",
+  "hpa-arrow-to-bottom": "\f121",
+  "hpa-bag": "\f122",
+  "hpa-calendar": "\f123",
+  "hpa-cart": "\f124",
+  "hpa-delete": "\f125",
+  "hpa-hamburguer-menu": "\f126",
+  "hpa-location-marker": "\f127",
+  "hpa-profile": "\f128",
+  "hpa-save": "\f129",
+  "hpa-search": "\f12a",
+  "hpa-telemarketing": "\f12b",
+  "inf-heart-filled": "\f12c",
+  "inf-heart": "\f12d",
+  "inf-help-filled": "\f12e",
+  "inf-help-outline": "\f12f",
+  "inf-location-filled": "\f130",
+  "inf-location": "\f131",
+  "inf-star": "\f132",
+  "inf-tooltip-filled": "\f133",
+  "inf-tooltip-outline": "\f134",
+  "inf-warning-filled": "\f135",
+  "inf-warning-outline": "\f136",
+  "instagram-social": "\f137",
+  "instagram": "\f138",
+  "linkedin": "\f139",
+  "list": "\f13a",
+  "login": "\f13b",
+  "logo-tutto-marrom": "\f13c",
+  "mpa-angle-down": "\f13d",
+  "mpa-angle-up": "\f13e",
+  "mpa-arrows": "\f13f",
+  "mpa-bag": "\f140",
+  "mpa-bars": "\f141",
+  "mpa-bookmark-filled": "\f142",
+  "mpa-bookmark-outline": "\f143",
+  "mpa-card": "\f144",
+  "mpa-clone-filled": "\f145",
+  "mpa-clone-outline": "\f146",
+  "mpa-cog": "\f147",
+  "mpa-columns": "\f148",
+  "mpa-credit-card": "\f149",
+  "mpa-delivery": "\f14a",
+  "mpa-discount": "\f14b",
+  "mpa-edit-filled": "\f14c",
+  "mpa-edit-outline": "\f14d",
+  "mpa-elypsis": "\f14e",
+  "mpa-exchange": "\f14f",
+  "mpa-expand": "\f150",
+  "mpa-export": "\f151",
+  "mpa-external-link-line": "\f152",
+  "mpa-external-link-outline": "\f153",
+  "mpa-eyesight-filled-off": "\f154",
+  "mpa-eyesight-filled-on": "\f155",
+  "mpa-eyesight-outline-off": "\f156",
+  "mpa-eyesight-outline-on": "\f157",
+  "mpa-filter-filled": "\f158",
+  "mpa-filter-outline": "\f159",
+  "mpa-filter-settings": "\f15a",
+  "mpa-gallery": "\f15b",
+  "mpa-gender": "\f15c",
+  "mpa-globe": "\f15d",
+  "mpa-heart": "\f15e",
+  "mpa-link": "\f15f",
+  "mpa-list-items": "\f160",
+  "mpa-location-input": "\f161",
+  "mpa-minus-filled": "\f162",
+  "mpa-minus-line": "\f163",
+  "mpa-minus-outline": "\f164",
+  "mpa-pause": "\f165",
+  "mpa-play": "\f166",
+  "mpa-player": "\f167",
+  "mpa-plus-filled": "\f168",
+  "mpa-plus-line": "\f169",
+  "mpa-plus-outline": "\f16a",
+  "mpa-remove": "\f16b",
+  "mpa-ruler": "\f16c",
+  "mpa-safebuy-filled": "\f16d",
+  "mpa-settings": "\f16e",
+  "mpa-shipping": "\f16f",
+  "mpa-single-item": "\f170",
+  "mpa-store": "\f171",
+  "mpa-swap": "\f172",
+  "mpa-zoom": "\f173",
+  "nav-arrow-down-filled": "\f174",
+  "nav-arrow-left": "\f175",
+  "nav-arrow-right-filled": "\f176",
+  "nav-arrow-right": "\f177",
+  "nav-arrow-top": "\f178",
+  "nav-caret-down": "\f179",
+  "nav-caret-left": "\f17a",
+  "nav-caret-right": "\f17b",
+  "nav-caret-up": "\f17c",
+  "nav-home": "\f17d",
+  "nav-minus": "\f17e",
+  "nav-plus": "\f17f",
+  "nav-thin-caret-left": "\f180",
+  "nav-thin-caret-right": "\f181",
+  "pinterest-social": "\f182",
+  "rotate": "\f183",
+  "shipping": "\f184",
+  "star-full": "\f185",
+  "star": "\f186",
+  "sti-check-filled": "\f187",
+  "sti-check-line": "\f188",
+  "sti-check-outline": "\f189",
+  "sti-clock": "\f18a",
+  "sti-close-filled": "\f18b",
+  "sti-close-line": "\f18c",
+  "sti-close-outline": "\f18d",
+  "sti-discount": "\f18e",
+  "sti-equals": "\f18f",
+  "sti-loading": "\f190",
+  "sti-volume-off": "\f191",
+  "sti-volume-on": "\f192",
+  "tiktok-social": "\f193",
+  "youtube": "\f194",
+);
+
+$icon-arrow-departament: "\f101";
+$icon-bnd-agenciaeplus: "\f102";
+$icon-bnd-amex: "\f103";
+$icon-bnd-boleto: "\f104";
+$icon-bnd-bradesco: "\f105";
+$icon-bnd-dinners: "\f106";
+$icon-bnd-electron: "\f107";
+$icon-bnd-elo: "\f108";
+$icon-bnd-facebook: "\f109";
+$icon-bnd-hipercard: "\f10a";
+$icon-bnd-instagram: "\f10b";
+$icon-bnd-jcb: "\f10c";
+$icon-bnd-letsencrypt-wide: "\f10d";
+$icon-bnd-letsencrypt: "\f10e";
+$icon-bnd-logo: "\f10f";
+$icon-bnd-maestro: "\f110";
+$icon-bnd-mastercard: "\f111";
+$icon-bnd-paypal: "\f112";
+$icon-bnd-pci: "\f113";
+$icon-bnd-pix: "\f114";
+$icon-bnd-visa: "\f115";
+$icon-bnd-vtex: "\f116";
+$icon-bnd-whatsapp: "\f117";
+$icon-bnd-youtube: "\f118";
+$icon-delivery: "\f119";
+$icon-expand-less: "\f11a";
+$icon-expand-more: "\f11b";
+$icon-facebook-social: "\f11c";
+$icon-facebook: "\f11d";
+$icon-fluent-right-arrow: "\f11e";
+$icon-hpa-arrow-back: "\f11f";
+$icon-hpa-arrow-from-bottom: "\f120";
+$icon-hpa-arrow-to-bottom: "\f121";
+$icon-hpa-bag: "\f122";
+$icon-hpa-calendar: "\f123";
+$icon-hpa-cart: "\f124";
+$icon-hpa-delete: "\f125";
+$icon-hpa-hamburguer-menu: "\f126";
+$icon-hpa-location-marker: "\f127";
+$icon-hpa-profile: "\f128";
+$icon-hpa-save: "\f129";
+$icon-hpa-search: "\f12a";
+$icon-hpa-telemarketing: "\f12b";
+$icon-inf-heart-filled: "\f12c";
+$icon-inf-heart: "\f12d";
+$icon-inf-help-filled: "\f12e";
+$icon-inf-help-outline: "\f12f";
+$icon-inf-location-filled: "\f130";
+$icon-inf-location: "\f131";
+$icon-inf-star: "\f132";
+$icon-inf-tooltip-filled: "\f133";
+$icon-inf-tooltip-outline: "\f134";
+$icon-inf-warning-filled: "\f135";
+$icon-inf-warning-outline: "\f136";
+$icon-instagram-social: "\f137";
+$icon-instagram: "\f138";
+$icon-linkedin: "\f139";
+$icon-list: "\f13a";
+$icon-login: "\f13b";
+$icon-logo-tutto-marrom: "\f13c";
+$icon-mpa-angle-down: "\f13d";
+$icon-mpa-angle-up: "\f13e";
+$icon-mpa-arrows: "\f13f";
+$icon-mpa-bag: "\f140";
+$icon-mpa-bars: "\f141";
+$icon-mpa-bookmark-filled: "\f142";
+$icon-mpa-bookmark-outline: "\f143";
+$icon-mpa-card: "\f144";
+$icon-mpa-clone-filled: "\f145";
+$icon-mpa-clone-outline: "\f146";
+$icon-mpa-cog: "\f147";
+$icon-mpa-columns: "\f148";
+$icon-mpa-credit-card: "\f149";
+$icon-mpa-delivery: "\f14a";
+$icon-mpa-discount: "\f14b";
+$icon-mpa-edit-filled: "\f14c";
+$icon-mpa-edit-outline: "\f14d";
+$icon-mpa-elypsis: "\f14e";
+$icon-mpa-exchange: "\f14f";
+$icon-mpa-expand: "\f150";
+$icon-mpa-export: "\f151";
+$icon-mpa-external-link-line: "\f152";
+$icon-mpa-external-link-outline: "\f153";
+$icon-mpa-eyesight-filled-off: "\f154";
+$icon-mpa-eyesight-filled-on: "\f155";
+$icon-mpa-eyesight-outline-off: "\f156";
+$icon-mpa-eyesight-outline-on: "\f157";
+$icon-mpa-filter-filled: "\f158";
+$icon-mpa-filter-outline: "\f159";
+$icon-mpa-filter-settings: "\f15a";
+$icon-mpa-gallery: "\f15b";
+$icon-mpa-gender: "\f15c";
+$icon-mpa-globe: "\f15d";
+$icon-mpa-heart: "\f15e";
+$icon-mpa-link: "\f15f";
+$icon-mpa-list-items: "\f160";
+$icon-mpa-location-input: "\f161";
+$icon-mpa-minus-filled: "\f162";
+$icon-mpa-minus-line: "\f163";
+$icon-mpa-minus-outline: "\f164";
+$icon-mpa-pause: "\f165";
+$icon-mpa-play: "\f166";
+$icon-mpa-player: "\f167";
+$icon-mpa-plus-filled: "\f168";
+$icon-mpa-plus-line: "\f169";
+$icon-mpa-plus-outline: "\f16a";
+$icon-mpa-remove: "\f16b";
+$icon-mpa-ruler: "\f16c";
+$icon-mpa-safebuy-filled: "\f16d";
+$icon-mpa-settings: "\f16e";
+$icon-mpa-shipping: "\f16f";
+$icon-mpa-single-item: "\f170";
+$icon-mpa-store: "\f171";
+$icon-mpa-swap: "\f172";
+$icon-mpa-zoom: "\f173";
+$icon-nav-arrow-down-filled: "\f174";
+$icon-nav-arrow-left: "\f175";
+$icon-nav-arrow-right-filled: "\f176";
+$icon-nav-arrow-right: "\f177";
+$icon-nav-arrow-top: "\f178";
+$icon-nav-caret-down: "\f179";
+$icon-nav-caret-left: "\f17a";
+$icon-nav-caret-right: "\f17b";
+$icon-nav-caret-up: "\f17c";
+$icon-nav-home: "\f17d";
+$icon-nav-minus: "\f17e";
+$icon-nav-plus: "\f17f";
+$icon-nav-thin-caret-left: "\f180";
+$icon-nav-thin-caret-right: "\f181";
+$icon-pinterest-social: "\f182";
+$icon-rotate: "\f183";
+$icon-shipping: "\f184";
+$icon-star-full: "\f185";
+$icon-star: "\f186";
+$icon-sti-check-filled: "\f187";
+$icon-sti-check-line: "\f188";
+$icon-sti-check-outline: "\f189";
+$icon-sti-clock: "\f18a";
+$icon-sti-close-filled: "\f18b";
+$icon-sti-close-line: "\f18c";
+$icon-sti-close-outline: "\f18d";
+$icon-sti-discount: "\f18e";
+$icon-sti-equals: "\f18f";
+$icon-sti-loading: "\f190";
+$icon-sti-volume-off: "\f191";
+$icon-sti-volume-on: "\f192";
+$icon-tiktok-social: "\f193";
+$icon-youtube: "\f194";
+
+
+@mixin ficon-before($icon, $size: 14px, $color: inherit) {
+	&::before {
+		display: inline-flex;
+		content: $icon;
+		font-size: $size;
+		font-family: $fantasticon_4GMjbTWvE5-font;
+		font-style: normal;
+		font-weight: 400;
+		color: $color;
+		@content;
+	}
+}
+
+@mixin ficon-after($icon, $size: 14px, $color: inherit) {
+	&::after {
+		display: inline-flex;
+		content: $icon;
+		font-size: $size;
+		font-family: $fantasticon_4GMjbTWvE5-font;
+		font-style: normal;
+		font-weight: 400;
+		color: $color;
+		@content;
+	}
+}

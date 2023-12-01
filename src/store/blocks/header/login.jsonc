@@ -1,0 +1,135 @@
+{
+	"flex-layout.col#login-desktop": {
+		"children": ["overlay-trigger#login"],
+		"props": {
+			"verticalAlign": "middle",
+			"horizontalAlign": "center",
+			"blockClass": "login"
+		}
+	},
+	"overlay-trigger#login": {
+		"children": ["rich-text#login-text", "conditional-login"],
+		"props": {
+			"trigger": "hover",
+			"blockClass": "login"
+		}
+	},
+	"rich-text#login-text": {
+		"props": {
+			"text": "LOGIN",
+			"blockClass": "login-text"
+		}
+	},
+	"conditional-login": {
+		"blocks": ["conditional-login.logged", "conditional-login.unlogged"]
+	},
+	"conditional-login.logged": {
+		"children": ["overlay-layout#logged"]
+	},
+	"overlay-layout#logged": {
+		"children": [
+			"rich-text#login-text-overlay",
+			"link#orders",
+			"link#account",
+			"rich-text#logout"
+		],
+		"props": {
+			"blockClass": ["logged", "dropdown-login"]
+		}
+	},
+	"link#orders": {
+		"props": {
+			"label": "Meus Pedidos",
+			"href": "/account#/orders",
+			"blockClass": "overlay-login"
+		}
+	},
+	"link#account": {
+		"props": {
+			"label": "Minha Conta",
+			"href": "/account#/profile",
+			"blockClass": "overlay-login"
+		}
+	},
+	"rich-text#logout": {
+		"title": "Desconectar",
+		"props": {
+			"blockClass": "overlay-login",
+			"text": "[Sair](/no-cache/user/logout)"
+		}
+	},
+	"conditional-login.unlogged": {
+		"children": ["overlay-layout#unlogged"]
+	},
+	"overlay-layout#unlogged": {
+		"children": ["rich-text#login-text-overlay", "rich-text#login"],
+		"props": {
+			"placement": "top",
+			"blockClass": ["unlogged", "dropdown-login"]
+		}
+	},
+	"rich-text#login": {
+		"props": {
+			"text": "[**Entre** ou **Cadastre-se**](/login)",
+			"blockClass": "text-unlogged"
+		}
+	},
+	"rich-text#login-text-overlay": {
+		"props": {
+			"text": "LOGIN",
+			"blockClass": "login-text-overlay"
+		}
+	},
+	//Mobile
+	"flex-layout.row#login-mobile": {
+		"children": ["conditional-login#mobile"],
+		"props": {
+			"verticalAlign": "middle",
+			"horizontalAlign": "center",
+			"blockClass": "login-mobile"
+		}
+	},
+	"conditional-login#mobile": {
+		"blocks": [
+			"conditional-login.logged#mobile",
+			"conditional-login.unlogged#mobile"
+		]
+	},
+	"conditional-login.logged#mobile": {
+		"children": ["flex-layout.row#my-orders"]
+	},
+	"conditional-login.unlogged#mobile": {
+		"children": ["modal-trigger#login-mobile"]
+	},
+	"modal-trigger#login-mobile": {
+		"children": ["rich-text#login", "modal-layout#login-mobile"]
+	},
+	"modal-layout#login-mobile": {
+		"children": ["login-content"],
+		"props": {
+			"blockClass": "login-mobile",
+			"fullScreen": true
+		}
+	},
+	"login-content#sidebar-mobile": {
+		"props": {
+			"blockClass": "sidebar-mobile"
+		}
+	},
+	"link#my-orders": {
+		"props": {
+			"label": "Meus Pedidos",
+			"href": "/account#/orders",
+			"blockClass": "my-orders-link"
+		}
+	},
+	"flex-layout.row#my-orders": {
+		"children": ["link#my-orders"],
+		"props": {
+			"fullWidth": true,
+			"verticalAlign": true,
+			"preserveLayoutOnMobile": true,
+			"blockClass": "my-orders"
+		}
+	}
+}

@@ -1,0 +1,130 @@
+{
+	"flex-layout.row#diferentials.mobile": {
+		"children": ["slider-layout#diferentials"],
+		"props": {
+			"blockClass": "diferentials"
+		}
+	},
+	"flex-layout.row#diferentials.desktop": {
+		"children": [
+			"flex-layout.col#diferentials01",
+			"flex-layout.col#diferentials02",
+			"flex-layout.col#diferentials03"
+		],
+		"props": {
+			"blockClass": "diferentials",
+			"colJustify": "between",
+			"colSizing": "auto"
+		}
+	},
+	"slider-layout#diferentials": {
+		"children": [
+			"flex-layout.col#diferentials01",
+			"flex-layout.col#diferentials02",
+			"flex-layout.col#diferentials03"
+		],
+		"props": {
+			"itemsPerPage": {
+				"mobile": 1,
+				"phone": 1,
+				"tablet": 2
+			},
+			"showPaginationDots": "never",
+			"infinite": true,
+			"blockClass": ["diferentials", "diferentials-mobile"]
+		}
+	},
+	"flex-layout.col#diferentials01": {
+		"children": ["flex-layout.row#diferentials01"],
+		"props": {
+			"blockClass": ["diferentials-item", "diferentials01"],
+			"preventVerticalStretch": true,
+			"verticalAlign": "middle"
+		}
+	},
+	"flex-layout.row#diferentials01": {
+		"children": ["icon#diferentials-card", "rich-text#diferentials01"],
+		"props": {
+			"blockClass": ["diferentials-item", "diferentials01"],
+			"colSizing": "auto",
+			"preventVerticalStretch": true,
+			"horizontalAlign": "center",
+			"preserveLayoutOnMobile": true
+		}
+	},
+	"flex-layout.col#diferentials02": {
+		"children": ["flex-layout.row#diferentials02"],
+		"props": {
+			"blockClass": ["diferentials-item", "diferentials02"],
+			"preventVerticalStretch": true,
+			"verticalAlign": "middle"
+		}
+	},
+	"flex-layout.row#diferentials02": {
+		"children": ["icon#diferentials-rotate", "rich-text#diferentials02"],
+		"props": {
+			"blockClass": ["diferentials-item", "diferentials02"],
+			"colSizing": "auto",
+			"preventVerticalStretch": true,
+			"horizontalAlign": "center",
+			"preserveLayoutOnMobile": true
+		}
+	},
+	"flex-layout.col#diferentials03": {
+		"children": ["flex-layout.row#diferentials03"],
+		"props": {
+			"blockClass": ["diferentials-item", "diferentials03"],
+			"preventVerticalStretch": true,
+			"verticalAlign": "middle"
+		}
+	},
+	"flex-layout.row#diferentials03": {
+		"children": ["icon#diferentials-delivery", "rich-text#diferentials03"],
+		"props": {
+			"blockClass": ["diferentials-item", "diferentials03"],
+			"colSizing": "auto",
+			"preventVerticalStretch": true,
+			"horizontalAlign": "center",
+			"preserveLayoutOnMobile": true
+		}
+	},
+	"rich-text#diferentials01": {
+		"props": {
+			"text": "Parcele em até __10x__ sem juros",
+			"blockClass": "diferentials-text"
+		}
+	},
+	"rich-text#diferentials02": {
+		"props": {
+			"text": "Troque __grátis__ nas lojas e no site",
+			"blockClass": "diferentials-text"
+		}
+	},
+	"rich-text#diferentials03": {
+		"props": {
+			"text": "Entrega __expressa__ para São Paulo",
+			"blockClass": "diferentials-text"
+		}
+	},
+	"icon#diferentials-card": {
+		"props": {
+			"id": "mpa-card",
+			"activeClassName": "vtex-store-components-3-x-diferentialsIcon",
+			"size": 20
+		}
+	},
+	"icon#diferentials-rotate": {
+		"props": {
+			"id": "rotate",
+			"activeClassName": "vtex-store-components-3-x-diferentialsIcon",
+			"size": 20
+		}
+	},
+	"icon#diferentials-delivery": {
+		"props": {
+			"id": "mpa-delivery",
+			"activeClassName": "vtex-store-components-3-x-diferentialsIcon",
+			"size": 20
+		}
+	}
+}

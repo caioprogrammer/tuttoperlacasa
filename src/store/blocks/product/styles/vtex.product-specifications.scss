@@ -1,0 +1,32 @@
+.specificationName{
+  font-family: $primaryFont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: $primary400;
+  text-transform: $storeTextTransform;
+  text-align: left;
+}
+
+.specificationValue{
+  font-family: $primaryFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: $primary400;
+  text-transform: $storeTextTransform;
+  text-align: left;
+  &--measurement-guide-value{
+    font-size: 12px;
+    line-height: 14px;
+    &[data-specification-name*="Titulo"]{
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+    &:not([data-specification-name*="Titulo"]){
+      margin-bottom: 11px;
+    }
+  }
+}

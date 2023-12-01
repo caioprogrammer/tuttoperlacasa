@@ -1,0 +1,51 @@
+{
+  "menu-item#submenu-seiscentos-mais": {
+    "props": {
+			"id": "menu-item-seiscentos",
+			"type": "custom",
+			"highlight": false,
+			"hasChild": true,
+			"itemProps": {
+				"type": "internal",
+				"href": "/para-presentear/acima-de-r-600",
+				"noFollow": false,
+				"tagTitle": "Acima de R$600",
+				"text": "Acima de R$600"
+			}
+		},
+		"blocks": ["tuttoperlacasa.menu:submenu#submenu-seiscentos-mais"]
+  },
+
+	// !SUBMENU
+  "tuttoperlacasa.menu:submenu#submenu-seiscentos-mais": {
+		"title": "Subcategoria",
+		"children": ["container#submenu-category-list-wrapper"],
+		"props": {
+			"blockClass": "subcategory"
+		}
+	},
+	"container#submenu-category-list-wrapper": {
+		"children": ["tuttoperlacasa.menu:menu#submenu-submenu-seiscentos-mais"],
+		"props": {
+			"blockClass": "subcategory-list-wrapper"
+		}
+	},
+
+  "tuttoperlacasa.menu:menu#submenu-submenu-seiscentos-mais": {
+		"props": {
+			"orientation": "vertical",
+			"items": [
+				{
+					"id": "menu-item-cafe-da-manha",
+					"type": "custom",
+					"highlight": false,
+					"itemProps": {
+						"href": "/",
+						"text": ""
+					}
+				}
+			],
+			"blockClass": ["subcategory"]
+		}
+	}
+}

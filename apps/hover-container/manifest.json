@@ -1,0 +1,20 @@
+{
+  "vendor": "tuttoperlacasa",
+  "name": "hover-container",
+  "version": "0.2.0",
+  "title": "Containter de Hover",
+  "description": "Adiciona seletor de hover à um componente",
+  "defaultLocale": "pt-BR",
+  "builders": {
+    "react": "3.x",
+    "store": "0.x",
+    "messages": "1.x",
+    "docs": "0.x"
+  },
+  "dependencies": {
+    "vtex.css-handles": "0.x"
+  },
+  "registries": ["smartcheckout"],
+  "policies": [],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

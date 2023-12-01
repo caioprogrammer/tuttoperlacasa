@@ -1,0 +1,14 @@
+{
+  "projectName": "shipping-simulator",
+  "projectOwner": "agenciaeplus",
+  "repoType": "bitbucket",
+  "repoHost": "https://bitbucket.org/osfeladaeplus/shipping-simulator/",
+  "files": [
+    "docs/README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "none",
+  "contributors": [],
+  "contributorsPerLine": 7
+}

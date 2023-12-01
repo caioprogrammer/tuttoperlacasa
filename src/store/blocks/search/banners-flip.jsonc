@@ -1,0 +1,62 @@
+{
+	"flex-layout.row#banners-slider": {
+		"children": ["flex-layout.col#banners-slider"],
+		"props": {
+			"blockClass": "banners-slider",
+			"preventVerticalStretch": true
+		}
+	},
+	"flex-layout.col#banners-slider": {
+		"children": ["rich-text#banners-slider", "image-flip-list#banners-slider"],
+		"props": {
+			"blockClass": "banners-slider"
+		}
+	},
+	"rich-text#banners-slider": {
+		"title": "Título do carossel de banners departamento",
+		"props": {
+			"text": "### Dicas da decoração da Tutto\nDescubra mais do que só decoração.",
+			"blockClass": ["banners-slider", "common-title"]
+		}
+	},
+	"image-flip-list#banners-slider": {
+		"title": "Carossel de banners departamento",
+		"props": {
+			"layoutMode": "slider",
+			"sliderProps": {
+				"itemsPerPage": {
+					"(max-width: 540px)": 1,
+					"(max-width: 840px)": 2,
+					"phone": 1,
+					"tablet": 3,
+					"desktop": 4
+				},
+				"showPaginationDots": "never",
+				"infinite": true
+			},
+			"images": [
+				{
+					"title": "3 dicas de mesa posta essenciais para arrasar",
+					"imgURL": "assets/images/flip-image-department01.png"
+				},
+				{
+					"title": "Mesa posta simples: Como montar uma mesa simples e elegante?",
+					"imgURL": "assets/images/flip-image-department02.png"
+				},
+				{
+					"title": "Uma harmonia de cores para você dar match",
+					"imgURL": "assets/images/flip-image-department03.png"
+				},
+				{
+					"title": "O Tutto Decora é um serviço de consultoria e decoração para a sua casa.",
+					"imgURL": "assets/images/flip-image-department04.png"
+				},
+				{
+					"title": "Mesa posta simples: Como montar uma mesa simples e elegante?",
+					"imgURL": "assets/images/flip-image-department02.png"
+				}
+			],
+			"blockClass": "banners-slider"
+		}
+	}
+}

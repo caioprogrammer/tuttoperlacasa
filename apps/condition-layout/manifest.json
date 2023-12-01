@@ -1,0 +1,24 @@
+{
+  "vendor": "tuttoperlacasa",
+  "name": "condition-layout",
+  "version": "2.5.2",
+  "title": "IO Base Component",
+  "description": "IO Base component",
+  "defaultLocale": "pt-BR",
+  "builders": {
+    "docs": "0.x",
+    "messages": "1.x",
+    "react": "3.x",
+    "store": "0.x"
+  },
+  "mustUpdateAt": "2019-04-02",
+  "scripts": {
+    "postreleasy": "vtex publish --verbose"
+  },
+  "dependencies": {
+    "vtex.styleguide": "9.x",
+    "vtex.product-context": "0.x",
+    "vtex.store-graphql": "2.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

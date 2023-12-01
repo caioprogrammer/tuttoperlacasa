@@ -1,0 +1,19 @@
+{
+  "vendor": "tuttoperlacasa",
+  "name": "awesome-newsletter",
+  "version": "0.5.0",
+  "title": "Awesome Newsletter",
+  "description": "Exports blocks to build an easy customizible newsletter",
+  "builders": {
+    "react": "3.x",
+    "store": "0.x",
+    "messages": "1.x",
+    "docs": "0.x"
+  },
+  "dependencies": {
+    "vtex.css-handles": "1.x"
+  },
+  "registries": ["smartcheckout"],
+  "policies": [],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

@@ -1,0 +1,114 @@
+:global(.vtex-reviews-and-ratings-3-x-star) {
+	font-size: 0px;
+
+	&:not(:last-child) {
+		margin-right: 6px;
+	}
+}
+
+:global(.vtex-reviews-and-ratings-3-x-stars) {
+	display: flex;
+	align-items: center;
+}
+
+:global(.vtex-reviews-and-ratings-3-x-summaryTotalReviews) {
+	margin-left: 3px;
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14px;
+	color: $primary400;
+}
+
+:global(.vtex-reviews-and-ratings-3-x-star--empty) {
+	&::before {
+		content: '';
+		width: 18px;
+		height: 18px;
+		background: url(assets/images/star.svg) no-repeat;
+		display: flex;
+	}
+}
+
+:global(.vtex-reviews-and-ratings-3-x-star--filled) {
+	@include ficon-before($icon-star, 16px, #d2993e);
+}
+
+:global(.vtex-reviews-and-ratings-3-x-reviewsHeading) {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 22px;
+	color: $primary400;
+
+	border: none;
+	margin-bottom: 12px;
+}
+:global(.vtex-reviews-and-ratings-3-x-reviewsRatingAverage) {
+	display: none;
+}
+:global(.vtex-reviews-and-ratings-3-x-reviewsRatingCount) {
+	display: none;
+}
+
+:global(.vtex-reviews-and-ratings-3-x-reviewsOrderBy) {
+	display: none;
+}
+
+:global(.vtex-reviews-and-ratings-3-x-writeReviewContainer) {
+	svg {
+		color: $primary400;
+	}
+}
+
+:global(.vtex-reviews-and-ratings-3-x-writeReviewButton) {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: $primary400;
+}
+
+:global(.vtex-reviews-and-ratings-3-x-reviewComment) {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	border-bottom: 1px solid #ede8ec;
+	padding-bottom: 25px;
+	margin-bottom: 25px;
+
+	> div {
+		display: flex;
+		flex-direction: column;
+	}
+
+	:global(.vtex-reviews-and-ratings-3-x-reviewCommentRating) {
+		display: flex;
+		align-items: center;
+		margin-bottom: 18px;
+
+		:global(.vtex-reviews-and-ratings-3-x-reviewCommentUser) {
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 17px;
+			color: $primary400;
+			margin: 0px;
+			margin-left: 10px;
+		}
+	}
+
+	:global(.vtex-reviews-and-ratings-3-x-reviewInfo) {
+		margin: 0px;
+		margin-bottom: 15px;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+		color: $primary400;
+	}
+
+	:global(.vtex-reviews-and-ratings-3-x-reviewCommentMessage) {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+		color: $primary400;
+	}
+}

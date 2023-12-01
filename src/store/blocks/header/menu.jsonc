@@ -1,0 +1,343 @@
+{
+	//Menu principal
+	"category-menu#menu-desktop": {
+		"title": "Categorias menu principal",
+		"children": ["category-menu-custom-item#list"],
+		"props": {
+			"subCategoriesLevels": 4,
+			"showSubcategories": true,
+			"showAllDepartments": false,
+			"showSeeAllOnDesk": true,
+			"sortSubcategories": "name",
+
+			"departments": [
+				{
+					"id": 1,
+					"imgUrl": "assets/images/banner-menu-1.png",
+					"description": "Confira as novidades"
+				},
+				{
+					"id": 2,
+					"imgUrl": "assets/images/banner-menu-2.png",
+					"description": "Confira tudo para mesa"
+				},
+				{
+					"id": 3,
+					"imgUrl": "assets/images/banner-menu-3.png",
+					"description": "Veja nossa categoria de Bar em Casa"
+				},
+				{
+					"id": 4,
+					"imgUrl": "assets/images/banner-menu-4.png",
+					"description": "Para Presentear"
+				},
+				{
+					"id": 5,
+					"imgUrl": "assets/images/banner-menu-5.png",
+					"description": "Confira as novidades para todos Momentos"
+				},
+				{
+					"id": 6,
+					"imgUrl": "assets/images/banner-menu-6.png",
+					"description": "Confira as novidades"
+				},
+				{
+					"id": 7,
+					"imgUrl": "assets/images/banner-menu-7.png",
+					"description": "Confira tudo para mesa"
+				},
+				{
+					"id": 8,
+					"imgUrl": "assets/images/banner-menu-8.png",
+					"description": "Veja nossa categoria de Bar em Casa"
+				},
+				{
+					"id": 9,
+					"imgUrl": "assets/images/banner-menu-9.png",
+					"description": "Para Presentear"
+				},
+				{
+					"id": 10,
+					"imgUrl": "assets/images/banner-menu-10.png",
+					"description": "Para Presentear"
+				},
+				{
+					"id": 11,
+					"imgUrl": "assets/images/banner-menu-11.png",
+					"description": "Para Presentear"
+				},
+				{
+					"id": 12,
+					"imgUrl": "assets/images/banner-menu-12.png",
+					"description": "Para Presentear"
+				}
+			],
+			"blockClass": "menu-desktop"
+		}
+	},
+
+	//Menu home
+	"category-menu#menu-home-desktop": {
+		"title": "Categorias menu principal home",
+		"children": ["category-menu-custom-item#list"],
+		"props": {
+			"subCategoriesLevels": 4,
+			"showSubcategories": true,
+			"showAllDepartments": false,
+			"showSeeAllOnDesk": true,
+			"sortSubcategories": "name",
+
+			"departments": [
+				{
+					"id": 1,
+					"imgUrl": "assets/images/banner-menu-1.png",
+					"description": "Confira as novidades"
+				},
+				{
+					"id": 2,
+					"imgUrl": "assets/images/banner-menu-2.png",
+					"description": "Confira tudo para mesa"
+				},
+				{
+					"id": 3,
+					"imgUrl": "assets/images/banner-menu-3.png",
+					"description": "Veja nossa categoria de Bar em Casa"
+				},
+				{
+					"id": 4,
+					"imgUrl": "assets/images/banner-menu-4.png",
+					"description": "Para Presentear"
+				},
+				{
+					"id": 5,
+					"imgUrl": "assets/images/banner-menu-5.png",
+					"description": "Confira as novidades para todos Momentos"
+				},
+				{
+					"id": 6,
+					"imgUrl": "assets/images/banner-menu-6.png",
+					"description": "Confira as novidades"
+				},
+				{
+					"id": 7,
+					"imgUrl": "assets/images/banner-menu-7.png",
+					"description": "Confira tudo para mesa"
+				},
+				{
+					"id": 8,
+					"imgUrl": "assets/images/banner-menu-8.png",
+					"description": "Veja nossa categoria de Bar em Casa"
+				},
+				{
+					"id": 9,
+					"imgUrl": "assets/images/banner-menu-9.png",
+					"description": "Para Presentear"
+				},
+				{
+					"id": 10,
+					"imgUrl": "assets/images/banner-menu-10.png",
+					"description": "Para Presentear"
+				},
+				{
+					"id": 11,
+					"imgUrl": "assets/images/banner-menu-11.png",
+					"description": "Para Presentear"
+				},
+				{
+					"id": 12,
+					"imgUrl": "assets/images/banner-menu-12.png",
+					"description": "Para Presentear"
+				}
+			],
+			"blockClass": ["menu-desktop", "menu-home-desktop"]
+		}
+	},
+	"category-menu-custom-item#menu-home-sazonal": {
+		"title": "Item sazonal menu principal home",
+		"props": {
+			"title": "BAZAR",
+			"blockClass": ["menu-desktop", "menu-home-desktop"]
+		}
+	},
+
+	//Menu home hover
+	"category-menu#menu-home-hover-desktop": {
+		"title": "Categorias menu principal home",
+		"children": ["category-menu-custom-item#list"],
+		"props": {
+			"subCategoriesLevels": 4,
+			"showSubcategories": true,
+			"showAllDepartments": false,
+			"showSeeAllOnDesk": true,
+			"sortSubcategories": "name",
+			"departments": [
+				{
+					"id": 1,
+					"imgUrl": "assets/images/banner-menu-1.png",
+					"description": "Confira as novidades"
+				},
+				{
+					"id": 2,
+					"imgUrl": "assets/images/banner-menu-2.png",
+					"description": "Confira tudo para mesa"
+				},
+				{
+					"id": 3,
+					"imgUrl": "assets/images/banner-menu-3.png",
+					"description": "Veja nossa categoria de Bar em Casa"
+				},
+				{
+					"id": 4,
+					"imgUrl": "assets/images/banner-menu-4.png",
+					"description": "Para Presentear"
+				},
+				{
+					"id": 5,
+					"imgUrl": "assets/images/banner-menu-5.png",
+					"description": "Confira as novidades para todos Momentos"
+				},
+				{
+					"id": 6,
+					"imgUrl": "assets/images/banner-menu-6.png",
+					"description": "Confira as novidades"
+				},
+				{
+					"id": 7,
+					"imgUrl": "assets/images/banner-menu-7.png",
+					"description": "Confira tudo para mesa"
+				},
+				{
+					"id": 8,
+					"imgUrl": "assets/images/banner-menu-8.png",
+					"description": "Veja nossa categoria de Bar em Casa"
+				},
+				{
+					"id": 9,
+					"imgUrl": "assets/images/banner-menu-9.png",
+					"description": "Para Presentear"
+				},
+				{
+					"id": 10,
+					"imgUrl": "assets/images/banner-menu-10.png",
+					"description": "Para Presentear"
+				},
+				{
+					"id": 11,
+					"imgUrl": "assets/images/banner-menu-11.png",
+					"description": "Para Presentear"
+				},
+				{
+					"id": 12,
+					"imgUrl": "assets/images/banner-menu-12.png",
+					"description": "Para Presentear"
+				}
+			],
+			"blockClass": ["menu-desktop", "menu-home-hover-desktop"]
+		}
+	},
+
+	"category-menu-custom-item#list": {
+		"title": "Lista",
+		"props": {
+			"title": "Listas",
+			"position": 0,
+			"blockClass": "menu-desktop",
+			"link": "https://listas.tuttoperlacasa.com.br/"
+		}
+	},
+
+	"category-menu-custom-item#menu-home-hover-sazonal": {
+		"title": "Item sazonal menu principal home",
+		"props": {
+			"title": "BAZAR",
+			"blockClass": ["menu-desktop", "menu-home-hover-desktop"]
+		}
+	},
+
+	//Menu fixo
+	// "category-menu#menu-desktop-fixed": {
+	// 	"title": "Categorias menu fixo",
+	// 	//"children": ["category-menu-custom-item#menu-fixed-sazonal"],
+	// 	"props": {
+	// 		"subCategoriesLevels": 2,
+	// 		"showSubcategories": true,
+	// 		"showAllDepartments": false,
+	// 		"showSeeAllOnDesk": true,
+	// 		"departments": [
+	// 			{
+	// 				"id": 1,
+	// 				"imgUrl": "assets/images/menu-image-default.png",
+	// 				"description": "NOVIDADES EM ROUPAS"
+	// 			},
+	// 			{
+	// 				"id": 6,
+	// 				"imgUrl": "assets/images/menu-image-default.png",
+	// 				"description": "NOVIDADES EM ROUPAS"
+	// 			},
+	// 			{
+	// 				"id": 7,
+	// 				"imgUrl": "assets/images/menu-image-default.png",
+	// 				"description": "NOVIDADES EM ROUPAS"
+	// 			},
+	// 			{
+	// 				"id": 8,
+	// 				"imgUrl": "assets/images/menu-image-default.png",
+	// 				"description": "NOVIDADES EM ROUPAS"
+	// 			},
+	// 			{
+	// 				"id": 9,
+	// 				"imgUrl": "assets/images/menu-image-default.png",
+	// 				"description": "NOVIDADES EM ROUPAS"
+	// 			},
+	// 			{
+	// 				"id": 10,
+	// 				"imgUrl": "assets/images/menu-image-default.png",
+	// 				"description": "NOVIDADES EM ROUPAS"
+	// 			}
+	// 		],
+	// 		"blockClass": ["menu-desktop", "menu-desktop-fixed"]
+	// 	}
+	// },
+	// "category-menu-custom-item#menu-fixed-sazonal": {
+	// 	"title": "Item sazonal menu fixo",
+	// 	"props": {
+	// 		"title": "BAZAR",
+	// 		"blockClass": ["menu-desktop", "menu-desktop-fixed"]
+	// 	}
+	// },
+
+	//Mobile
+	"category-menu.mobile#menu-mobile": {
+		"title": "Categorias menu mobile",
+		"blocks": ["menu-header", "menu-footer"],
+		"props": {
+			"subCategoriesLevels": 4,
+			"showSubcategories": true,
+			"showAllDepartments": true,
+			"mobileMode": true,
+			"SubMenuOpenIcon": "icon#arrow-line",
+			"SubMenuCloseIcon": "icon#arrow-line-rotate",
+			"blockClass": "menu-mobile"
+		}
+	},
+	"icon#arrow-line": {
+		"props": {
+			"id": "nav-caret--up",
+			"size": 18,
+			"activeClassName": "vtex-store-components-3-x-arrowLine"
+		}
+	},
+	"icon#arrow-line-rotate": {
+		"props": {
+			"id": "nav-caret--down",
+			"size": 18,
+			"activeClassName": "vtex-store-components-3-x-arrowLineRotate"
+		}
+	},
+	"menu-header": {
+		"children": ["flex-layout.col#sidebar-mobile"]
+	},
+	"menu-footer": {
+		"children": ["category-menu-custom-item#list"]
+	}
+}

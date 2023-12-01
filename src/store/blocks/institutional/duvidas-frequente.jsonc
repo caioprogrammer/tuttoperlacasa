@@ -1,0 +1,72 @@
+{
+	"store.custom#duvidas-frequente": {
+		"blocks": [
+			"responsive-layout.desktop#duvidas-frequente",
+			"responsive-layout.mobile#duvidas-frequente"
+		]
+	},
+	"responsive-layout.desktop#duvidas-frequente": {
+		"children": [
+			"flex-layout.row#breadcrumb-duvidas-frequente",
+			"flex-layout.row#duvidas-frequente-content"
+		]
+	},
+	"flex-layout.row#duvidas-frequente-content": {
+		"children": [
+			"flex-layout.col#menu-institucional",
+			"flex-layout.col#duvidas-frequente"
+		],
+		"props": {
+			"blockClass": "duvidas-frequente",
+			"paddingBottom": 8
+		}
+	},
+
+	"flex-layout.col#duvidas-frequente": {
+		"children": ["rich-text#duvidas-frequente-content"]
+	},
+	"flex-layout.row#breadcrumb-duvidas-frequente": {
+		"children": [
+			"link#breadcrumb-home",
+			"link#breadcrumb-icon",
+			"link#breadcrumb-duvidas-frequente"
+		],
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true,
+			"blockClass": "breadcrumb",
+			"colGap": 3
+		}
+	},
+	"responsive-layout.mobile#duvidas-frequente": {
+		"children": ["flex-layout.row#duvidas-frequente-mobile"]
+	},
+	"flex-layout.row#duvidas-frequente-mobile": {
+		"children": ["flex-layout.col#duvidas-frequente-mobile"],
+		"props": {
+			"blockClass": "duvidas-frequente"
+		}
+	},
+	"flex-layout.col#duvidas-frequente-mobile": {
+		"children": [
+			"flex-layout.row#breadcrumb-duvidas-frequente",
+			"flex-layout.row#disc-institucional",
+			"rich-text#duvidas-frequente-content"
+		],
+		"props": {}
+	},
+
+	"link#breadcrumb-duvidas-frequente": {
+		"props": {
+			"label": "Dúvidas Frequente",
+			"blockClass": "active-breadcrumb"
+		}
+	},
+
+	"rich-text#duvidas-frequente-content": {
+		"props": {
+			"text": "# Dúvidas Frequente\n\n## DÚVIDAS MAIS FREQUENTES\n\n1. Como comprar?\n\nEscolha os produtos desejados e clique em COMPRAR para adicioná-los ao seu carrinho.\n\nApós a seleção dos produtos, clique no ícone do carrinho para finalizar suas compras. Também é no carrinho que você altera a quantidade dos produtos. Clique em FECHAR PEDIDO para prosseguir.\n\nPreencha seus dados (pessoais, entrega e pagamento) atentamente e clique em FINALIZAR COMPRA.\n\nPRONTO, seu pedido foi realizado e, em breve, você será atualizado sobre os próximos passos até a entrega.\n\nCaso o pedido seja um presente, basta deixar uma mensagem para o presenteado no campo É PARA PRESENTE, logo abaixo do resumo de seu pedido! A mensagem será impressa e entregue junto ao presente.\n\nEm caso de dúvida, fale conosco pelo atendimento@tuttoperlacasa.com.br ou pelo WhatsApp: (21) 99676-4169\n\nHorário de atendimento: 10h às 19h.\n\n2. Posso ficar seguro ao realizar uma compra neste site?\n\nNós, da Tutto per la Casa, nos preocupamos com a segurança e a privacidade de nossos clientes. Por isso, temos o compromisso de não divulgar, vender ou alugar os dados pessoais a terceiros.\n\nOs dados do seu cartão de crédito são criptografados e usados somente no processamento da compra.\n\nQueremos sempre garantir a sua segurança e privacidade.\n\n3. Como funciona a entrega?\n\nAs nossas entregas são realizadas em todo o Brasil, de forma rápida e segura através de transportadoras.\n\nO prazo de entrega e o valor do frete podem variar de acordo com a cidade e o tipo de envio escolhido na hora da finalização do pedido. Para o tempo estimado para entrega são considerados apenas os dias úteis. Em caso de atraso, a Tutto se compromete a realizar as tratativas junto a transportadora e lhe retornar com a melhor resolução possível.\n\n4. Quais são as formas de pagamento?\n\nAceitamos os cartões de crédito, cartões de débito, boleto bancário e transferência bancária.\n\n5. Posso parcelar minhas compras?\n\nSuas compras podem ser parceladas em até 6 vezes nos cartões de crédito – parcela mínima de R$ 100,00.\n\n6. Posso trocar ou devolver um produto?\n\nSim e o frete da primeira troca é por nossa conta. Nesse caso, mande um e–mail para atendimento@tuttoperlacasa.com.br ou mensagem para nosso WhatsApp: (21) 99676-4169\n\nPara solicitar a troca ou devolução do seu pedido, agendaremos a coleta do produto no endereço escolhido para entrega.\n\nO prazo para a troca é de até 30 dias corridos após a data do recebimento do produto.\n\nAs compras realizadas no site, poderão ser trocadas apenas no site.\n\n- Produtos que fazem parte da campanha do mês não poderão ser trocados.\n\n7. Como minha compra será embalada?\n\nEntregamos em caixas seguras e lacradas. Os produtos são cuidadosamente embalados para chegar em perfeito estado na sua casa.\n\n8. Posso acompanhar meu pedido?\n\nVocê pode acompanhar através das atualizações de status enviadas para seu e-mail ou entrando na página de “Minha Conta > Pedidos”\n\n9. Como fico por dentro das novidades da Tutto?\n\nPara saber mais sobre os nossos lançamentos e promoções basta você inserir seu e-mail no campo RECEBA NOSSA NEWSLETTER localizado no rodapé do site e clicar em ASSINAR.\n\n10. A Tutto per la Casa pode cancelar uma compra?\n\nCaso o produto comprado não esteja mais disponível em estoque ou não esteja em perfeitas condições de envio, a compra poderá ser cancelada.\n\n- Qualquer eventualidade com seu pedido será informada através do e-mail cadastrado.\n\n11. Após quanto tempo posso cancelar uma compra feita em uma lista de casamento?\n\nAté 1 (uma) semana após a confirmação da compra.\n\nEm caso de dúvida, fale conosco pelo atendimento@tuttoperlacasa.com.br ou pelo WhatsApp: (21) 99676-4169\n",
+			"blockClass": "institucional-content"
+		}
+	}
+}
