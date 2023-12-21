@@ -41,7 +41,8 @@
 		"children": [
 			"list-context.image-list#banner-main-mobile",
 			"__fold__",
-			"flex-layout.row#diferentials.mobile",
+			// "flex-layout.row#diferentials.mobile",
+			"flex-layout.row#diferentials-new.mobile",
 			"flex-layout.row#categories-slider.mobile",
 			"flex-layout.row#double-banners-mobile",
 			"flex-layout.row#shelf-home01.mobile",
@@ -51,6 +52,130 @@
 			"flex-layout.row#banners-slider"
 		]
 	},
+	"flex-layout.row#diferentials-new.mobile": {
+		"props": {
+			"blockClass": "diferentials-new"
+		},
+		"children": [
+			"flex-layout.col#diferential-1",
+			"flex-layout.col#diferential-2",
+			"flex-layout.col#diferential-3",
+			"flex-layout.col#diferential-4"
+		]
+	},
+	"flex-layout.col#diferential-1": {
+		"children": [
+			"image#diferential-banner-1",
+			"rich-text#strong-1",
+			"rich-text#text-1"
+		]
+	},
+	"image#diferential-banner-1": {
+		"props": {
+			"src": "https://tuttoperlacasa.vtexassets.com/assets/vtex/assets-builder/tuttoperlacasa.tuttoperlacasa/1.10.27/images/icons/vtex-pci-200___d375d3256a37d2e1daa3908989c08ea5.png"
+		}
+	},
+	"rich-text#strong-1": {
+		"props": {
+			"text": "ATÉ 8X",
+			"textAlignment": "CENTER",
+			"textPosition": "CENTER",
+			"blockClass": "strong"
+		}
+	},
+	"rich-text#text-1": {
+		"props": {
+			"text": "SEM JUROS",
+			"textAlignment": "CENTER",
+			"textPosition": "CENTER",
+			"blockClass": "simple-text"
+		}
+	},
+	"flex-layout.col#diferential-2": {
+		"children": [
+			"image#diferential-banner-2",
+			"rich-text#strong-2",
+			"rich-text#text-2"
+		]
+	},
+	"image#diferential-banner-2": {
+		"props": {
+			"src": "https://tuttoperlacasa.vtexassets.com/assets/vtex/assets-builder/tuttoperlacasa.tuttoperlacasa/1.10.27/images/icons/vtex-pci-200___d375d3256a37d2e1daa3908989c08ea5.png"
+		}
+	},
+	"rich-text#strong-2": {
+		"props": {
+			"text": "ATÉ 8X",
+			"textAlignment": "CENTER",
+			"textPosition": "CENTER",
+			"blockClass": "strong"
+		}
+	},
+	"rich-text#text-2": {
+		"props": {
+			"text": "SEM JUROS",
+			"textAlignment": "CENTER",
+			"textPosition": "CENTER",
+			"blockClass": "simple-text"
+		}
+	},
+	"flex-layout.col#diferential-3": {
+		"children": [
+			"image#diferential-banner-3",
+			"rich-text#strong-3",
+			"rich-text#text-3"
+		]
+	},
+	"image#diferential-banner-3": {
+		"props": {
+			"src": "https://tuttoperlacasa.vtexassets.com/assets/vtex/assets-builder/tuttoperlacasa.tuttoperlacasa/1.10.27/images/icons/vtex-pci-200___d375d3256a37d2e1daa3908989c08ea5.png"
+		}
+	},
+	"rich-text#strong-3": {
+		"props": {
+			"text": "ATÉ 8X",
+			"textAlignment": "CENTER",
+			"textPosition": "CENTER",
+			"blockClass": "strong"
+		}
+	},
+	"rich-text#text-3": {
+		"props": {
+			"text": "SEM JUROS",
+			"textAlignment": "CENTER",
+			"textPosition": "CENTER",
+			"blockClass": "simple-text"
+		}
+	},
+	"flex-layout.col#diferential-4": {
+		"children": [
+			"image#diferential-banner-4",
+			"rich-text#strong-4",
+			"rich-text#text-4"
+		]
+	},
+	"image#diferential-banner-4": {
+		"props": {
+			"src": "https://tuttoperlacasa.vtexassets.com/assets/vtex/assets-builder/tuttoperlacasa.tuttoperlacasa/1.10.27/images/icons/vtex-pci-200___d375d3256a37d2e1daa3908989c08ea5.png"
+		}
+	},
+	"rich-text#strong-4": {
+		"props": {
+			"text": "ATÉ 8X",
+			"textAlignment": "CENTER",
+			"textPosition": "CENTER",
+			"blockClass": "strong"
+		}
+	},
+	"rich-text#text-4": {
+		"props": {
+			"text": "SEM JUROS",
+			"textAlignment": "CENTER",
+			"textPosition": "CENTER",
+			"blockClass": "simple-text"
+		}
+	},
+
 	"list-context.image-list#banner-main-desktop": {
 		"children": ["slider-layout#banner-main"],
 		"props": {

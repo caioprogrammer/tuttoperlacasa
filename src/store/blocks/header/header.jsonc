@@ -142,11 +142,30 @@
 			"flex-layout.col#logo-desktop",
 			// "flex-layout.row#menu-desktop-fixed",
 			// "link#wishlist-icon",
-			"flex-layout.col#login-desktop",
+			"flex-layout.col#login-new",
+			// "flex-layout.col#login-desktop",
 			"tuttoperlacasa.store-components:search-bar",
 			"minicart.v2#main"
 		]
 	},
+	"flex-layout.col#login-new": {
+		"props": {
+			"blockClass": "login-new"
+		},
+		"children": [
+			"login"
+		]
+	},
+	"login": {
+		"props": {
+			"optionsTitle": "login",
+		  "emailAndPasswordTitle": "LOG-IN",
+		  "accessCodeTitle": "Acess Code LOG-IN",
+		  "emailPlaceholder": "e-mail",
+		  "passwordPlaceholder": "password",
+		  "showPasswordVerificationIntoTooltip": true
+		}
+	  },
 
 	// "flex-layout.row#menu-desktop-fixed": {
 	// 	"children": ["tuttoperlacasa.menu:menu#desktop"],
