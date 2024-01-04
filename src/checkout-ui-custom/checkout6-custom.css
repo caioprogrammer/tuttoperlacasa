@@ -936,6 +936,16 @@ select.error:focus {
     fill: var(--btn-bg-color)
 }
 
+.coupon-fields span:first-child {
+    display: flex;
+    align-items: center;
+}
+
+#cart-coupon.coupon-value {
+    width: 100%;
+    margin-right: 10px;
+    height: 32px;
+}
 #cart-coupon-add {
     background: rgba(0, 0, 0, 0);
     background-color: rgba(0, 0, 0, 0);
@@ -944,7 +954,14 @@ select.error:focus {
     background-position: unset;
     box-shadow: none;
     background-color: var(--primary200);
-    border: 1px solid var(--primary200)
+    border: 1px solid var(--primary200);
+
+    height: 40px;
+    line-height: 40px;
+    max-height: initial;
+    display: inline-block;
+    padding: 0px 10px;
+    border-radius: 4px;
 }
 
 #cart-coupon-add:hover {
@@ -1224,4 +1241,35 @@ select.error:focus {
     display: inline-block;
     padding: 0px 10px;
     border-radius: 4px;
+}
+
+
+.summary-template-holder,
+.mini-cart .item {
+    border-top: 0 !important;
+}
+.mini-cart h2[data-i18n="totalizers.summary"] {
+    border: none !important;
+}
+
+@media screen and (min-width: 1200px) {
+    .cart-template.mini-cart {
+        margin-left: 2.4% !important;
+    }
+    .cart-fixed-transition {
+        height: auto !important;
+    }
+    .cart-fixed.affix, .cart-fixed.affix-bottom {
+        position: unset !important;
+    }
+}
+.cart-template .cart-fixed {
+    border: 1px solid var(--main-border-color);
+    border-radius: 5px;
+    padding: 5px;
+}
+@media (max-width: 979px) {
+    .body-order-form .row-fluid .mini-cart {
+        width: calc(100% - 10px);
+    }
 }
