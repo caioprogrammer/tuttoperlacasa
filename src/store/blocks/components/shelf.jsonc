@@ -11,8 +11,7 @@
 		"title": "Prateleira 01 container mobile",
 		"children": ["flex-layout.col#shelf-home01.mobile"],
 		"props": {
-			"blockClass": ["shelf-home01", "shelf-container"],
-			"fullWidth": true
+			"blockClass": ["shelf-home01", "shelf-container"]
 		}
 	},
 	"flex-layout.row#shelf-home02": {
@@ -298,8 +297,8 @@
 				"tablet": 2,
 				"phone": 2
 			},
-			"showPaginationDots": "desktopOnly",
-			"showNavigationArrows": "always",
+			"showPaginationDots": "never",
+			"showNavigationArrows": "desktopOnly",
 			"infinite": true,
 			"blockClass": ["shelf", "banner-shelf"]
 		}

@@ -148,7 +148,7 @@
 		"props": {
 			"blockClass": "product-page-specs",
 			"animated": true,
-			"initialVisibility": "visible"
+			"initialVisibility": "hidden"
 		}
 	},
 

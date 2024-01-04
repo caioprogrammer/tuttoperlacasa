@@ -1207,3 +1207,21 @@ select.error:focus {
     font-size: 14px;
     content: "É presente? Deixe sua mensagem para pessoa aqui";
 }
+.seller-code-fields > span {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.seller-code-value.input-small {
+    width: 100%;
+    margin-right: 10px;
+    height: 32px;
+}
+.submit-add-seller {
+    height: 40px;
+    line-height: 40px;
+    max-height: initial;
+    display: inline-block;
+    padding: 0px 10px;
+    border-radius: 4px;
+}

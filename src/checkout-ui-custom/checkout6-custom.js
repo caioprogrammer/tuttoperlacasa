@@ -70,23 +70,19 @@ addSellerCode: async function(code) {
         <form class="seller-code-form" action="">
           <fieldset class="seller-code-fieldset">
             <div style="display: block">
-              <p class="seller-code-label">
-                <label for="seller-code" data-i18n="totalizers.seller-codeCapitalize"
-                  >Código do vendedor</label
-                >
-              </p>
               <p class="seller-code-fields">
                 <span>
                   <input
                     type="text"
                     id="seller-code"
                     class="seller-code-value input-small"
-                    placeholder="Insira o código"
+                    placeholder="Código do Vendedor"
                     data-i18n="[placeholder]totalizers.seller-codeCode;"
                   />
                   <button
+                    class="submit-add-seller"
                     type="submit"
-                    id="seller-code-add"
+                    id="cart-coupon-add"
                     class="btn"
                     data-i18n="global.add"
                   >

@@ -222,7 +222,7 @@
 	"filter-navigator.v3": {
 		"props": {
 			"navigationTypeOnMobile": "page",
-			"priceRangeLayout": "slider",
+			"priceRangeLayout": "inputAndSlider",
 			"initiallyCollapsed": true,
 			"appliedFiltersOverview": "hide",
 			"closeOnOutsideClick": true,
@@ -305,7 +305,7 @@
 					"itemsPerRow": {
 						"desktop": 4,
 						"tablet": 2,
-						"mobile": 1
+						"mobile": 2
 					}
 				}
 			],

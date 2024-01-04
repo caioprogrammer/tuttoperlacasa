@@ -45,7 +45,8 @@
 			"flex-layout.row#diferentials-new.mobile",
 			"flex-layout.row#categories-slider.mobile",
 			"flex-layout.row#double-banners-mobile",
-			"flex-layout.row#shelf-home01.mobile",
+			// "flex-layout.row#shelf-home02.mobile",
+			"flex-layout.row#shelf-home01",
 			"flex-layout.row#grid-banners-mobile",
 			"flex-layout.row#shelf-home02.mobile",
 			"flex-layout.row#shelf-banner-mobile",
@@ -59,8 +60,7 @@
 		"children": [
 			"flex-layout.col#diferential-1",
 			"flex-layout.col#diferential-2",
-			"flex-layout.col#diferential-3",
-			"flex-layout.col#diferential-4"
+			"flex-layout.col#diferential-3"
 		]
 	},
 	"flex-layout.col#diferential-1": {
