@@ -940,6 +940,9 @@ select.error:focus {
     display: flex;
     align-items: center;
 }
+.coupon-fields span:first-child i.icon-spin {
+    display: none !important;
+}
 
 #cart-coupon.coupon-value {
     width: 100%;
@@ -1251,7 +1254,11 @@ select.error:focus {
 .mini-cart h2[data-i18n="totalizers.summary"] {
     border: none !important;
 }
-
+@media screen and (min-width: 980px) {
+    body .summary-coupon {
+        margin-left: 0 !important;
+    }
+}
 @media screen and (min-width: 1200px) {
     .cart-template.mini-cart {
         margin-left: 2.4% !important;
