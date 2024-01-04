@@ -1,7 +1,7 @@
 {
   "vendor": "tuttoperlacasa",
   "name": "tuttoperlacasa",
-  "version": "1.10.28",
+  "version": "1.10.29",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
