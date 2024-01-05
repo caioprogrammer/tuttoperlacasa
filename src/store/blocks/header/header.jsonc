@@ -372,7 +372,9 @@
 	},
 	"flex-layout.col#sidebar-mobile": {
 		"children": [
-			"flex-layout.row#login-mobile",
+			"flex-layout.col#login-new",
+			// "conditional-login.logged#mobile",
+			// "flex-layout.row#login-mobile",
 			"flex-layout.row#minicart-sidebar",
 			"flex-layout.row#wishlist-sidebar",
 			"tuttoperlacasa.menu:menu#mobile"
