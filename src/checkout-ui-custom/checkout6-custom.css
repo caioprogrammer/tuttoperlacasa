@@ -1225,7 +1225,10 @@ select.error:focus {
 
 .summary-note .note-label label:before {
     font-size: 14px;
-    content: "É presente? Deixe sua mensagem para pessoa aqui";
+    content: "É presente ou tem alguma observação sobre o pedido para adicionar?";
+}
+.summary-note .note-data {
+    display: none !important;
 }
 .seller-code-fields > span {
     display: flex;
