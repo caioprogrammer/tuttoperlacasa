@@ -492,7 +492,7 @@
 	"product-selling-price": {
 		"title": "Preço (sem preço de lista) produto vitrine",
 		"props": {
-			"message": "<bold>Por: {sellingPriceValue}</bold>",
+			"message": "<bold>{sellingPriceValue}</bold>",
 			"markers": ["bold"],
 			"blockClass": "product-shelf-price"
 		}
@@ -500,7 +500,7 @@
 	"product-selling-price#shelf": {
 		"title": "Preço (com preço de lista) produto vitrine",
 		"props": {
-			"message": "<bold>Por: {sellingPriceValue}</bold>",
+			"message": "<bold>{sellingPriceValue}</bold>",
 			"markers": ["bold"],
 			"blockClass": "product-shelf-price"
 		}
