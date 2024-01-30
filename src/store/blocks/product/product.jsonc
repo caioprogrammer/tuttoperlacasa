@@ -10,7 +10,10 @@
 		]
 	},
 	"responsive-layout.desktop#product-main": {
-		"children": ["flex-layout.row#product-main"]
+		"children": [
+			"flex-layout.row#product-main",
+			"sticky-layout#float-button-buy"
+		]
 	},
 	"responsive-layout.mobile#product-main": {
 		"children": ["flex-layout.row#product-main-mobile"]
@@ -18,8 +21,7 @@
 	"flex-layout.row#product-main": {
 		"children": [
 			"flex-layout.col#product-main-left",
-			"flex-layout.col#product-main-right",
-			"sticky-layout#float-button-buy"
+			"flex-layout.col#product-main-right"
 		],
 		"props": {
 			"blockClass": "product-main"

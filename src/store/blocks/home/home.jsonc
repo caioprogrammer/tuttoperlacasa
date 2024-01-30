@@ -12,7 +12,8 @@
 		"children": [
 			"list-context.image-list#banner-main-desktop",
 			"__fold__",
-			"flex-layout.row#diferentials.desktop",
+			// "flex-layout.row#diferentials.desktop",
+			"flex-layout.row#diferentials-new.mobile",
 			"flex-layout.row#categories-slider",
 			"flex-layout.row#double-banners-desktop",
 			"flex-layout.row#shelf-home01",
