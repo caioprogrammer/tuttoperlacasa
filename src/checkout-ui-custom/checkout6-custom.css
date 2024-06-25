@@ -1,3 +1,5 @@
+
+/* source: <tuttoperlacasa.tuttoperlacasa@1.10.39> */
 @import"https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap";
 
 @font-face {
@@ -1282,4 +1284,10 @@ select.error:focus {
     .body-order-form .row-fluid .mini-cart {
         width: calc(100% - 10px);
     }
+}
+.coupon-fieldset div {
+    display: block !important;
+}
+.coupon-fieldset div.coupon-data {
+    display: none !important;
 }
