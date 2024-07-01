@@ -1288,6 +1288,6 @@ select.error:focus {
 .coupon-fieldset div {
     display: block !important;
 }
-.coupon-fieldset div.coupon-data {
+.coupon-data {
     display: none !important;
 }
